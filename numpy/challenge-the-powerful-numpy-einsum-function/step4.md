@@ -12,4 +12,3 @@ import numpy as np
 def tensor_contract(A: np.ndarray, B: np.ndarray) -> np.ndarray:
     # TODO: Perform tensor contraction between two tensors using Numpy's einsum function and return the resulting tensor.
 ```
-

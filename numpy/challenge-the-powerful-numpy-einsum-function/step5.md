@@ -12,4 +12,3 @@ import numpy as np
 def einsum_convention(A: np.ndarray, B: np.ndarray) -> np.ndarray:
     # TODO: Compute matrix multiplication between two tensors using Numpy's einsum function and return the resulting matrix.
 ```
-
