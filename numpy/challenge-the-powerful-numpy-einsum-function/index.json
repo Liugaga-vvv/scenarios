@@ -55,12 +55,28 @@
                 ]
             },
             {
-                "title": "Einstein Summation Convention",
+                "title": "Tensor Contraction",
                 "text": "step4.md",
                 "verify": [
                     {
-                        "name": "Testing einsum_convention.py",
+                        "name": "Testing tensor_contract.py",
                         "file": "verify4.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "numpy/einsum"
+                ]
+            },
+            {
+                "title": "Einstein Summation Convention",
+                "text": "step5.md",
+                "verify": [
+                    {
+                        "name": "Testing einsum_convention.py",
+                        "file": "verify5.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
@@ -92,6 +108,11 @@
                   },
                   {
                     "file": "hadamard_product.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "tensor_contract.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
                   },

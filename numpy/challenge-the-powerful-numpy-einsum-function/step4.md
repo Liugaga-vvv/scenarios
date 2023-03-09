@@ -1,15 +1,15 @@
-# Einstein Summation Convention
+# Tensor Contraction
 
-You are given two tensors `A` and `B` of dimensions `(m x n)` and `(n x p)` respectively. Write a function `einsum_convention(A, B)` that computes the matrix multiplication between the two tensors using Numpy's einsum function and returns the resulting matrix of dimensions `(m x p)`.
+You are given a tensor `A` of dimensions `(m x n x p)` and a tensor `B` of dimensions `(p x q)`. Write a function `tensor_contract(A, B)` that performs a tensor contraction between the two tensors using Numpy's einsum function and returns the resulting tensor of dimensions `(m x n x q)`.
 
 ## TODO
 
-Write a function `einsum_convention(A, B)` that computes matrix multiplication between two tensors using Numpy's einsum function and returns the resulting matrix.
+Write a function `tensor_contract(A, B)` that performs a tensor contraction between two tensors using Numpy's einsum function and returns the resulting tensor.
 
 ```python
 import numpy as np
 
-def einsum_convention(A: np.ndarray, B: np.ndarray) -> np.ndarray:
-    # TODO: Compute matrix multiplication between two tensors using Numpy's einsum function and return the resulting matrix.
+def tensor_contract(A: np.ndarray, B: np.ndarray) -> np.ndarray:
+    # TODO: Perform tensor contraction between two tensors using Numpy's einsum function and return the resulting tensor.
 ```
 
