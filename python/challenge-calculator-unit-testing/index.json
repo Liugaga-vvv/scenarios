@@ -1,0 +1,44 @@
+{
+  "type": "challenge",
+  "title": "Calculator Unit Testing",
+  "description": "Your task is to implement a Python class called Calculator that performs basic arithmetic operations, including addition, subtraction, multiplication, and division.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Python Unit Testing",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "The output of the command should be: OK",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/unittest", "python/class", "python/function_basic"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "calculator_unittest.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
