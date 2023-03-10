@@ -1,6 +1,6 @@
 # Tensor Contraction
 
-You are given a tensor $A$ of dimensions $(m x n x p)$ and a tensor $B$ of dimensions $(p x q)$. Write a function `tensor_contract(A, B)` that performs a tensor contraction between the two tensors using Numpy's einsum function and returns the resulting tensor of dimensions $(m x n x q)$.
+You are given a tensor $A$ of dimensions $(m × n × p)$ and a tensor $B$ of dimensions $(p × q)$. Write a function `tensor_contract(A, B)` that performs a tensor contraction between the two tensors using Numpy's einsum function and returns the resulting tensor of dimensions $(m × n × q)$.
 
 ## TODO
 
