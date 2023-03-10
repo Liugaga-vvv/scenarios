@@ -1,0 +1,178 @@
+{
+    "type": "challenge",
+    "title": "Random Number Generation with Numpy",
+    "description": " In this challenge, you will work with NumPy to create a program that generates random numbers for various scenarios.",
+    "difficulty": "Intermediate",
+    "time": 30,
+    "details": {
+        "steps": [
+            {
+                "title": "Rolling Dice",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Testing roll_dice.py",
+                        "file1": "verify1-1.sh",
+                        "file2": "verify1-2.sh",
+                        "file3": "verify1-3.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "numpy/random"
+                ]
+            },
+            {
+                "title": "Monte Carlo Simulation",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Testing estimate_pi.py",
+                        "file": "verify2.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "numpy/random"
+                ]
+            },
+            {
+                "title": "Shuffling a Deck of Cards",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Testing shuffle_deck.py",
+                        "file": "verify3.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "numpy/random"
+                ]
+            },
+            {
+                "title": "Sampling from a Probability Distribution",
+                "text": "step4.md",
+                "verify": [
+                    {
+                        "name": "Testing sample_distribution.py",
+                        "file": "verify4.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "numpy/random"
+                ]
+            },
+            {
+                "title": "Sampling from a Multinomial Distribution",
+                "text": "step5.md",
+                "verify": [
+                    {
+                        "name": "Testing sample_multinomial.py",
+                        "file": "verify5.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "numpy/random"
+                ]
+            },
+            {
+                "title": "Generating a Random Graph",
+                "text": "step6.md",
+                "verify": [
+                    {
+                        "name": "Testing generate_graph.py",
+                        "file": "verify6.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "numpy/random"
+                ]
+            },
+            {
+                "title": "Generating a Random Markov Chain",
+                "text": "step7.md",
+                "verify": [
+                    {
+                        "name": "Testing generate_markov_chain.py",
+                        "file": "verify7.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "numpy/random"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "roll_dice.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "estimate_pi.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "shuffle_deck.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "sample_distribution.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "sample_multinomial.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "generate_graph.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "generate_markov_chain.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                  }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
