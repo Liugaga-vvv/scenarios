@@ -4,7 +4,8 @@ You are given a tensor $A$ of dimensions $(m × n × p)$ and a tensor $B$ of dim
 
 ## TODO
 
-Write a function `tensor_contract(A, B)` that performs a tensor contraction between two tensors using Numpy's einsum function and returns the resulting tensor.
+1. Write a function `tensor_contract(A, B)` that performs a tensor contraction between two tensors using Numpy's einsum function and returns the resulting tensor.
+2. Completing `tensor_contract.py`
 
 ```python
 import numpy as np

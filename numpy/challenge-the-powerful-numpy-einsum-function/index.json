@@ -97,29 +97,6 @@
                 "skills": [
                     "numpy/einsum"
                 ]
-            },
-            {
-                "title": "Einstein Summation Convention",
-                "text": "step5.md",
-                "verify": [
-                    {
-                        "name": "Check whether it is used numpy.einsum",
-                        "file": "verify5-0.sh",
-                        "hint": "Please use numpy.einsum.",
-                        "timeout": 0,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Testing einsum_convention.py",
-                        "file": "verify5-1.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "numpy/einsum"
-                ]
             }
         ],
         "intro": {
@@ -148,11 +125,6 @@
                   },
                   {
                     "file": "tensor_contract.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                  },
-                  {
-                    "file": "einsum_convention.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
                   },

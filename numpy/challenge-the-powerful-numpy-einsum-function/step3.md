@@ -4,7 +4,8 @@ You are given two matrices $A$ and $B$ of dimensions $(m × n)$. Write a functio
 
 ## TODO
 
-Write a function `hadamard_product(A, B)` that computes the Hadamard product of two matrices using Numpy's einsum function and returns the resulting matrix.
+1. Write a function `hadamard_product(A, B)` that computes the Hadamard product of two matrices using Numpy's einsum function and returns the resulting matrix.
+2. Completing `hadamard_product.py`
 
 ```python
 import numpy as np
