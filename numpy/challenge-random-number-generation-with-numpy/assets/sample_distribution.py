@@ -9,7 +9,5 @@ def sample_distribution(probs: np.ndarray) -> int:
     Returns:
         int: The index of the selected element.
     """
-    cum_probs = np.cumsum(probs)
-    r = np.random.rand()
-    idx = np.where(cum_probs >= r)[0][0]
-    return idx
+    # TODO: implement this function
+    # Note: Do not change the existing code

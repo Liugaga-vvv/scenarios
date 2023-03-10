@@ -12,7 +12,7 @@
                 "verify": [
                     {
                         "name": "Testing roll_dice.py",
-                        "file": "verify1-1.sh",
+                        "file": "verify1.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
