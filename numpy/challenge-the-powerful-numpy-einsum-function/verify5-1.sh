@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /tmp && python3 test_einsum_convention.py
+cd /tmp && python3 einsum_convention__test.py

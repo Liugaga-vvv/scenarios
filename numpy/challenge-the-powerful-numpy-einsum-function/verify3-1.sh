@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /tmp && python3 test_hadamard_product.py
+cd /tmp && python3 hadamard_product__test.py
