@@ -11,8 +11,15 @@
                 "text": "step1.md",
                 "verify": [
                     {
+                        "name": "Check whether it is used numpy.einsum",
+                        "file": "verify1-0.sh",
+                        "hint": "Please use numpy.einsum.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
                         "name": "Testing matmul.py",
-                        "file": "verify1.sh",
+                        "file": "verify1-1.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
@@ -27,8 +34,15 @@
                 "text": "step2.md",
                 "verify": [
                     {
+                        "name": "Check whether it is used numpy.einsum",
+                        "file": "verify2-0.sh",
+                        "hint": "Please use numpy.einsum.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
                         "name": "Testing trace_of_matrix.py",
-                        "file": "verify2.sh",
+                        "file": "verify2-1.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
@@ -43,8 +57,15 @@
                 "text": "step3.md",
                 "verify": [
                     {
+                        "name": "Check whether it is used numpy.einsum",
+                        "file": "verify3-0.sh",
+                        "hint": "Please use numpy.einsum.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
                         "name": "Testing hadamard_product.py",
-                        "file": "verify3.sh",
+                        "file": "verify3-1.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
@@ -59,8 +80,15 @@
                 "text": "step4.md",
                 "verify": [
                     {
+                        "name": "Check whether it is used numpy.einsum",
+                        "file": "verify4-0.sh",
+                        "hint": "Please use numpy.einsum.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
                         "name": "Testing tensor_contract.py",
-                        "file": "verify4.sh",
+                        "file": "verify4-1.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
@@ -75,8 +103,15 @@
                 "text": "step5.md",
                 "verify": [
                     {
+                        "name": "Check whether it is used numpy.einsum",
+                        "file": "verify5-0.sh",
+                        "hint": "Please use numpy.einsum.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
                         "name": "Testing einsum_convention.py",
-                        "file": "verify5.sh",
+                        "file": "verify5-1.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
