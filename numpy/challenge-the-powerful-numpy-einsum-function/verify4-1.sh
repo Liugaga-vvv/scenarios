@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /tmp && python3 tensor_contract_test2.py
+cd /tmp && python3 test_tensor_contract.py
