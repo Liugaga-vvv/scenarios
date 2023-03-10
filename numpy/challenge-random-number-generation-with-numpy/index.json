@@ -3,7 +3,7 @@
     "title": "Random Number Generation with Numpy",
     "description": " In this challenge, you will work with NumPy to create a program that generates random numbers for various scenarios.",
     "difficulty": "Intermediate",
-    "time": 30,
+    "time": 40,
     "details": {
         "steps": [
             {
@@ -11,7 +11,21 @@
                 "text": "step1.md",
                 "verify": [
                     {
-                        "name": "Testing roll_dice.py",
+                        "name": "Completing roll_dice.py",
+                        "file": "verify1.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether random values are generated",
+                        "file": "verify1.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether the results are the same as the previous two tests",
                         "file": "verify1.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
@@ -27,7 +41,21 @@
                 "text": "step2.md",
                 "verify": [
                     {
-                        "name": "Testing estimate_pi.py",
+                        "name": "Completing estimate_pi.py",
+                        "file": "verify2.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether random values are generated",
+                        "file": "verify2.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether the results are the same as the previous two tests",
                         "file": "verify2.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
@@ -43,7 +71,21 @@
                 "text": "step3.md",
                 "verify": [
                     {
-                        "name": "Testing shuffle_deck.py",
+                        "name": "Completing shuffle_deck.py",
+                        "file": "verify3.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether random values are generated",
+                        "file": "verify3.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether the results are the same as the previous two tests",
                         "file": "verify3.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
@@ -59,7 +101,21 @@
                 "text": "step4.md",
                 "verify": [
                     {
-                        "name": "Testing sample_distribution.py",
+                        "name": "Completing sample_distribution.py",
+                        "file": "verify4.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether random values are generated",
+                        "file": "verify4.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether the results are the same as the previous two tests",
                         "file": "verify4.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
@@ -75,7 +131,21 @@
                 "text": "step5.md",
                 "verify": [
                     {
-                        "name": "Testing sample_multinomial.py",
+                        "name": "Completing sample_multinomial.py",
+                        "file": "verify5.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether random values are generated",
+                        "file": "verify5.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether the results are the same as the previous two tests",
                         "file": "verify5.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
@@ -91,7 +161,21 @@
                 "text": "step6.md",
                 "verify": [
                     {
-                        "name": "Testing generate_graph.py",
+                        "name": "Completing generate_graph.py",
+                        "file": "verify6.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether random values are generated",
+                        "file": "verify6.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether the results are the same as the previous two tests",
                         "file": "verify6.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
@@ -107,7 +191,21 @@
                 "text": "step7.md",
                 "verify": [
                     {
-                        "name": "Testing generate_markov_chain.py",
+                        "name": "Completing generate_markov_chain.py",
+                        "file": "verify7.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether random values are generated",
+                        "file": "verify7.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    },
+                    {
+                        "name": "Check whether the results are the same as the previous two tests",
                         "file": "verify7.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
