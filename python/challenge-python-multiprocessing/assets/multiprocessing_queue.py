@@ -4,9 +4,9 @@ def producer(queue):
     for i in range(10):
         queue.put(None)
 
-def consumer(queue):
+def consumer():
     while True:
-        item = queue.get()
+        item = None
 
 
     # TODO: implement this function
