@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /tmp && python3 matmul_test1.py
+cd /tmp && python3 matmul_test_1.py
