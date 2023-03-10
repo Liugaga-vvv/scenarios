@@ -13,6 +13,7 @@ class TestTrace(unittest.TestCase):
     @patch('numpy.einsum')
     def test_trace(self, mock_einsum):
         A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+        expected_result = 15
         trace(A)
         mock_einsum.assert_called_once_with('ii', A)
 

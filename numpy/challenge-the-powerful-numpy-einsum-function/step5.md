@@ -1,6 +1,6 @@
 # Einstein Summation Convention
 
-You are given two tensors `A` and `B` of dimensions `(m x n)` and `(n x p)` respectively. Write a function `einsum_convention(A, B)` that computes the matrix multiplication between the two tensors using Numpy's einsum function and returns the resulting matrix of dimensions `(m x p)`.
+You are given two tensors $A$ and $B$ of dimensions $(m x n)$ and $(n x p)$ respectively. Write a function `einsum_convention(A, B)` that computes the matrix multiplication between the two tensors using Numpy's einsum function and returns the resulting matrix of dimensions $(m x p)$.
 
 ## TODO
 

@@ -1,6 +1,6 @@
 # Hadamard Product
 
-You are given two matrices `A` and `B` of dimensions `(m x n)`. Write a function `hadamard_product(A, B)` that computes the Hadamard product of the two matrices, which is the element-wise multiplication of the matrices, using Numpy's einsum function.
+You are given two matrices $A$ and $B$ of dimensions $(m x n)$. Write a function `hadamard_product(A, B)` that computes the Hadamard product of the two matrices, which is the element-wise multiplication of the matrices, using Numpy's einsum function.
 
 ## TODO
 

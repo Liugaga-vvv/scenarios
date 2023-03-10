@@ -1,6 +1,6 @@
 # Trace of a Matrix
 
-You are given a square matrix `A` of dimensions `(n x n)`. Write a function `trace(A)` that computes the trace of the matrix, which is the sum of the diagonal elements of the matrix, using Numpy's einsum function.
+You are given a square matrix $A$ of dimensions $(n x n)$. Write a function `trace(A)` that computes the trace of the matrix, which is the sum of the diagonal elements of the matrix, using Numpy's einsum function.
 
 ## TODO
 

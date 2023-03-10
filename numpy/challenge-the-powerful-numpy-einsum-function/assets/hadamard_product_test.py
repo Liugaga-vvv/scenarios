@@ -13,6 +13,7 @@ class TestHadamardProduct(unittest.TestCase):
     def test_hadamard_product(self, mock_einsum):
         A = np.array([[1, 2], [3, 4], [5, 6]])
         B = np.array([[7, 8], [9, 10], [11, 12]])
+        expected_result = np.array([[7, 16], [27, 40], [55, 72]])
         hadamard_product(A,B)
         mock_einsum.assert_called_once_with('ij, ij -> ij', A, B)
 
