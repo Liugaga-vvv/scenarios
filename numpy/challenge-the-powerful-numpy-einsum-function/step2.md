@@ -4,8 +4,8 @@ You are given a square matrix $A$ of dimensions $(n × n)$. Write a function `tr
 
 ## TODO
 
-1. Write a function `trace(A)` that computes the trace of a matrix using Numpy's einsum function.
-2. Completing `trace.py`
+1. Write a function `trace(A)` in `trace_of_matrix.py`.
+2. This function computes the trace of a matrix using Numpy's einsum function.
 
 ```python
 import numpy as np

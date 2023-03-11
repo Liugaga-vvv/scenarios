@@ -4,8 +4,8 @@ You are given two matrices $A$ and $B$ of dimensions $(m × n)$ and $(n × p)$ r
 
 ## TODO
 
-1. Write a function `matmul(A, B)` that performs matrix multiplication using Numpy's einsum function and returns the resulting matrix.
-2. Completing `matmul.py`
+1. Write a function `matmul(A, B)` in `matmul.py`.
+2. This function performs matrix multiplication using Numpy's einsum function and returns the resulting matrix.
 
 ```python
 import numpy as np
