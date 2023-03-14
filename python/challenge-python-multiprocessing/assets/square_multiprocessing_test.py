@@ -1,5 +1,5 @@
-from square_multiprocessing import square_multiprocessing
 import unittest
+from square_multiprocessing import square_multiprocessing
 import sys
 
 sys.path.append("/home/labex/project")

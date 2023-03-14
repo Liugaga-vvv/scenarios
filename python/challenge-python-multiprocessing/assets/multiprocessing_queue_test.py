@@ -1,6 +1,6 @@
-from multiprocessing_queue import producer, consumer
-import multiprocessing
 import unittest
+import multiprocessing
+from multiprocessing_queue import producer, consumer
 import sys
 
 sys.path.append("/home/labex/project")
