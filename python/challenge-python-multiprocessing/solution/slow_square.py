@@ -10,6 +10,8 @@ def slow_square(x):
 def callback(result):
     print(result)
 
+
+if __name__ == '__main__':
     pool = multiprocessing.Pool(processes=4)
     results = [pool.apply_async(
         slow_square, (x,), callback=callback) for x in range(10)]

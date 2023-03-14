@@ -3,12 +3,26 @@ import multiprocessing
 
 def producer(queue):
     for i in range(10):
-        queue.put(None)
+        queue.put(None)  # The code needs to be improved here
 
 
-def consumer():
+def consumer(queue):
     while True:
-        item = None
+        item = None  # The code needs to be improved here
+        if item is None:
+            break
+        print(item)
 
     # TODO: implement this function
     # Note: Do not change the existing code
+
+
+if __name__ == '__main__':
+    queue = multiprocessing.Queue()
+    process_producer = multiprocessing.Process(target=producer, args=(queue,))
+    process_consumer = None  # The code needs to be improved here
+    process_producer.start()
+    process_consumer.start()
+    process_producer.join()
+    queue.put(None)
+    process_consumer.join()
