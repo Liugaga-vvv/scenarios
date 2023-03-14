@@ -1,6 +1,11 @@
 # Simple Multiprocessing
 
-In this programming challenge, you will be using Python multiprocessing to calculate the square of each number from 0 to 9 in parallel. Your program should use the `multiprocessing.Pool()` class and the `map()` method to apply the `square()` function to each number in the range.
+In this programming challenge, you will be using Python multiprocessing to calculate the square of each number from 0 to 9 in parallel.
+
+Your solution should include:
+
+1. You should use the `multiprocessing.Pool` module to create a process pool.
+2. You should use the `map` method of the `multiprocessing.Pool` to apply the `square` function to each integer in the list.
 
 ## Examples
 

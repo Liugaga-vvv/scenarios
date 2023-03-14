@@ -1,11 +1,10 @@
+from slow_square import slow_square
+import multiprocessing
+import unittest
 import sys
-
 
 sys.path.append("/home/labex/project")
 
-import unittest
-import multiprocessing
-from slow_square import slow_square
 
 class TestMultiprocessing(unittest.TestCase):
     def test_slow_square(self):
@@ -15,6 +14,7 @@ class TestMultiprocessing(unittest.TestCase):
             self.assertEqual(result.get(), result.get())
         pool.close()
         pool.join()
+
 
 if __name__ == '__main__':
     unittest.main()

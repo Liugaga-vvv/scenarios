@@ -1,10 +1,9 @@
+from square_multiprocessing import square_multiprocessing
+import unittest
 import sys
-
 
 sys.path.append("/home/labex/project")
 
-import unittest
-from square_multiprocessing import square_multiprocessing
 
 class TestSquareMultiprocessing(unittest.TestCase):
     def test_square_multiprocessing(self):
@@ -21,6 +20,7 @@ class TestSquareMultiprocessing(unittest.TestCase):
         integers = list(range(100000))
         expected_output = [i*i for i in integers]
         self.assertEqual(square_multiprocessing(integers), expected_output)
+
 
 if __name__ == '__main__':
     unittest.main()

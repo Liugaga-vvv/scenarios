@@ -1,6 +1,10 @@
 # Inter-Process Communication
 
-In this programming challenge, you will be using Python multiprocessing to create a shared queue between processes. Your program should use the `multiprocessing.Queue()` function to create a shared queue and the `multiprocessing.Process()` class to run two processes that each call the `producer()` and `consumer()` functions.
+In this programming challenge, you will be using Python multiprocessing to create a shared queue between processes.
+
+Your solution should include:
+
+Your program should use the `multiprocessing.Queue()` function to create a shared queue and the `multiprocessing.Process()` class to run two processes that each call the `producer()` and `consumer()` functions.
 
 ## Examples
 

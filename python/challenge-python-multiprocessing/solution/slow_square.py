@@ -8,7 +8,6 @@ def slow_square(x):
 def callback(result):
     print(result)
 
-
     pool = multiprocessing.Pool(processes=4)
     results = [pool.apply_async(slow_square, (x,), callback=callback) for x in range(10)]
     for result in results:

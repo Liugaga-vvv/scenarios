@@ -2,7 +2,7 @@
     "type": "challenge",
     "title": "Python Multiprocessing",
     "description": "In this challenge, you will try Python's multi-processing function and try to use it to run processes in parallel.In this challenge, you will try Python's multiprocessing function and try to use it to run processes in parallel. ",
-    "difficulty": "Beginner",
+    "difficulty": "Intermediate",
     "time": 20,
     "details": {
         "steps": [

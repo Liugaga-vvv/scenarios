@@ -1,6 +1,11 @@
 # Asynchronous Tasks with apply_async()
 
-In this programming challenge, you will be using Python multiprocessing to perform asynchronous tasks using the `apply_async()` method. Your program should use the `multiprocessing.Pool()` class and the `apply_async()` method to submit a function call to the pool of processes for each number in the range from 0 to 9. You should also use a callback function to retrieve the result of the function call when it is ready.
+In this programming challenge, you will be using Python multiprocessing to perform asynchronous tasks using the `apply_async()` method.
+
+Your solution should include:
+
+1. Your program should use the `multiprocessing.Pool()` class and the `apply_async()` method to submit a function call to the pool of processes for each number in the range from 0 to 9.
+2. You should also use a callback function to retrieve the result of the function call when it is ready.
 
 ## Examples
 
