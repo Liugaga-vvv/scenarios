@@ -2,6 +2,8 @@
 
 In some cases, you may need to communicate between processes when using multiprocessing in Python. In this example, we will use the `multiprocessing.Queue()` function to create a shared queue between processes.
 
+## Example
+
 ```python
 import multiprocessing
 
@@ -31,4 +33,4 @@ This code creates a shared queue `queue` using the `multiprocessing.Queue()` fun
 
 ## Exercise
 
-Now please follow the above procedure to complete the exercise.
+Now follow the procedure above to complete `multiprocessing_queue.py`.

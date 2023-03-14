@@ -2,7 +2,7 @@
     "type": "lab",
     "title": "Python Multiprocessing",
     "description": "In this lab, you will learn about Python multiprocessing and how to use it to run processes in parallel. ",
-    "difficulty": "Beginner",
+    "difficulty": "Intermediate",
     "time": 20,
     "details": {
         "steps": [

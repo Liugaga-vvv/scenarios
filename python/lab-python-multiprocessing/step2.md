@@ -2,6 +2,8 @@
 
 Now that you understand how multiprocessing works in Python, we can move on to a more complex example. In this example, we will use multiprocessing to speed up the processing of a large list of numbers.
 
+## Example
+
 ```python
 import multiprocessing
 
@@ -18,4 +20,4 @@ This code creates a pool of four processes and uses the `map()` function to appl
 
 ## Exercise
 
-Now follow the above code and use the `map()` function to apply `square()` to each number in the range of 0 to 999999 to output the result. And use the "with" statement to ensure that the process pool is properly closed when processing is completed. Please complete this exercise.
+Please complete `complex_square.py`, follow the code above and use the `map()` function to apply `square()` to each number in the range 0 to 999999 to output the result. And use the `with' statement to ensure that the process pool is properly closed when processing is complete.

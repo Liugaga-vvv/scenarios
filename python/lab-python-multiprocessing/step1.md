@@ -2,6 +2,8 @@
 
 The first step in learning about multiprocessing in Python is to create a simple program that demonstrates how it works. In this program, we will create a function that takes a single argument and returns the square of that number. We will then use multiprocessing to run this function on multiple processes.
 
+## Example
+
 ```python
 import multiprocessing
 
@@ -18,4 +20,4 @@ This code creates a pool of four processes and uses the `map()` function to appl
 
 ## Exercise
 
-Now follow the above code and use the `map()` function to apply `square()` to each number in the range of 0 to 9 to output the result. Please complete this exercise.
+Please complete `square.py`, follow the code above and use the `map()` function to apply `square()` to each number in the range 0 to 9 to output the result.
