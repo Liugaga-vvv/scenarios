@@ -1,10 +1,10 @@
-from square import square
-import multiprocessing
-import unittest
 import sys
 
 sys.path.append("/home/labex/project")
 
+from square import square
+import multiprocessing
+import unittest
 
 class TestMultiprocessing(unittest.TestCase):
     def test_square(self):

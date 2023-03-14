@@ -1,10 +1,10 @@
-import unittest
-import multiprocessing
-from multiprocessing_queue import producer, consumer
 import sys
 
 sys.path.append("/home/labex/project")
 
+from multiprocessing_queue import producer, consumer
+import multiprocessing
+import unittest
 
 class TestMultiprocessing(unittest.TestCase):
     def test_producer_consumer(self):
