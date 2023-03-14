@@ -15,6 +15,5 @@ class TestMultiprocessing(unittest.TestCase):
         pool.close()
         pool.join()
 
-
 if __name__ == '__main__':
     unittest.main()

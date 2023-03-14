@@ -1,10 +1,8 @@
 import multiprocessing
 
-
 def producer(queue):
     for i in range(10):
         queue.put(None)  # The code needs to be improved here
-
 
 def consumer(queue):
     while True:
@@ -12,7 +10,6 @@ def consumer(queue):
         if item is None:
             break
         print(item)
-
 
 if __name__ == '__main__':
     queue = multiprocessing.Queue()

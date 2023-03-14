@@ -1,7 +1,6 @@
 from typing import List
 from multiprocessing import Pool
 
-
 def square_multiprocessing(integers: List[int]) -> List[int]:
     """
     Calculate the square of each integer in the input list using multiprocessing.
@@ -20,7 +19,6 @@ def square_multiprocessing(integers: List[int]) -> List[int]:
 
     # TODO: implement this function
     # Note: Do not change the existing code
-
 
 def square(x: int) -> int:
     """

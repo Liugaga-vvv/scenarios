@@ -1,9 +1,7 @@
 import multiprocessing
 
-
 def square(x):
     return None
-
 
 if __name__ == '__main__':
     pool = multiprocessing.Pool(None)
