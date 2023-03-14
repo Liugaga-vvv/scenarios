@@ -1,0 +1,6 @@
+default:
+  comment:
+    message: "Hi, @$AUTHOR \n\n请确保遵循了我们 [贡献指南](https://labex.wiki/) 的全部要求，并请将 PR 关联 Issue 的创建者添加为 Reviewer，我们会尽快 Review。\n\nPlease make sure that you have followed all the requirements in our [Contribution Guidelines](https://labex.wiki/) and add the creator of the related Issue as a Reviewer to your PR. We will review it as soon as possible."
+
+labels:
+  "Test Completed": comment

@@ -1,12 +1,28 @@
 # PR Checklist
 
-Please post the link to the PR-related issue here (请将 PR 相关的 issues 的链接贴于此处):
+Please paste the links to the issues related to this PR below.
 
-Please make sure you've completed the relevant tasks for this PR from the following list (**请确保完成下方检查项，提交 PR 后才能打勾**):
+请将本 PR 相关的 issues 的链接贴下方：
 
-- [ ] The structure of the lab/challenge is correct.(实验/挑战的结构正确)
-- [ ] The format of the lab/challenge is correct.(实验/挑战的格式正确)
-- [ ] The code and verification scripts have been tested in the environment.(代码和验证脚本在环境中测试通过，测试通过后请在 Labels 项添加 Test Complete)
-- [ ] I promise that I have not plagiarised and have not copied the solution from other sources, AIGC is not included.(我保证没有抄袭，也没有从其他来源复制解决方案，AIGC 不包括在内)
+- Example: `fix https://github.com/labex-labs/scenarios/issues/18`
+- Your issue link: fix
 
-See the [Contribution Guidelines](https://labex-docs.vercel.app/) for more details.(请参阅 [贡献指南](https://labex-docs.vercel.app/) 了解更多信息。)
+---
+
+Thank your for raising your pull request.
+
+1. Please make sure you have followed our [CONTRIBUTING GUIDELINES](https://labex.wiki/).
+2. Our robot will synchronize your content online later. Please complete the online test according to the requirements of [How to Test](https://www.labex.wiki/basic/how-to-test).
+3. After passing the test, please add **Test Completed** to the Labels section. If you can't add Label, please comment that the test has been completed.
+4. Please add the creator of the Issue as a Reviewer for the PR.
+
+We will review it as soon as possible.
+
+感谢你提出拉取请求 (PR)。
+
+1. 请确保你遵循了我们的 [贡献指南](https://labex.wiki/)。
+2. 我们的机器人稍后会将你的内容同步上线。请根据 [如何测试](https://www.labex.wiki/zh/basic/how-to-test) 的要求完成在线测试。
+3. 通过测试后，请将 **Test Completed** 添加到 PR Label。如果你无法添加 Label，请评论说明测试已完成。
+4. 请将 PR 关联 Issue 的创建者添加为 Reviewer。
+
+我们将尽快审查它。
