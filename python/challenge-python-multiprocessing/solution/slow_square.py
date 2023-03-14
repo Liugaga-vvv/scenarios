@@ -13,8 +13,6 @@ def callback(result):
 
 if __name__ == '__main__':
     pool = multiprocessing.Pool(processes=4)
-    results = [pool.apply_async(
-        slow_square, (x,), callback=callback) for x in range(10)]
+    results = [pool.apply_async(slow_square, (x,), callback=callback) for x in range(10)]
     for result in results:
         result.wait()
-    print("All tasks completed.")

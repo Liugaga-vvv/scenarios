@@ -13,9 +13,6 @@ def consumer(queue):
             break
         print(item)
 
-    # TODO: implement this function
-    # Note: Do not change the existing code
-
 
 if __name__ == '__main__':
     queue = multiprocessing.Queue()
@@ -26,3 +23,6 @@ if __name__ == '__main__':
     process_producer.join()
     queue.put(None)
     process_consumer.join()
+
+    # TODO: implement this function
+    # Note: Do not change the existing code
