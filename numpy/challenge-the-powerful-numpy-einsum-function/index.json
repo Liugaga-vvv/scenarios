@@ -129,7 +129,11 @@
                     "chmod": "ugo+rwx"
                   },
                   {
-                    "file": "*_test.py",
+                    "file": "*_test1.py",
+                    "target": "/tmp"
+                  },
+                  {
+                    "file": "*_test2.py",
                     "target": "/tmp"
                   }
             ]
