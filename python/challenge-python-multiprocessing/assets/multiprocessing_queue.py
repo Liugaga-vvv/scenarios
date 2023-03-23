@@ -1,5 +1,8 @@
 import multiprocessing
 
+# TODO: Implement this function and supplement the following code
+# Note: Do not change the existing code
+
 def producer(queue):
     for i in range(10):
         queue.put(None)  # The code needs to be improved here
@@ -20,6 +23,3 @@ if __name__ == '__main__':
     process_producer.join()
     queue.put(None)
     process_consumer.join()
-
-    # TODO: implement this function
-    # Note: Do not change the existing code

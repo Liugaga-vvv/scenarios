@@ -13,12 +13,13 @@ def square_multiprocessing(integers: List[int]) -> List[int]:
         element in the input list.
 
     """
+
+    # TODO: Implement this function and supplement the following code
+    # Note: Do not change the existing code
+
     with Pool() as pool:
         results = pool.map(None)
     return results
-
-    # TODO: implement this function
-    # Note: Do not change the existing code
 
 def square(x: int) -> int:
     """

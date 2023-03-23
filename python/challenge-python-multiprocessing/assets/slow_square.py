@@ -1,6 +1,9 @@
 import multiprocessing
 import time
 
+# TODO: Implement this function and supplement the following code
+# Note: Do not change the existing code
+
 def slow_square(x):
     time.sleep(None)
     return None
@@ -13,6 +16,3 @@ if __name__ == '__main__':
     results = None
     for result in results:
         result.wait()
-
-    # TODO: implement this function
-    # Note: Do not change the existing code
