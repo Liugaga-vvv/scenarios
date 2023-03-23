@@ -1,0 +1,6 @@
+default:
+  comment:
+    message: "Hi, @$AUTHOR \n\n感谢你提出拉取请求 (PR)。\n\n1. 请确保你遵循了我们的 [贡献指南](https://labex.wiki/)。\n2. 我们的机器人稍后会将你的内容同步上线。请根据 [如何测试](https://www.labex.wiki/zh/basic/how-to-test) 的要求完成在线测试。\n3. 通过测试后，请将 **Test Completed** 添加到 PR Label。如果你无法添加 Label，请评论说明测试已完成。\n4. 请将 PR 关联 Issue 的创建者添加为 Reviewer。\n\n我们将尽快审查它。\n\nThank your for raising your pull request.\n\n1. Please make sure you have followed our [CONTRIBUTING GUIDELINES](https://labex.wiki/).\n2. Our robot will synchronize your content online later. Please complete the online test according to the requirements of [How to Test](https://www.labex.wiki/basic/how-to-test).\n3. After passing the test, please add **Test Completed** to the Labels section. If you can't add Label, please comment that the test has been completed.\n4. Please add the creator of the Issue as a Reviewer for the PR.\n\nWe will review it as soon as possible."
+
+labels:
+  "Test Completed": comment
