@@ -1,0 +1,105 @@
+{
+  "type": "lab",
+  "title": "NumPy Multiplications",
+  "description": "This tutorial covers all the multiplication functions in NumPy.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Getting Started",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if open the Python shell",
+            "file": "verify1.sh",
+            "hint": "You need to open the Python shell to continue.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/array"]
+      },
+      {
+        "title": "numpy.multiply",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if practice the multiply function",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/multiply"]
+      },
+      {
+        "title": "numpy.dot",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if practice the dot function",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/dot"]
+      },
+      {
+        "title": "numpy.matmul",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if practice the matmul function",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/matmul"]
+      },
+      {
+        "title": "* operator",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if practice the * operator",
+            "file": "verify5.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/multiply"]
+      },
+      {
+        "title": "@ operator",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Check if practice the @ operator",
+            "file": "verify6.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/matmul"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
