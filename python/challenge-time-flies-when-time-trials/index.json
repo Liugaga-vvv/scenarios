@@ -32,7 +32,7 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/datetime_module"]
+        "skills": ["python/datetime"]
       },
       {
         "title": "What Time Is Next?",
@@ -81,11 +81,7 @@
             "showstderr": false
           }
         ],
-        "skills": [
-          "python/datetime_module",
-          "python/for_loop",
-          "python/the_range_function"
-        ]
+        "skills": ["python/datetime", "python/for_loop", "python/range"]
       },
       {
         "title": "Convert Your Time",
@@ -113,7 +109,7 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/datetime_module", "python/manipulating_strings"]
+        "skills": ["python/datetime", "python/manipulating_strings"]
       }
     ],
     "intro": {

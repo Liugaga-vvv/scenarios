@@ -18,7 +18,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/os_module", "python/if_else"]
+        "skills": ["python/os", "python/if_else"]
       },
       {
         "title": "File Travel",
@@ -32,7 +32,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/os_module", "python/if_else"]
+        "skills": ["python/os", "python/if_else"]
       },
       {
         "title": "Count and Clean All",
@@ -46,7 +46,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/os_module", "python/len", "python/if_else"]
+        "skills": ["python/os", "python/len", "python/if_else"]
       }
     ],
     "intro": {
