@@ -1,0 +1,164 @@
+{
+  "type": "challenge",
+  "title": "Error and Exception Handling",
+  "description": "The aim in this advanced Python programming challenge is to test your knowledge of error handling, exception management, and the ability to predict and prevent problems in your code.",
+  "difficulty": "Advanced",
+  "time": 60,
+  "details": {
+    "steps": [
+      {
+        "title": "Custom Exceptions and Logging",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the three custom exceptions are implemented",
+            "file": "verify1-1.sh",
+            "hint": "Three exceptions not realized",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the read_data_from_file function with the variable '/home/labex/project/example.txt'",
+            "file": "verify1-2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the read_data_from_file function with the variable 'on_existent_file.txt'",
+            "file": "verify1-3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the process_data function with the variable 'example content'",
+            "file": "verify1-4.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the process_data function with an empty string",
+            "file": "verify1-5.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the main function when the file pointed to by the variable '/home/labex/project/example.txt' does not exist",
+            "file": "verify1-6.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the main function when there is a file pointed to by the variable '/home/labex/project/example.txt'",
+            "file": "verify1-7.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/logging",
+          "python/try_except",
+          "python/raise_errors"
+        ],
+        "solutions": ["custom_exceptions_and_logging.py"]
+      },
+      {
+        "title": "Graceful Error Recovery",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the perform_critical_operation function with the variable 'example content'",
+            "file": "verify2-1.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the perform_critical_operation function with an empty string",
+            "file": "verify2-2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the main function",
+            "file": "verify2-3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/decorator",
+          "python/logging",
+          "python/try_except",
+          "python/raise_errors"
+        ],
+        "solutions": ["graceful_error_recovery.py"]
+      },
+      {
+        "title": "Automated Testing and Error Simulation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test whether the test text written by the challenger can pass",
+            "file": "verify3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/try_except",
+          "python/raise_errors",
+          "python/unittest"
+        ],
+        "solutions": ["automated_testing.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "example.txt",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "custom_exceptions_and_logging.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "graceful_error_recovery.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "automated_testing.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
