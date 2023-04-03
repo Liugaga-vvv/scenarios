@@ -1,0 +1,99 @@
+{
+  "type": "lab",
+  "title": "Sequence Magic Methods",
+  "description": "Python sequence magic methods customize sequence behavior in classes.",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Length and Containment",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the length and containment methods steps are completed.",
+            "file": "verify1.sh",
+            "hint": "Please complete all the length and containment methods steps",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/__len__",
+          "python/__contains__",
+          "python/__init__",
+          "python/class"
+        ]
+      },
+      {
+        "title": "Item Access",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check the item access methods steps are completed.",
+            "file": "verify2.sh",
+            "hint": "Please complete all the item access methods steps",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/__getitem__",
+          "python/__setitem__",
+          "python/__delitem__"
+        ]
+      },
+      {
+        "title": "Iteration",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check the iteration methods steps are completed.",
+            "file": "verify3.sh",
+            "hint": "Please complete all the iteration methods steps",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/__iter__",
+          "python/__reversed__",
+          "python/for_loop",
+          "python/yield_values"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*example.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "sequence.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

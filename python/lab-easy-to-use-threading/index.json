@@ -1,0 +1,173 @@
+{
+  "type": "lab",
+  "title": "Easy to Use Threading",
+  "description": "Quickly grasp and use Python Threading.",
+  "difficulty": "Intermediate",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating Threads",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the Creating Threads experiment is completed.",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/threading", "python/print"]
+      },
+      {
+        "title": "Synchronization",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the Threads Synchronization experiment is completed.",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/threading", "python/print", "python/for_loop"]
+      },
+      {
+        "title": "Thread with Arguments",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the Threads subclass experiment is completed.",
+            "file": "verify3-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Threads with args experiment is completed.",
+            "file": "verify3-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/threading", "python/print", "python/class"]
+      },
+      {
+        "title": "Thread Pool",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the Threads pool with submit experiment is completed.",
+            "file": "verify4-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Threads pool with map experiment is completed.",
+            "file": "verify4-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/threading",
+          "python/print",
+          "python/with_statement",
+          "python/for_loop"
+        ]
+      },
+      {
+        "title": "Daemon Threads",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if the Daemon Threads with args experiment is completed.",
+            "file": "verify5-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Daemon Threads with setDaemon method experiment is completed.",
+            "file": "verify5-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/threading",
+          "python/print",
+          "python/with_statement",
+          "python/while_loop"
+        ]
+      },
+      {
+        "title": "Event Object",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Check if the Event Object Threads experiment is completed.",
+            "file": "verify6.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/threading", "python/print"]
+      },
+      {
+        "title": "Timer Object",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Check if the Timer Object Threads experiment is completed.",
+            "file": "verify6.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/threading", "python/print"]
+      },
+      {
+        "title": "Barrier Object",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Check if the Barrier Object Threads experiment is completed.",
+            "file": "verify6.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/threading", "python/print", "python/for_loop"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

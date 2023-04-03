@@ -1,0 +1,103 @@
+{
+  "type": "lab",
+  "title": "Python Assignment Expressions",
+  "description": "In this lab, we will learn about Python Assignment Expressions, also known as the walrus operator (:=). ",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Simple Assignment Expression",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if open the Python shell",
+            "file": "verify1-0.sh",
+            "hint": "You need to open the Python shell to continue.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the walrus operator is written correctly.",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/walrus", "python/print", "python/variables"]
+      },
+      {
+        "title": "Using Assignment Expressions in a Conditional Statement",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check that the conditional statement is written correctly.",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/walrus",
+          "python/if_else",
+          "python/len",
+          "python/variables",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Using Assignment Expressions in a Loop",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the loop statement is written correctly.",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/walrus",
+          "python/while_loop",
+          "python/list",
+          "python/variables",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Using Assignment Expressions in a List Comprehension",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the List Comprehension is written correctly.",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/walrus",
+          "python/list_comprehension",
+          "python/list",
+          "python/for_loop",
+          "python/int",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
