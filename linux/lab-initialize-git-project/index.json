@@ -1,0 +1,71 @@
+{
+  "type": "lab",
+  "title": "Initialize Git Project",
+  "description": "Initialize your git repository using the git command",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Using git init to create a new repository",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the git init command is used correctly",
+            "file": "verify1.sh",
+            "hint": "Please follow the documentation for the relevant operation",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/git"]
+      },
+      {
+        "title": "Git necessary files directory",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if you have finished reading the document",
+            "file": "verify2.sh",
+            "hint": "Please use ls command to view these files",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/touch", "git/init", "git/add", "git/commit"]
+      },
+      {
+        "title": "Using git glone to create a copy of an existing repository",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the git clone command is used correctly",
+            "file": "verify3.sh",
+            "hint": "Please follow the documentation for the relevant operation",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/clone"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
