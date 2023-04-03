@@ -27,7 +27,8 @@
                 ],
                 "skills": [
                     "numpy/einsum"
-                ]
+                ],
+                "solutions": ["matmul.py"]
             },
             {
                 "title": "Trace of a Matrix",
@@ -50,7 +51,8 @@
                 ],
                 "skills": [
                     "numpy/einsum"
-                ]
+                ],
+                "solutions": ["trace_of_matrix.py"]
             },
             {
                 "title": "Hadamard Product",
@@ -73,7 +75,8 @@
                 ],
                 "skills": [
                     "numpy/einsum"
-                ]
+                ],
+                "solutions": ["hadamard_product.py"]
             },
             {
                 "title": "Tensor Contraction",
@@ -96,7 +99,8 @@
                 ],
                 "skills": [
                     "numpy/einsum"
-                ]
+                ],
+                "solutions": ["tensor_contract.py"]
             }
         ],
         "intro": {
