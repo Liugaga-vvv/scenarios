@@ -1,25 +1,3 @@
 import multiprocessing
 
-def producer(queue):
-    for i in range(10):
-        queue.put(None)
-
-def consumer():
-    while True:
-        item = queue.get()
-        if item is None:
-            break
-        print(item)
-
-if __name__ == '__main__':
-    queue = multiprocessing.Queue()
-    process_producer = multiprocessing.Process(target=producer, args=(queue,))
-    process_consumer = None
-    process_producer.start()
-    process_consumer.start()
-    process_producer.join()
-    queue.put(None)
-    process_consumer.join()
-
-    # TODO: implement this function
-    # Note: Do not change the existing code
+# TODO: implement this function
