@@ -93,7 +93,7 @@
       {
         "title": "Dictionaries",
         "text": "step4.md",
-        "skills": ["python/dictionaries"],
+        "skills": ["python/dict"],
         "verify": [
           {
             "name": "Check if create a dictionary",
