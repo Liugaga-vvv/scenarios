@@ -1,0 +1,131 @@
+{
+  "type": "lab",
+  "title": "Custom Numeric Magic Methods",
+  "description": "This tutorial delves into Python magic methods, focusing on customizing class behavior for arithmetic operations.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Unary Operators",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the unary operates steps are completed.",
+            "file": "verify1.sh",
+            "hint": "Please complete all the unary operates steps",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__init__",
+          "python/__neg__",
+          "python/__abs__",
+          "python/__round__",
+          "python/__floor__",
+          "python/__ceil__",
+          "python/math_operator",
+          "python/math",
+          "python/f_string",
+          "python/class",
+          "python/instance_objects",
+          "python/method_objects"
+        ]
+      },
+      {
+        "title": "Binary Operators",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check the binary operates steps are completed.",
+            "file": "verify2.sh",
+            "hint": "Please complete all the binary operates steps",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__add__",
+          "python/__sub__",
+          "python/__mul__",
+          "python/__truediv__",
+          "python/__floordiv__",
+          "python/__mod__",
+          "python/__pow__",
+          "python/math_operator",
+          "python/f_string",
+          "python/class",
+          "python/instance_objects",
+          "python/method_objects"
+        ]
+      },
+      {
+        "title": "In-place Operations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check the in-place operates steps are completed.",
+            "file": "verify3.sh",
+            "hint": "Please complete all the in-place operates steps",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__iadd__",
+          "python/__isub__",
+          "python/__imul__",
+          "python/__itruediv__",
+          "python/__ifloordiv__",
+          "python/__imod__",
+          "python/__ipow__",
+          "python/math_operator",
+          "python/f_string",
+          "python/class",
+          "python/instance_objects",
+          "python/method_objects"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "*example.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "*example1.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "*example2.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "number.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
