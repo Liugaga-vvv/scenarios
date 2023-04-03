@@ -16,25 +16,12 @@
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
-                    },
-                    {
-                        "name": "Check whether random values are generated",
-                        "file": "verify1.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Check whether the results are the same as the previous two tests",
-                        "file": "verify1.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
                     }
                 ],
                 "skills": [
                     "numpy/random"
-                ]
+                ],
+                "solutions": ["roll_dice.py"]
             },
             {
                 "title": "Monte Carlo Simulation",
@@ -46,25 +33,12 @@
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
-                    },
-                    {
-                        "name": "Check whether random values are generated",
-                        "file": "verify2.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Check whether the results are the same as the previous two tests",
-                        "file": "verify2.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
                     }
                 ],
                 "skills": [
                     "numpy/random"
-                ]
+                ],
+                "solutions": ["estimate_pi.py"]
             },
             {
                 "title": "Shuffling a Deck of Cards",
@@ -76,25 +50,12 @@
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
-                    },
-                    {
-                        "name": "Check whether random values are generated",
-                        "file": "verify3.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Check whether the results are the same as the previous two tests",
-                        "file": "verify3.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
                     }
                 ],
                 "skills": [
                     "numpy/random"
-                ]
+                ],
+                "solutions": ["shuffle_deck.py"]
             },
             {
                 "title": "Sampling from a Probability Distribution",
@@ -106,25 +67,12 @@
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
-                    },
-                    {
-                        "name": "Check whether random values are generated",
-                        "file": "verify4.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Check whether the results are the same as the previous two tests",
-                        "file": "verify4.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
                     }
                 ],
                 "skills": [
                     "numpy/random"
-                ]
+                ],
+                "solutions": ["sample_distribution.py"]
             },
             {
                 "title": "Sampling from a Multinomial Distribution",
@@ -136,25 +84,12 @@
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
-                    },
-                    {
-                        "name": "Check whether random values are generated",
-                        "file": "verify5.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Check whether the results are the same as the previous two tests",
-                        "file": "verify5.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
                     }
                 ],
                 "skills": [
                     "numpy/random"
-                ]
+                ],
+                "solutions": ["sample_multinomial.py"]
             },
             {
                 "title": "Generating a Random Graph",
@@ -166,25 +101,12 @@
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
-                    },
-                    {
-                        "name": "Check whether random values are generated",
-                        "file": "verify6.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Check whether the results are the same as the previous two tests",
-                        "file": "verify6.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
                     }
                 ],
                 "skills": [
                     "numpy/random"
-                ]
+                ],
+                "solutions": ["generate_graph.py"]
             },
             {
                 "title": "Generating a Random Markov Chain",
@@ -196,25 +118,12 @@
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
-                    },
-                    {
-                        "name": "Check whether random values are generated",
-                        "file": "verify7.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    },
-                    {
-                        "name": "Check whether the results are the same as the previous two tests",
-                        "file": "verify7.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
                     }
                 ],
                 "skills": [
                     "numpy/random"
-                ]
+                ],
+                "solutions": ["generate_markov_chain.py"]
             }
         ],
         "intro": {

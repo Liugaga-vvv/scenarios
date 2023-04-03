@@ -4,11 +4,11 @@ In this sub-challenge, you will write a Python program that simulates shuffling 
 
 ## TODOs
 
-1. Import the NumPy library.
-2. Create a NumPy array representing a deck of cards, where each card is represented by an integer between 1 and 52, inclusive.
-3. Shuffle the deck by randomly reordering the elements of the array using the NumPy `random.permutation` function.
-4. Print the shuffled deck.
-5. Completing `shuffle_deck.py`
+1. Completing `shuffle_deck.py`
+2. Import the NumPy library.
+3. Create a NumPy array representing a deck of cards, where each card is represented by an integer between 1 and 52, inclusive.
+4. Shuffle the deck by randomly reordering the elements of the array using the NumPy `random.permutation` function.
+5. Print the shuffled deck.
 
 ## Example Output
 

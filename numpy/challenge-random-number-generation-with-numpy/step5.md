@@ -4,11 +4,11 @@ In this sub-challenge, you will write a Python program that generates a random s
 
 ## TODOs
 
-1. Import the NumPy library.
-2. Create a NumPy array representing the probability distribution, where each element represents the probability of a specific outcome.
-3. Sample from the multinomial distribution by randomly selecting $n$ elements from the array, where $n$ is the number of trials, with a probability proportional to their values.
-4. Return the counts of each selected element.
-5. Completing `sample_multinomial.py`
+1. Completing `sample_multinomial.py`
+2. Import the NumPy library.
+3. Create a NumPy array representing the probability distribution, where each element represents the probability of a specific outcome.
+4. Sample from the multinomial distribution by randomly selecting $n$ elements from the array, where $n$ is the number of trials, with a probability proportional to their values.
+5. Return the counts of each selected element.
 
 ## Example Output
 

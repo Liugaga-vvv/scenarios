@@ -4,12 +4,12 @@ In this sub-challenge, you will write a Python program that generates a random M
 
 ## TODOs
 
-1. Import the NumPy library.
-2. Generate a NumPy array representing the transition matrix of the Markov chain, where each element is a probability between 0 and 1.
-3. Normalize each row of the matrix by dividing each element by the sum of its row.
-4. Generate a random initial state vector, where each element is a probability between 0 and 1 and the sum of all elements is 1.
-5. Return the transition matrix and initial state vector.
-6. Completing `generate_markov_chain.py`
+1. Completing `generate_markov_chain.py`
+2. Import the NumPy library.
+3. Generate a NumPy array representing the transition matrix of the Markov chain, where each element is a probability between 0 and 1.
+4. Normalize each row of the matrix by dividing each element by the sum of its row.
+5. Generate a random initial state vector, where each element is a probability between 0 and 1 and the sum of all elements is 1.
+6. Return the transition matrix and initial state vector.
 
 ## Example Output
 

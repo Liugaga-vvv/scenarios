@@ -4,11 +4,11 @@ In this sub-challenge, you will write a Python program that generates a random g
 
 ## TODOs
 
-1. Import the NumPy library.
-2. Generate a NumPy array representing the adjacency matrix of the graph, where each element is 1 with probability $p$ and 0 with probability $1-p$.
-3. Ensure that the matrix is symmetric.
-4. Return the adjacency matrix.
-5. Completing `generate_graph.py`
+1. Completing `generate_graph.py`
+2. Import the NumPy library.
+3. Generate a NumPy array representing the adjacency matrix of the graph, where each element is 1 with probability $p$ and 0 with probability $1-p$.
+4. Ensure that the matrix is symmetric.
+5. Return the adjacency matrix.
 
 ## Example Output
 

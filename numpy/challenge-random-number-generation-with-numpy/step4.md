@@ -4,11 +4,11 @@ In this sub-challenge, you will write a Python program that generates a random s
 
 ## TODOs
 
-1. Import the NumPy library.
-2. Create a NumPy array representing a probability distribution, where each element represents the probability of a specific outcome.
-3. Sample from the probability distribution by randomly selecting an element from the array with a probability proportional to its value.
-4. Return the index of the selected element.
-5. Completing `sample_distribution.py`
+1. Completing `sample_distribution.py`
+2. Import the NumPy library.
+3. Create a NumPy array representing a probability distribution, where each element represents the probability of a specific outcome.
+4. Sample from the probability distribution by randomly selecting an element from the array with a probability proportional to its value.
+5. Return the index of the selected element.
 
 ## Example Output
 
