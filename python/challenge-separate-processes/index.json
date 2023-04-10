@@ -25,7 +25,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["sum_multiprocessing.py"]
       }
     ],
     "intro": {

@@ -1,12 +1,12 @@
 import unittest
 import sys
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 
 from comparisons import MathExpression
 
-class TestMathExpression(unittest.TestCase):
 
+class TestMathExpression(unittest.TestCase):
     def test_ge(self):
         a = MathExpression(5)
         b = MathExpression(5)

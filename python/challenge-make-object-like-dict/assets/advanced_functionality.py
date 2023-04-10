@@ -1,16 +1,17 @@
 from typing import Any, List, Iterator
 
+
 class DictLikeObject:
     """
     A class that behaves like a dictionary using magic methods.
     """
 
     def __init__(self):
-    
+
         # TODO
-        
+
         pass
-    
+
     def __getitem__(self, key: str) -> Any:
         """
         Retrieve the value for a given key using square bracket notation.
@@ -24,10 +25,10 @@ class DictLikeObject:
         Raises:
             KeyError: If the key does not exist in the dictionary.
         """
-    
+
         # TODO
-        
-        return 
+
+        return
 
     def __setitem__(self, key: str, value: Any) -> None:
         """
@@ -40,9 +41,9 @@ class DictLikeObject:
         Returns:
             None.
         """
-    
+
         # TODO
-        
+
         pass
 
     def __delitem__(self, key: str) -> None:
@@ -58,9 +59,8 @@ class DictLikeObject:
         Raises:
             KeyError: If the key does not exist in the dictionary.
         """
-    
+
         # TODO
-        
 
     def __len__(self) -> int:
         """
@@ -69,10 +69,10 @@ class DictLikeObject:
         Returns:
             The number of key-value pairs in the dictionary as an integer.
         """
-    
+
         # TODO
-        
-        return 
+
+        return
 
     def __contains__(self, key: str) -> bool:
         """
@@ -84,10 +84,10 @@ class DictLikeObject:
         Returns:
             True if the key exists in the dictionary, False otherwise.
         """
-    
+
         # TODO
-        
-        return 
+
+        return
 
     def __iter__(self) -> Iterator:
         """
@@ -96,10 +96,10 @@ class DictLikeObject:
         Returns:
             An iterator over keys in the dictionary.
         """
-    
+
         # TODO
-        
-        return 
+
+        return
 
     def keys(self) -> List[str]:
         """
@@ -108,7 +108,7 @@ class DictLikeObject:
         Returns:
             A list of keys in the dictionary.
         """
-    
+
         # TODO
-        
-        return 
+
+        return

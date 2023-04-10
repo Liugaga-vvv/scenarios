@@ -25,7 +25,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["linux/ls", "linux/mkdir"]
+        "skills": ["linux/ls", "linux/mkdir"],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "Packing System Log",
@@ -53,7 +54,8 @@
           "linux/date",
           "linux/tar",
           "linux/find"
-        ]
+        ],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Develop Backup Scripts",
@@ -74,7 +76,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["linux/vim"]
+        "skills": ["linux/vim"],
+        "solutions": ["solution-step3.md"]
       },
       {
         "title": "Add Cron Job",
@@ -88,7 +91,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["linux/crontab"]
+        "skills": ["linux/crontab"],
+        "solutions": ["solution-step4.md"]
       }
     ],
     "intro": {

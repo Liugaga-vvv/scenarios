@@ -1,1 +1,1 @@
-grep -E "np.sin"  ~/.python_history
+grep -E "np.sin" ~/.python_history

@@ -5,6 +5,7 @@ sys.path.append("/home/labex/project/")
 import unittest
 from magic_set import magic_set
 
+
 class TestMagicSet(unittest.TestCase):
     def test_eq_ne(self):
         s1 = magic_set()
@@ -25,5 +26,5 @@ class TestMagicSet(unittest.TestCase):
         self.assertTrue(s1 != s3)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

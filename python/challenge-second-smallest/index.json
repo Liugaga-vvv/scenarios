@@ -18,7 +18,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/walrus"]
+        "skills": ["python/walrus"],
+        "solutions": ["solution.md"]
       }
     ],
     "intro": {

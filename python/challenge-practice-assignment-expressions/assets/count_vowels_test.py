@@ -5,6 +5,7 @@ sys.path.append("/home/labex/project/")
 import unittest
 from count_vowels import count_vowels
 
+
 class TestAssignmentExpressionsChallenge(unittest.TestCase):
     def test_count_vowels(self):
         test_cases = [
@@ -17,6 +18,7 @@ class TestAssignmentExpressionsChallenge(unittest.TestCase):
 
         for s, expected in test_cases:
             self.assertEqual(count_vowels(s), expected)
+
 
 if __name__ == "__main__":
     unittest.main()

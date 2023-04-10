@@ -46,7 +46,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__init__", "python/__str__"]
+        "skills": ["python/list", "python/__init__", "python/__str__"],
+        "solutions": ["magic_set.py"]
       },
       {
         "title": "Implementing len",
@@ -60,7 +61,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__len__"]
+        "skills": ["python/list", "python/__len__"],
+        "solutions": ["magic_set.py"]
       },
       {
         "title": "Implementing contains",
@@ -74,7 +76,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__contains__"]
+        "skills": ["python/list", "python/__contains__"],
+        "solutions": ["magic_set.py"]
       },
       {
         "title": "Implementing iter and next",
@@ -95,7 +98,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__iter__", "python/next"]
+        "skills": ["python/list", "python/__iter__", "python/next"],
+        "solutions": ["magic_set.py"]
       },
       {
         "title": "Implementing eq and ne",
@@ -116,7 +120,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__eq__", "python/__ne__"]
+        "skills": ["python/list", "python/__eq__", "python/__ne__"],
+        "solutions": ["magic_set.py"]
       },
       {
         "title": "Implementing and, or, and sub",
@@ -149,7 +154,8 @@
           "python/__and__",
           "python/__or__",
           "python/__sub__"
-        ]
+        ],
+        "solutions": ["magic_set.py"]
       }
     ],
     "intro": {

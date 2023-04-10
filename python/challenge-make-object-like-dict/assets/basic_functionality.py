@@ -1,14 +1,15 @@
 from typing import Any
 
+
 class DictLikeObject:
     """
     A class that behaves like a dictionary using magic methods.
     """
 
     def __init__(self):
-        
+
         # TODO
-        
+
         pass
 
     def __getitem__(self, key: str) -> Any:
@@ -24,9 +25,9 @@ class DictLikeObject:
         Raises:
             KeyError: If the key does not exist in the dictionary.
         """
-        
+
         # TODO
-        
+
         return None
 
     def __setitem__(self, key: str, value: Any) -> None:
@@ -40,9 +41,9 @@ class DictLikeObject:
         Returns:
             None.
         """
-        
+
         # TODO
-        
+
     def __delitem__(self, key: str) -> None:
         """
         Remove the key-value pair for a given key using square bracket notation.
@@ -56,10 +57,9 @@ class DictLikeObject:
         Raises:
             KeyError: If the key does not exist in the dictionary.
         """
-        
+
         # TODO
 
-    
     def __len__(self) -> int:
         """
         Return the number of key-value pairs in the dictionary.
@@ -67,7 +67,7 @@ class DictLikeObject:
         Returns:
             The number of key-value pairs in the dictionary as an integer.
         """
-        
+
         # TODO
-        
+
         return None

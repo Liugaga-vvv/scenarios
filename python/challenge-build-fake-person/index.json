@@ -1,0 +1,90 @@
+{
+  "type": "challenge",
+  "title": "Build Fake Person",
+  "description": "By constructing objects of class, this challenge is designed to practice the installation and usage of third-party library packages.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Library install",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check is correctly install third library in pip",
+            "file": "verify1.sh",
+            "hint": "Please install third library in pip",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/pypi", "python/packages"],
+        "solutions": ["install.bash"]
+      },
+      {
+        "title": "Build Person class",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the class containing multiple attributes is created correctly.",
+            "file": "verify2.sh",
+            "hint": "Please create a class with multiple attributes and implement methods correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/class", "python/attributes"],
+        "solutions": ["person.py"]
+      },
+      {
+        "title": "Fake Person objects and sort in age",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if multiple users are simulated correctly using the Faker library and the Person class.",
+            "file": "verify3.sh",
+            "hint": "Please use the Faker library and the Person class to correctly simulate multiple users.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/instance_objects",
+          "python/method_objects",
+          "python/iterator",
+          "python/lambda_function",
+          "python/for_loop"
+        ],
+        "solutions": ["fake_person.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "person.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "fake_person.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -4,7 +4,7 @@ def even_numbers(numbers: list) -> list:
     Args:
         numbers(list): A list of integers,e.g. [1,2,3,4]
 
-    Returns: 
+    Returns:
         result (list): A list of even integers,e.g. [2,4]
     """
     # TODO: implement this function
@@ -13,4 +13,3 @@ def even_numbers(numbers: list) -> list:
     result = None
 
     return result
-    

@@ -1,0 +1,141 @@
+{
+  "type": "challenge",
+  "title": "The Powerful Numpy Einsum Function",
+  "description": "This challenge is designed to test your skills in using Numpy's einsum function, which allows you to perform various operations on multi-dimensional arrays. The challenge consists of several sub-challenges that gradually increase in difficulty.",
+  "difficulty": "Intermediate",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Matrix Multiplication",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check whether it is used numpy.einsum",
+            "file": "verify1-0.sh",
+            "hint": "Please use numpy.einsum.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing matmul.py",
+            "file": "verify1-1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/einsum"],
+        "solutions": ["matmul.py"]
+      },
+      {
+        "title": "Trace of a Matrix",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check whether it is used numpy.einsum",
+            "file": "verify2-0.sh",
+            "hint": "Please use numpy.einsum.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing trace_of_matrix.py",
+            "file": "verify2-1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/einsum"],
+        "solutions": ["trace_of_matrix.py"]
+      },
+      {
+        "title": "Hadamard Product",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check whether it is used numpy.einsum",
+            "file": "verify3-0.sh",
+            "hint": "Please use numpy.einsum.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing hadamard_product.py",
+            "file": "verify3-1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/einsum"],
+        "solutions": ["hadamard_product.py"]
+      },
+      {
+        "title": "Tensor Contraction",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check whether it is used numpy.einsum",
+            "file": "verify4-0.sh",
+            "hint": "Please use numpy.einsum.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing tensor_contract.py",
+            "file": "verify4-1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/einsum"],
+        "solutions": ["tensor_contract.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "matmul.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "trace_of_matrix.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "hadamard_product.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "tensor_contract.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test1.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "*_test2.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -5,6 +5,5 @@ def while_loop() -> int:
     Returns:
         int: The sum of the entered numbers.
     """
-    
+
     # TODO
-    

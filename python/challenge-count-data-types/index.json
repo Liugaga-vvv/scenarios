@@ -18,7 +18,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/data_types"]
+        "skills": ["python/data_types"],
+        "solutions": ["solution.md"]
       }
     ],
     "intro": {

@@ -1,0 +1,111 @@
+{
+  "type": "challenge",
+  "title": "Install Jenkins And Create Pipeline",
+  "description": "Takes you through a complete deployment of the Jenkins service and creates a simple Pipeline for testing.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Install JDK",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if JDK version is 11",
+            "file": "verify1-3.sh",
+            "hint": "Please install version 11 of the JDK",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if JAVA_HOME is set",
+            "file": "verify1-4.sh",
+            "hint": "Please set JAVA_HOME",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": ["jenkins/war_files_installation"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Install Tomcat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the tomcat user exists",
+            "file": "verify2-1.sh",
+            "hint": "Please create tomcat user",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if /opt/tomcat directory exists",
+            "file": "verify2-2.sh",
+            "hint": "Please create directory named /opt/tomcat",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the /opt/tomcat directory is owned by tomcat",
+            "file": "verify2-3.sh",
+            "hint": "Please change the owner of /opt/tomcat to tomcat user",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Install Jenkins",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if jenkins.war has download",
+            "file": "verify3-1.sh",
+            "hint": "Please download the jenkins.war file",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if jenkins.war exists",
+            "file": "verify3-2.sh",
+            "hint": "Please copy the jenkins.war file to the /opt/tomcat/webapps directory",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step3-solution.md"]
+      },
+      {
+        "title": "Initialize Jenkins",
+        "text": "step4.md",
+        "skills": ["jenkins/initial_settings"],
+        "solutions": ["step4-solution.md"]
+      },
+      {
+        "title": "Manage Pipeline Project",
+        "text": "step5.md",
+        "skills": [
+          "jenkins/create_project",
+          "jenkins/pipeline",
+          "jenkins/running_pipelines",
+          "jenkins/build_history"
+        ],
+        "solutions": ["step5-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

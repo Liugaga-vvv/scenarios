@@ -1,1 +1,1 @@
-cat ~/.python_history | grep "loadtxt" 
+cat ~/.python_history | grep "loadtxt"

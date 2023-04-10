@@ -10,7 +10,7 @@ Open the Python shell by typing the following command in the terminal.
 python3
 ```
 
-## Import Numpy
+## Import NumPy
 
 NumPy is already installed，you can import it in your Python code:
 

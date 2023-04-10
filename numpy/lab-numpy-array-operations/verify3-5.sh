@@ -1,1 +1,1 @@
-grep -E "np.log"  ~/.python_history
+grep -E "np.log" ~/.python_history

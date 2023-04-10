@@ -1,1 +1,1 @@
-grep -E "np.sqrt"  ~/.python_history
+grep -E "np.sqrt" ~/.python_history

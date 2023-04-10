@@ -1,6 +1,6 @@
 {
   "type": "lab",
-  "title": "Numpy Arrays and Data Types",
+  "title": "NumPy Arrays and Data Types",
   "description": "In this tutorial, we will be discussing how to create, access, and modify NumPy arrays, as well as exploring the different data types available.",
   "difficulty": "Beginner",
   "time": 15,

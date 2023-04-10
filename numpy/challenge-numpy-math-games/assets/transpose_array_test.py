@@ -6,6 +6,7 @@ import unittest
 import numpy as np
 from transpose_array import transpose_array
 
+
 class TestTransposeArray(unittest.TestCase):
     def test_transpose_array_2d(self):
         a = np.array([[1, 2], [3, 4]])
@@ -19,5 +20,6 @@ class TestTransposeArray(unittest.TestCase):
         expected = np.array([[[1, 5], [3, 7]], [[2, 6], [4, 8]]])
         np.testing.assert_array_equal(result, expected)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -11,13 +11,16 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
-      - name: Get the changed documents
-        uses: trilom/file-changes-action@v1.2.4
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          output: '" "'
-      - name: Formatting documents
-        run: npx prettier --write "${{ steps.get_file_changes.outputs.files }}"
+      - name: Get the changed files
+        id: changed-files-specific
+        uses: tj-actions/changed-files@v35
+      - name: Formatting files
+        run: |
+          npm i -g prettier prettier-plugin-sh
+          pip install black
+          echo ${{ steps.changed-files-specific.outputs.all_changed_files }}
+          npx prettier --write ${{ steps.changed-files-specific.outputs.all_changed_files }}
+          black ${{ steps.changed-files-specific.outputs.all_changed_files }}
         continue-on-error: true
       - name: Git commit
         uses: stefanzweifel/git-auto-commit-action@v4.3.0

@@ -1,7 +1,7 @@
 {
   "type": "challenge",
-  "title": "Numpy Math Games",
-  "description": "In this challenge will help you to understand how to use the `Numpy` module in Python and how to work with Numpy arrays",
+  "title": "NumPy Math Games",
+  "description": "In this challenge will help you to understand how to use the `NumPy` module in Python and how to work with NumPy arrays",
   "difficulty": "Beginner",
   "time": 25,
   "details": {
@@ -24,7 +24,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["multiply_arrays.py"]
       },
       {
         "title": "Matrix Multiplication",
@@ -44,7 +45,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["matrix_multiply.py"]
       },
       {
         "title": "Transpose",
@@ -64,7 +66,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["transpose_array.py"]
       },
       {
         "title": "Reshape",
@@ -84,7 +87,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["reshape_array.py"]
       },
       {
         "title": "Euclidean Distance",
@@ -105,7 +109,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["euclidean_distance.py"]
       }
     ],
     "intro": {

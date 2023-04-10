@@ -22,5 +22,6 @@ class TestMultiplyArrays(unittest.TestCase):
         expected = np.array([[5, 12], [21, 32]])
         np.testing.assert_array_equal(result, expected)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

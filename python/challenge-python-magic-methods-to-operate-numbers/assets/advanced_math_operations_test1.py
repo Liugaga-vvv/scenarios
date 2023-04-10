@@ -1,16 +1,16 @@
 import unittest
 import sys
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 
 from advanced_math_operations import MathExpression
 
-class TestMathExpression(unittest.TestCase):
 
+class TestMathExpression(unittest.TestCase):
     def test_pow(self):
         a = MathExpression(5)
         b = MathExpression(7)
-        c = a ** b
+        c = a**b
         self.assertEqual(str(c), "78125")
 
 

@@ -6,10 +6,8 @@ SFTP_USER=root
 SFTP_PWD=054422
 REMOTE_PATH="qyx.txt"
 
-lftp -u ${SFTP_USER},${SFTP_PWD} sftp://${SFTP_HOST}:${PORT}<<EOF
+lftp -u ${SFTP_USER},${SFTP_PWD} sftp://${SFTP_HOST}:${PORT} << EOF
 put ${SFTP_PATH}
 ls
 bye
 EOF
-
-

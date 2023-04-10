@@ -7,7 +7,7 @@ class MathExpression:
         """
         self.value = None
 
-    def __add__(self, other: 'MathExpression') -> 'MathExpression':
+    def __add__(self, other: "MathExpression") -> "MathExpression":
         """Adds two instances of the class together.
 
         Args:
@@ -21,7 +21,7 @@ class MathExpression:
 
         return
 
-    def __sub__(self, other: 'MathExpression') -> 'MathExpression':
+    def __sub__(self, other: "MathExpression") -> "MathExpression":
         """Subtracts one instance of the class from another.
 
         Args:
@@ -35,7 +35,7 @@ class MathExpression:
 
         return
 
-    def __mul__(self, other: 'MathExpression') -> 'MathExpression':
+    def __mul__(self, other: "MathExpression") -> "MathExpression":
         """Multiplies two instances of the class together.
 
         Args:
@@ -49,7 +49,7 @@ class MathExpression:
 
         return
 
-    def __truediv__(self, other: 'MathExpression') -> 'MathExpression':
+    def __truediv__(self, other: "MathExpression") -> "MathExpression":
         """Divides one instance of the class by another.
 
         Args:

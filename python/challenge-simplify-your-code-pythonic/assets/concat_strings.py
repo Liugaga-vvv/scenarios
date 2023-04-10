@@ -9,7 +9,7 @@ def concat_strings(strings: list) -> str:
         str: String containing all the strings concatenated together.
     """
 
-    string = ''
+    string = ""
     for s in strings:
         string += s
     return string

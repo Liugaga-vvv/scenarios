@@ -7,7 +7,7 @@ class MathExpression:
         """
         self.value = value
 
-    def __pow__(self, other: 'MathExpression') -> 'MathExpression':
+    def __pow__(self, other: "MathExpression") -> "MathExpression":
         """Raises one instance of the class to the power of another.
         Args:
             other (MathExpression): The other MathExpression object to pow
@@ -19,7 +19,7 @@ class MathExpression:
 
         return
 
-    def __mod__(self, other: 'MathExpression') -> 'MathExpression':
+    def __mod__(self, other: "MathExpression") -> "MathExpression":
         """Returns the modulo of one instance of the class by another.
         Args:
             other (MathExpression): The other MathExpression object to mod
@@ -31,7 +31,7 @@ class MathExpression:
 
         return
 
-    def __floordiv__(self, other: 'MathExpression') -> 'MathExpression':
+    def __floordiv__(self, other: "MathExpression") -> "MathExpression":
         """Returns the floor division of one instance of the class by another.
         Args:
             other (MathExpression): The other MathExpression object to floordiv

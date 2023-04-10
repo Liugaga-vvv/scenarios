@@ -1,5 +1,6 @@
 import sqlite3
 
+
 def update_price(cursor: sqlite3.Cursor, title: str, new_price: float) -> None:
     """Update the price of a book in the 'books' table.
 

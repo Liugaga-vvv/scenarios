@@ -6,6 +6,7 @@ import unittest
 import numpy as np
 from reshape_array import reshape_array
 
+
 class TestReshapeArray(unittest.TestCase):
     def test_reshape_array_1d_to_2d(self):
         a = np.array([1, 2, 3, 4, 5, 6])
@@ -24,5 +25,6 @@ class TestReshapeArray(unittest.TestCase):
         expected = np.array([1, 2, 3, 4])
         np.testing.assert_array_equal(result, expected)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

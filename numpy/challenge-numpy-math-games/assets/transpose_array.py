@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def transpose_array(a: np.ndarray) -> np.ndarray:
     """
     Transposes a numpy array and returns the result.

@@ -18,7 +18,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/open", "python/len"]
+        "skills": ["python/open", "python/len"],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "High-Frequency Words",
@@ -46,7 +47,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/sorted", "python/dict"]
+        "skills": ["python/sorted", "python/dict"],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Words Line Up in Order",
@@ -65,7 +67,8 @@
           "python/rw_files",
           "python/manipulating_strings",
           "python/python_scripts"
-        ]
+        ],
+        "solutions": ["solution-step3.md"]
       }
     ],
     "intro": {

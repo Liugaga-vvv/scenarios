@@ -2,8 +2,8 @@
 name: New Lab Scenario
 about: Create a new Lab
 title: lab-name-use-lowercase
-labels: New,Lab,Easy
-assignees: ""
+labels: New,Lab,Beginner,Pending Review,
+assignees: "huhuhang"
 ---
 
 > **Please read [For Newbie](https://github.com/labex-labs/scenarios/issues/18) first. 请先阅读 [新手须知](https://github.com/labex-labs/scenarios/issues/18)。**

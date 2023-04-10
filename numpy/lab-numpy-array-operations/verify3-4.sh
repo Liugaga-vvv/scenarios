@@ -1,1 +1,1 @@
-grep -E "np.cos"  ~/.python_history
+grep -E "np.cos" ~/.python_history

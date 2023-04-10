@@ -22,7 +22,8 @@
           "python/walrus",
           "python/return_values",
           "python/function_basic"
-        ]
+        ],
+        "solutions": ["basic_syntax.py"]
       },
       {
         "title": "Assignment Expression in List Comprehension",
@@ -44,7 +45,8 @@
           "python/list_comprehension",
           "python/return_values",
           "python/function_basic"
-        ]
+        ],
+        "solutions": ["list_comprehension.py"]
       },
       {
         "title": "Assignment Expression in a While Loop",
@@ -64,7 +66,8 @@
           "python/for_loop",
           "python/return_values",
           "python/function_basic"
-        ]
+        ],
+        "solutions": ["while_loop.py"]
       },
       {
         "title": "Assignment Expression in a Function",
@@ -85,7 +88,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["count_vowels.py"]
       }
     ],
     "intro": {

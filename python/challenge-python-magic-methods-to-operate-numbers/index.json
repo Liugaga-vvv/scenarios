@@ -47,7 +47,8 @@
           "python/__truediv__",
           "python/__str__",
           "python/math_operator"
-        ]
+        ],
+        "solutions": ["basic_math_operations.py"]
       },
       {
         "title": "Advanced Math Operations",
@@ -81,7 +82,8 @@
           "python/__floordiv__",
           "python/str",
           "python/math_operator"
-        ]
+        ],
+        "solutions": ["advanced_math_operations.py"]
       },
       {
         "title": "Comparisons",
@@ -139,7 +141,8 @@
           "python/__ge__",
           "python/boolean",
           "python/math_operator"
-        ]
+        ],
+        "solutions": ["comparisons.py"]
       },
       {
         "title": "Unary Operators",
@@ -173,7 +176,8 @@
           "python/__abs__",
           "python/str",
           "python/math_operator"
-        ]
+        ],
+        "solutions": ["unary_operators.py"]
       },
       {
         "title": "In-Place Operations",
@@ -215,7 +219,8 @@
           "python/__itruediv__",
           "python/str",
           "python/math_operator"
-        ]
+        ],
+        "solutions": ["in_place_operations.py"]
       }
     ],
     "intro": {
