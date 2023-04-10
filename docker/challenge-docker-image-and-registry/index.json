@@ -1,0 +1,94 @@
+{
+  "type": "challenge",
+  "title": "Docker Image And Registry",
+  "description": "How to create and manage container images",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Change Docker Image",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check that the Ubuntu image is downloading.",
+            "file": "verify1-1.sh",
+            "hint": "Please download the Ubuntu container image.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/pull", "docker/tag", "docker/login", "docker/push"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Build A Web Image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the index.html and Dockerfile files exist.",
+            "file": "verify2-1.sh",
+            "hint": "Please create the index.html and Dockerfile files and write the appropriate content.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the web:1.1.0 image has been created.",
+            "file": "verify2-2.sh",
+            "hint": "Please make your_dockerhub_id/web:1.1.0 image.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the container named web is started.",
+            "file": "verify2-3.sh",
+            "hint": "Please create a new container named web.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Multi-stage Image Build",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the Dockerfile file exists.",
+            "file": "verify3-1.sh",
+            "hint": "Please create the Dockerfile file.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the go-hello-world:1.1.0 image has been created.",
+            "file": "verify3-2.sh",
+            "hint": "Please make your_dockerhub_id/go-hello-world:1.1.0 image.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the container named go-hello-world is started.",
+            "file": "verify3-3.sh",
+            "hint": "Please create a new container named go-hello-world.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

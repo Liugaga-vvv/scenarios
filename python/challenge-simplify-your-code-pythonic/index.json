@@ -18,7 +18,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/sum", "python/generator_expression"]
+        "skills": ["python/sum", "python/generator_expression"],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "Concatenate Strings",
@@ -32,7 +33,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/manipulating_strings"]
+        "skills": ["python/manipulating_strings"],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Get Grade",
@@ -46,7 +48,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/dict", "python/next"]
+        "skills": ["python/dict", "python/next"],
+        "solutions": ["solution-step3.md"]
       },
       {
         "title": "Sum Two Lists",
@@ -60,7 +63,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/zip", "python/list_comprehension"]
+        "skills": ["python/zip", "python/list_comprehension"],
+        "solutions": ["solution-step4.md"]
       },
       {
         "title": "Flatten List",
@@ -78,7 +82,8 @@
           "python/list_comprehension",
           "python/function_basic",
           "python/data_types"
-        ]
+        ],
+        "solutions": ["solution-step5.md"]
       }
     ],
     "intro": {

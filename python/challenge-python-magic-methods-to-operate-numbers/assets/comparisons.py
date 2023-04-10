@@ -7,7 +7,7 @@ class MathExpression:
         """
         self.value = value
 
-    def __eq__(self, other: 'MathExpression') -> bool:
+    def __eq__(self, other: "MathExpression") -> bool:
         """Determines if two instances of the class are equal.
 
         Args:
@@ -21,7 +21,7 @@ class MathExpression:
 
         return
 
-    def __ne__(self, other: 'MathExpression') -> bool:
+    def __ne__(self, other: "MathExpression") -> bool:
         """Determines if two instances of the class are not equal.
 
         Args:
@@ -35,7 +35,7 @@ class MathExpression:
 
         return
 
-    def __lt__(self, other: 'MathExpression') -> bool:
+    def __lt__(self, other: "MathExpression") -> bool:
         """Determines if one instance of the class is less than another.
 
         Args:
@@ -49,7 +49,7 @@ class MathExpression:
 
         return
 
-    def __le__(self, other: 'MathExpression') -> bool:
+    def __le__(self, other: "MathExpression") -> bool:
         """Determines if one instance of the class is less than or equal to another.
 
         Args:
@@ -63,7 +63,7 @@ class MathExpression:
 
         return
 
-    def __gt__(self, other: 'MathExpression') -> bool:
+    def __gt__(self, other: "MathExpression") -> bool:
         """Determines if one instance of the class is greater than another.
 
         Args:
@@ -77,7 +77,7 @@ class MathExpression:
 
         return
 
-    def __ge__(self, other: 'MathExpression') -> bool:
+    def __ge__(self, other: "MathExpression") -> bool:
         """Determines if one instance of the class is greater than or equal to another.
 
         Args:

@@ -1,0 +1,93 @@
+{
+  "type": "challenge",
+  "title": "Container Lifecycle Management",
+  "description": "How to manage the states of the docker containers.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Start Docker Container",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the nginx image exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please pull the nginx image with version 1.22.1",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the web1 container start.",
+            "file": "verify1-2.sh",
+            "hint": "Please start a docker container named web1",
+            "timeout": 10,
+            "showstderr": true
+          },
+          {
+            "name": "Check if the web1 container start.",
+            "file": "verify1-3.sh",
+            "hint": "Please start a docker container named web2",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "docker/pull",
+          "docker/create",
+          "docker/start",
+          "docker/run",
+          "docker/ps"
+        ],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Update Docker Container",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the web3 container is started with the nginx:1.22.1 image.",
+            "file": "verify2-1.sh",
+            "hint": "Please start the container named web3 with the nginx:1.22.1 image",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the web3 container image is upgraded to nginx:1.23.1.",
+            "file": "verify2-2.sh",
+            "hint": "Please upgrade the web3 container image to nginx:1.23.1",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/stop", "docker/rm"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Delete Docker Container",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the web4 container has been deleted.",
+            "file": "verify3-2.sh",
+            "hint": "Please delete the web4 container.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "challenge",
+  "title": "Statistical Fruits",
+  "description": "In this challenge, the example of counting fruits is used to master the knowledge points of built-in functions, list, dict, lambda functions, etc.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Sum and Sorted",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Calculate the weight of the fruits in each basket and output in descending order.",
+            "file": "verify1.sh",
+            "hint": "Please calculate the weight of the fruits in each basket and output",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/dict",
+          "python/list_comprehension",
+          "python/sorted",
+          "python/lambda_function",
+          "python/print"
+        ],
+        "solutions": ["basket_weight.py"]
+      },
+      {
+        "title": "Put Fruit into basket",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Please calculate the weight of the fruits based on the input.",
+            "file": "verify2.sh",
+            "hint": "Please enter the values that meet the requirements and calculate the weight accordingly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/while_loop",
+          "python/float",
+          "python/input",
+          "python/math_operator",
+          "python/f_string"
+        ],
+        "solutions": ["put_fruits.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "basket_weight.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "put_fruits.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -1,1 +1,1 @@
-grep -E "np.sum"  ~/.python_history
+grep -E "np.sum" ~/.python_history

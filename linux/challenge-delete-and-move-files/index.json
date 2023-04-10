@@ -18,7 +18,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["linux/rm"]
+        "skills": ["linux/rm"],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "Copy Files",
@@ -32,7 +33,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["linux/cp", "linux/sudo"]
+        "skills": ["linux/cp", "linux/sudo"],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Move Files",
@@ -53,7 +55,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["linux/mv", "linux/sudo", "linux/chmod"]
+        "skills": ["linux/mv", "linux/sudo", "linux/chmod"],
+        "solutions": ["solution-step3.md"]
       }
     ],
     "intro": {

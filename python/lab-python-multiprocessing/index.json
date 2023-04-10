@@ -1,0 +1,122 @@
+{
+  "type": "lab",
+  "title": "Python Multiprocessing",
+  "description": "In this lab, you will learn about Python multiprocessing and how to use it to run processes in parallel. ",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating a Simple Multiprocessing Program",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing square.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/multiprocessing",
+          "python/for_loop",
+          "python/math_operator"
+        ]
+      },
+      {
+        "title": "Using Multiprocessing to Speed Up Processing",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing complex_square.py",
+            "file": "verify2.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/multiprocessing",
+          "python/for_loop",
+          "python/math_operator"
+        ]
+      },
+      {
+        "title": "Inter-Process Communication",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing multiprocessing_queue.py",
+            "file": "verify3.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/multiprocessing",
+          "python/math_operator",
+          "python/function_basic"
+        ]
+      },
+      {
+        "title": "Asynchronous Tasks with Pool.apply_async()",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing slow_square.py",
+            "file": "verify4.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/multiprocessing",
+          "python/math_operator",
+          "python/function_arguments"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "square.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "complex_square.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "multiprocessing_queue.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "slow_square.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

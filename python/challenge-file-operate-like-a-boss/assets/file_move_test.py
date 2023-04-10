@@ -1,7 +1,7 @@
 import sys
 
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 
 
 import os
@@ -11,8 +11,8 @@ import unittest
 
 from file_move import file_move
 
-class TestFileMove(unittest.TestCase):
 
+class TestFileMove(unittest.TestCase):
     def setUp(self):
         self.test_dir = tempfile.mkdtemp()
 
@@ -40,7 +40,9 @@ class TestFileMove(unittest.TestCase):
         self.assertFalse(os.path.isfile(test_file_path))
         self.assertFalse(os.path.isdir(test_folder_path))
         file_move(test_file_path, test_folder_path)
-        self.assertFalse(os.path.isfile(os.path.join(test_folder_path, "nonexistent_file.txt")))
+        self.assertFalse(
+            os.path.isfile(os.path.join(test_folder_path, "nonexistent_file.txt"))
+        )
 
     def test_file_move_folder_not_exist(self):
         # try to move a test file to a non-existent folder
@@ -54,5 +56,6 @@ class TestFileMove(unittest.TestCase):
         self.assertFalse(os.path.isfile(test_file_path))
         self.assertTrue(os.path.isfile(os.path.join(test_folder_path, "test_file.txt")))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

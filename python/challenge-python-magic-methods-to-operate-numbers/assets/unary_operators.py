@@ -7,7 +7,7 @@ class MathExpression:
         """
         self.value = value
 
-    def __neg__(self) -> 'MathExpression':
+    def __neg__(self) -> "MathExpression":
         """Returns the negation of the instance of the class.
 
         Returns:
@@ -18,7 +18,7 @@ class MathExpression:
 
         return
 
-    def __pos__(self) -> 'MathExpression':
+    def __pos__(self) -> "MathExpression":
         """Returns the positive value of the instance of the class.
 
         Returns:
@@ -29,7 +29,7 @@ class MathExpression:
 
         return
 
-    def __abs__(self) -> 'MathExpression':
+    def __abs__(self) -> "MathExpression":
         """Returns the absolute value of the instance of the class.
 
         Returns:

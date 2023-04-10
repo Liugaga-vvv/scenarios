@@ -1,0 +1,108 @@
+{
+  "type": "challenge",
+  "title": "File Properties",
+  "description": "This challenge ask you to create a file using the basic Linux commands and, on that basis, to change the permissions of the file and to change the user to whom it belongs.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Create Files With 'touch'",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if test.cpp exists",
+            "file": "verify1-1.sh",
+            "hint": "Please create a file named `test.cpp` in the `~` directory.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check if main.cpp exists",
+            "file": "verify1-2.sh",
+            "hint": "Please create a file named `main.cpp` in the `~/Code` directory.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/touch", "linux/ls"],
+        "solutions": ["solution-step1.md"]
+      },
+      {
+        "title": "Create a File With 'vim'",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if main.cpp exists",
+            "file": "verify2-1.sh",
+            "hint": "Please create a file named `main.cpp` in the `~` directory.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check if main.cpp exists",
+            "file": "verify2-2.sh",
+            "hint": "Please type `#include` in the file.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/vim", "linux/ls"],
+        "solutions": ["solution-step2.md"]
+      },
+      {
+        "title": "Modify File Permission",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if setup.sh exists",
+            "file": "verify3-1.sh",
+            "hint": "Please create a file named `setup.sh` in the `~` directory.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the file permission is changed",
+            "file": "verify3-2.sh",
+            "hint": "Please add executable permissions to Other Users of the `setup.sh` script file.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/chmod", "linux/ls"],
+        "solutions": ["solution-step3.md"]
+      },
+      {
+        "title": "Modify File Owner",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if setup.sh exists",
+            "file": "verify4-1.sh",
+            "hint": "Please create a file named `setup.sh` in the `~` directory.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the file owner is changed",
+            "file": "verify4-2.sh",
+            "hint": "Please change the file owner to shiyanlou.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/chown", "linux/ls"],
+        "solutions": ["solution-step4.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

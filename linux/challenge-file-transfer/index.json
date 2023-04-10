@@ -18,7 +18,8 @@
             "timeout": 5,
             "showstderr": false
           }
-        ]
+        ],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "Check UserName and Password.",
@@ -39,7 +40,8 @@
             "timeout": 5,
             "showstderr": false
           }
-        ]
+        ],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Copying Files from Local to Remote using scp.",
@@ -60,7 +62,8 @@
             "timeout": 5,
             "showstderr": false
           }
-        ]
+        ],
+        "solutions": ["solution-step3.md"]
       }
     ],
     "intro": {

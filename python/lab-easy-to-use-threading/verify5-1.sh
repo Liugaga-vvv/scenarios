@@ -2,4 +2,4 @@
 # cat ~/.zsh_history | grep "daemon_thread_with_args.py" | grep python
 cd /home/labex/project
 output=$(python3 daemon_thread_with_args.py 2>&1)
-echo "${output}" |grep "Main"
+echo "${output}" | grep "Main"

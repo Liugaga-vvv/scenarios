@@ -6,6 +6,8 @@ sys.path.append("/home/labex/project")
 from myiterator import MyIterator
 
 import unittest
+
+
 class TestMyIterator(unittest.TestCase):
     def test_iterator(self):
         it = MyIterator(2, 5)
@@ -20,5 +22,6 @@ class TestMyIterator(unittest.TestCase):
         self.assertEqual(next(it), 0)
         self.assertEqual(next(it), None)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

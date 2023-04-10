@@ -1,7 +1,7 @@
 import sys
 
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 
 
 import os
@@ -11,8 +11,8 @@ import unittest
 
 from folder_delete import folder_delete
 
-class TestFolderDelete(unittest.TestCase):
 
+class TestFolderDelete(unittest.TestCase):
     def setUp(self):
         self.test_dir = tempfile.mkdtemp()
         self.test_folder = os.path.join(self.test_dir, "test_folder")
@@ -36,5 +36,6 @@ class TestFolderDelete(unittest.TestCase):
         file_count = folder_delete(nonexistent_folder)
         self.assertEqual(file_count, 0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

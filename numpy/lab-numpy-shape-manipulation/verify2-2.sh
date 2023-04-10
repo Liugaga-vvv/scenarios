@@ -1,1 +1,1 @@
-cat ~/.python_history | grep "np.stack" 
+cat ~/.python_history | grep "np.stack"

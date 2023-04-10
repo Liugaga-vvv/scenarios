@@ -5,6 +5,7 @@ sys.path.append("/home/labex/project")
 import unittest
 from reverseiterator import ReverseIterator
 
+
 class TestReverseIterator(unittest.TestCase):
     def test_iterator(self):
         it = ReverseIterator([1, 2, 3, 4, 5])
@@ -19,5 +20,6 @@ class TestReverseIterator(unittest.TestCase):
         it = ReverseIterator([])
         self.assertEqual(next(it), None)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

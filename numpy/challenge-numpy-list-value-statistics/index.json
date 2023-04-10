@@ -1,6 +1,6 @@
 {
   "type": "challenge",
-  "title": "Numpy List Value Statistics",
+  "title": "NumPy List Value Statistics",
   "description": "In this challenge, you will create a Python program using the NumPy library to perform various statistical operations on a list of values.",
   "difficulty": "Beginner",
   "time": 15,
@@ -25,7 +25,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["mean_median.py"]
       },
       {
         "title": "Standard Deviation",
@@ -44,7 +45,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["standard_deviation.py"]
       },
       {
         "title": "Correlation Coefficient",
@@ -63,7 +65,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["correlation_coefficient.py"]
       }
     ],
     "intro": {

@@ -2,7 +2,7 @@
 
 ## Contributing
 
-If you would like to contribute to the DevOps Labs, please read the [Contributing Guidelines](https://labex.wiki/).
+If you would like to contribute to the LabEx, please read the [Contributing Guidelines](https://labex.wiki/).
 
 Templates for new labs and challenges can be found in the [TEMPLATE](https://github.com/labex-labs/scenarios/tree/master/template).
 

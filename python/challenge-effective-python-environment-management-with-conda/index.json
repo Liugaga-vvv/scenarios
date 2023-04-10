@@ -18,7 +18,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["linux/wget", "python/conda"]
+        "skills": ["linux/wget", "python/conda"],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "Package Management",
@@ -46,7 +47,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/conda"]
+        "skills": ["python/conda"],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Environment Management",
@@ -102,7 +104,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/conda"]
+        "skills": ["python/conda"],
+        "solutions": ["solution-step3.md"]
       }
     ],
     "intro": {

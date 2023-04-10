@@ -1,6 +1,9 @@
 import sqlite3
 
-def record_order(cursor: sqlite3.Cursor, book_id: int, quantity: int, order_date: str) -> None:
+
+def record_order(
+    cursor: sqlite3.Cursor, book_id: int, quantity: int, order_date: str
+) -> None:
     """Record a new order in the 'orders' table.
 
     Args:
@@ -14,4 +17,3 @@ def record_order(cursor: sqlite3.Cursor, book_id: int, quantity: int, order_date
     """
     # TODO: implement this function
     # Note: Do not change the existing code
-

@@ -26,7 +26,8 @@
           "python/function_arguments",
           "python/tuple",
           "python/list"
-        ]
+        ],
+        "solutions": ["find_pair.py"]
       }
     ],
     "intro": {

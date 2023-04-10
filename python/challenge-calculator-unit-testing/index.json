@@ -18,7 +18,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/unittest", "python/class", "python/function_basic"]
+        "skills": ["python/unittest", "python/class", "python/function_basic"],
+        "solutions": ["calculator_unittest.py"]
       }
     ],
     "intro": {

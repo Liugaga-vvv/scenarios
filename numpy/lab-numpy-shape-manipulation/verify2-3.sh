@@ -1,1 +1,1 @@
-cat ~/.python_history | grep "np.split" 
+cat ~/.python_history | grep "np.split"

@@ -32,7 +32,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/datetime"]
+        "skills": ["python/datetime"],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "What Time Is Next?",
@@ -81,7 +82,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/datetime", "python/for_loop", "python/range"]
+        "skills": ["python/datetime", "python/for_loop", "python/range"],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Convert Your Time",
@@ -109,7 +111,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/datetime", "python/manipulating_strings"]
+        "skills": ["python/datetime", "python/manipulating_strings"],
+        "solutions": ["solution-step3.md"]
       }
     ],
     "intro": {
@@ -122,7 +125,7 @@
     "assets": {
       "host01": [
         {
-          "file": "*",
+          "file": "*.py",
           "target": "/home/labex/project",
           "chmod": "777"
         }

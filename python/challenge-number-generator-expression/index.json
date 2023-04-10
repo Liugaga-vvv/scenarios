@@ -18,7 +18,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/generator_expression"]
+        "skills": ["python/generator_expression"],
+        "solutions": ["square_numbers.py"]
       },
       {
         "title": "Even Numbers Generator",
@@ -32,7 +33,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/generator_expression"]
+        "skills": ["python/generator_expression"],
+        "solutions": ["even_numbers.py"]
       },
       {
         "title": "Running Total Generator",
@@ -46,7 +48,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/generator_expression"]
+        "skills": ["python/generator_expression"],
+        "solutions": ["running_total.py"]
       },
       {
         "title": "Fibonacci Numbers Generator",
@@ -60,7 +63,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/generator_expression"]
+        "skills": ["python/generator_expression"],
+        "solutions": ["fibonacci.py"]
       },
       {
         "title": "Factorial Generator",
@@ -74,7 +78,8 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/generator_expression"]
+        "skills": ["python/generator_expression"],
+        "solutions": ["factorial.py"]
       }
     ],
     "intro": {
@@ -111,7 +116,6 @@
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
-
         {
           "file": "*_test.py",
           "target": "/tmp"

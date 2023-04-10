@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def multiply_arrays(a: np.ndarray, b: np.ndarray) -> np.ndarray:
     """
     Multiplies two numpy arrays element-wise and returns the result.

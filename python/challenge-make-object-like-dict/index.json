@@ -24,7 +24,8 @@
           "python/__setitem__",
           "python/__delitem__",
           "python/__len__"
-        ]
+        ],
+        "solutions": ["basic_functionality.py"]
       },
       {
         "title": "Advanced Functionality",
@@ -46,7 +47,8 @@
           "python/__len__",
           "python/__contains__",
           "python/__iter__"
-        ]
+        ],
+        "solutions": ["advanced_functionality.py"]
       }
     ],
     "intro": {

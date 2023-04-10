@@ -2,11 +2,10 @@
 package="vsftpd-3.0.2-25.el7.x86_64.rpm"
 packageName="vsftpd"
 apt-get install rpm
-search=$( rpm -qa | grep "${packageName}" )
+search=$(rpm -qa | grep "${packageName}")
 
-if (( $? != 0))
-then
-	rpm -i ${package}
+if (($? != 0)); then
+  rpm -i ${package}
 fi
 sleep 3
 
@@ -20,7 +19,7 @@ local_path="/"
 put_file="haha.txt"
 get_file="hehe.txt"
 
-ftp -v -n $ip<<EOF
+ftp -v -n $ip << EOF
 user $username $password
 binary
 cd $remote_path

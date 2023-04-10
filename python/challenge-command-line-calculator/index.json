@@ -1,0 +1,100 @@
+{
+  "type": "challenge",
+  "title": "Command Line Calculator",
+  "description": "In this challenge, you will write a program that uses the `argparse` module to parse command-line arguments and perform some simple arithmetic operations based on the arguments.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Parser and a Group",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if create a parser.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a parser with a description.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if create a group.",
+            "file": "verify1-2.sh",
+            "hint": "Please create a mutually exclusive group.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/argparse"],
+        "solutions": ["step1.md"]
+      },
+      {
+        "title": "Add and Parse the Arguments",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if add the arguments.",
+            "file": "verify2-1.sh",
+            "hint": "Please add the arguments.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if add the parameters.",
+            "file": "verify2-2.sh",
+            "hint": "Please add the parameters.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if parse the arguments.",
+            "file": "verify2-3.sh",
+            "hint": "Please parse the arguments.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/argparse"],
+        "solutions": ["step2.md"]
+      },
+      {
+        "title": "Output Management",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check the output of your calculator.",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/if_else"],
+        "solutions": ["step3.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "calculator.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "type": "challenge",
+  "title": "Kubernetes Resource Monitoring",
+  "description": "Install Prometheus Monitoring on Kubernetes.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Create Namespace And ClusterRole",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the namespace created.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a namespace named monitoring.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if ClusterRole and ClusterRoleBinding are created.",
+            "file": "verify1-2.sh",
+            "hint": "Please create ClusterRole and ClusterRoleBinding as required.",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": ["kubernetes/create", "kubernetes/get"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Create Prometheus ConfigMap",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the configMap YAML file exists.",
+            "file": "verify2-1.sh",
+            "hint": "Please create the YAML file of ConfigMap as required.",
+            "timeout": 10,
+            "showstderr": true
+          },
+          {
+            "name": "Check if the ConfigMap created on the cluster.",
+            "file": "verify2-2.sh",
+            "hint": "Please create the configMap of prometheus on the cluster.",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": ["kubernetes/apply"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Create Prometheus Deployment",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the deployment of Prometheus is created.",
+            "file": "verify3-1.sh",
+            "hint": "Please deploy Prometheus in Kubernetes.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if Prometheus is running.",
+            "file": "verify3-2.sh",
+            "hint": "Please check the configuration to ensure that Prometheus is deployed correctly.",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": [],
+        "solutions": ["step3-solution.md"]
+      },
+      {
+        "title": "Expose By Service NodePort",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if Prometheus' Service is exposing port 30000 using NodePort.",
+            "file": "verify4-1.sh",
+            "hint": "Please expose Prometheus' Service to port 30000 using NodePort.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/describe"],
+        "solutions": ["step4-solution.md"]
+      },
+      {
+        "title": "Install Grafana",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if the grafana is deployed to the cluster.",
+            "file": "verify5-1.sh",
+            "hint": "Please deploy grafana to the cluster.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if grafana's Service is exposing port 32000 using NodePort.",
+            "file": "verify5-2.sh",
+            "hint": "Please expose grafana's Service to port 32000 using NodePort.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step5-solution.md"]
+      },
+      {
+        "title": "Using Grafana",
+        "text": "step6.md",
+        "skills": [],
+        "solutions": ["step6-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

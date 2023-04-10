@@ -5,10 +5,10 @@ def tuple_operations(input_tuple: tuple) -> tuple:
     2. Sort the list in ascending order.
     3. Convert the sorted list back to a tuple.
     4. Return the final tuple.
-    
+
     Args:
     input_tuple: a tuple to be manipulated
-    
+
     Returns:
     The final manipulated tuple.
     """

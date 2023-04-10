@@ -1,5 +1,6 @@
 from typing import List, Tuple
 
+
 def find_pair(nums: List[int], target: int) -> Tuple[int, int]:
     """
     Returns a tuple containing the indices of two elements in the list that add up to the target value.
