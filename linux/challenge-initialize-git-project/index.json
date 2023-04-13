@@ -1,0 +1,60 @@
+{
+  "type": "challenge",
+  "title": "Initialize Git Project",
+  "description": "In this challenge, you learned how to initialize a new repository, how to clone an existing repository, and how to clone an existing repository with limited history.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Initializing a New Repository",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if a repository has been created",
+            "file": "verify1.sh",
+            "hint": "Please use the git command to create a repository",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/init"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Cloning an Existing Repository",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects if a repository has been cloned",
+            "file": "verify2.sh",
+            "hint": "Please use the git command to clone a repository",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/clone"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Cloning an Existing Repository With Depth",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if a repository has been cloned",
+            "file": "verify3.sh",
+            "hint": "Please use the git command with depth parameter to clone a repository",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["git/clone"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "finish": { "text": "finish.md" },
+    "assets": { "host01": [{ "file": "", "target": "/tmp" }] }
+  },
+  "backend": { "imageid": "vnc-ubuntu:2204" }
+}

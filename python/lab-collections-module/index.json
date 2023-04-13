@@ -1,0 +1,205 @@
+{
+  "type": "lab",
+  "title": "Collections Module",
+  "description": "In this tutorial, we will explore Python's built-in collections module.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "NamedTuple",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if import collections",
+            "file": "verify1-0.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the namedtuple is written correctly.",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if run this script in terminal",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/collections", "python/print", "python/tuple"]
+      },
+      {
+        "title": "Counter",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check that the Counter is written correctly.",
+            "file": "verify2-0.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if run this script in terminal",
+            "file": "verify2-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/collections", "python/print", "python/dict"]
+      },
+      {
+        "title": "OrderedDict",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check that the OrderedDict is written correctly.",
+            "file": "verify3-0.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if run this script in terminal",
+            "file": "verify3-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/collections", "python/print", "python/for_loop"]
+      },
+      {
+        "title": "DefaultDict",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check that the defaultdict(int) is written correctly.",
+            "file": "verify4-0.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if run default_dict1.py in terminal",
+            "file": "verify4-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the defaultdict(list) is written correctly.",
+            "file": "verify4-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if run default_dict2.py in terminal",
+            "file": "verify4-3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the defaultdict(set) is written correctly.",
+            "file": "verify4-4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if run default_dict3.py in terminal",
+            "file": "verify4-5.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/collections",
+          "python/for_loop",
+          "python/print",
+          "python/dict"
+        ]
+      },
+      {
+        "title": "Deque",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check that the deque is written correctly.",
+            "file": "verify5-0.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if run this script in terminal",
+            "file": "verify5-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/collections", "python/tuple", "python/print"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "named_tuple.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "counter.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "ordered_dict.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "default_dict1.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "default_dict2.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "default_dict3.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "deque.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

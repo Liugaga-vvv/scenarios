@@ -1,0 +1,25 @@
+name: sync-pr-to-feishu
+
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - name: Sync to Feishu
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_SECRET: ${{ secrets.APP_SECRET }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          pip install requests
+          wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@latest/actions/sync-pr-to-feishu.py
+          python sync-pr-to-feishu.py --appid "$APP_ID" --appsecret "$APP_SECRET" --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY

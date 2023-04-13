@@ -1,6 +1,22 @@
-default:
-  comment:
-    message: "Hi, @$AUTHOR \n\n感谢你提出拉取请求 (PR)。\n\n1. 请确保你遵循了我们的 [贡献指南](https://labex.wiki/)。\n2. 我们的机器人稍后会将你的内容同步上线。请根据 [如何测试](https://www.labex.wiki/zh/basic/how-to-test) 的要求完成在线测试。\n3. 通过测试后，请将 **Test Completed** 添加到 PR Label。如果你无法添加 Label，请评论说明测试已完成。\n4. 请将 PR 关联 Issue 的创建者添加为 Reviewer。\n\n我们将尽快审查它。\n\nThank your for raising your pull request.\n\n1. Please make sure you have followed our [CONTRIBUTING GUIDELINES](https://labex.wiki/).\n2. Our robot will synchronize your content online later. Please complete the online test according to the requirements of [How to Test](https://www.labex.wiki/basic/how-to-test).\n3. After passing the test, please add **Test Completed** to the Labels section. If you can't add Label, please comment that the test has been completed.\n4. Please add the creator of the Issue as a Reviewer for the PR.\n\nWe will review it as soon as possible."
-
 labels:
-  "Test Completed": comment
+  "Test Completed":
+    action: comment
+    message: "Hi, @$AUTHOR \n\n感谢你提出拉取请求 (PR)。\n请确保你遵循了确保遵循了我们的 [贡献指南](https://labex.wiki/) 并再次完成了 [线上测试](https://www.labex.wiki/zh/basic/how-to-test)，我们会在 3 个工作日内完成 Review，如果超期请主动联系并提醒我们。\n\nThank you for submitting a PULL REQUEST. Please make sure that you have followed our [CONTRIBUTION GUIDELINES](https://labex.wiki/) and completed the [ONLINE TESTING](https://www.labex.wiki/zh/basic/how-to-test) again. We will complete the review within 3 working days. If it exceeds the deadline, please contact us proactively to remind us."
+  "Major Repair":
+    action: comment
+    message: "Hi, @$AUTHOR \n\n你的 PR 已经 Review 完毕，需要大修。\n\n1. 请在 3 日内修改完成，并确保遵循了我们的 [贡献指南](https://labex.wiki/) 并再次完成了 [线上测试](https://www.labex.wiki/zh/basic/how-to-test)。\n2. 提交修改后，请点击页面右上角 Reviewer 头像旁边的循环按钮，申请再次 Review。\n\nYour PR has been reviewed and requires MAJOR REPAIR.\n1. Please complete the modifications within 3 days, ensuring that you have followed our [CONTRIBUTION GUIDELINES](https://labex.wiki/) and completed the [ONLINE TEST](https://www.labex.wiki/zh/basic/how-to-test) again.\n2. After submitting your changes, click on the loop button next to the Reviewer's avatar to REQUEST ANOTHER REVIEW."
+  "Minor Repair":
+    action: comment
+    message: "Hi, @$AUTHOR \n\n你的 PR 已经 Review 完毕，需要小修。\n\n1. 请在 2 日内修改完成，并确保遵循了我们的 [贡献指南](https://labex.wiki/) 并再次完成了 [线上测试](https://www.labex.wiki/zh/basic/how-to-test)。\n2. 提交修改后，请点击页面右上角 Reviewer 头像旁边的循环按钮，申请再次 Review。\n\nYour PR has been reviewed and requires MINOR REPAIR.\n1. Please complete the modifications within 3 days, ensuring that you have followed our [CONTRIBUTION GUIDELINES](https://labex.wiki/) and completed the [ONLINE TEST](https://www.labex.wiki/zh/basic/how-to-test) again.\n2. After submitting your changes, click on the loop button next to the Reviewer's avatar to REQUEST ANOTHER REVIEW."
+  "No Repair":
+    action: comment
+    message: "Hi, @$AUTHOR \n\n你的 PR 已经 Review 完毕，无需修改，我们会直接合并。感谢你的贡献。\n\nYour PR has been reviewed and no changes are needed. We will merge it directly. Thank you for your contribution. 🎉"
+
+# All maintainer comments containing the pattern "test complete"
+# will apply the duplicate label
+comments:
+  - action: label
+    # either a string or a string representation of a regular expresssion
+    pattern: /test complete/i
+    labels: 
+      - "Test Completed"

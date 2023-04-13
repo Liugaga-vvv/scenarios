@@ -1,0 +1,69 @@
+{
+  "type": "lab",
+  "title": "Array Attributes and Dtype",
+  "description": "Array has shape and dtype attributes describing size and data type.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating NumPy Arrays",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Please open the terminal and Python interpreter",
+            "file": "verify1-1.sh",
+            "hint": "You need to open the Python shell to continue.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Please practice the numpy.array()",
+            "file": "verify1-2.sh",
+            "hint": "Please input array in the python interpreter",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/list"]
+      },
+      {
+        "title": "NumPy Array Attributes",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Please practice and print out these properties of the NumPy array",
+            "file": "verify2.sh",
+            "hint": "Please input array and print out these properties in the python interpreter",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/print", "python/list", "python/attributes"]
+      },
+      {
+        "title": "Understanding Dtype",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Please practice the dtype attribute",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/data_types",
+          "python/list",
+          "python/variables",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "finish": { "text": "finish.md" },
+    "assets": { "host01": [{ "file": "", "target": "/tmp" }] }
+  },
+  "backend": { "imageid": "vnc-ubuntu:2204" }
+}
