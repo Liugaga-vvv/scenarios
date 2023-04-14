@@ -1,0 +1,130 @@
+{
+  "type": "challenge",
+  "title": "Docker Volume Management",
+  "description": "How to use data volumes in containers",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Data Volume Management",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the docker volume exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a data volume named my-vol",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the test.txt file created in data volume",
+            "file": "verify1-2.sh",
+            "hint": "Please create a file named text.txt in data volume's host directory",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": ["docker/volume"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Creating Containers With Data Volume",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the docker volume exists",
+            "file": "verify2-1.sh",
+            "hint": "Please create a data volume named nginx-vol",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the container started",
+            "file": "verify2-2.sh",
+            "hint": "Please create a new container named nginx",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if local files are copied to the container",
+            "file": "verify2-3.sh",
+            "hint": "Please copy the index.html file to nginx container",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run", "docker/exec", "docker/ps", "docker/cp"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Create Containers With Host Path",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the host directory exists",
+            "file": "verify3-1.sh",
+            "hint": "Please creat a directory named /tmp/nginx",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the container started",
+            "file": "verify3-2.sh",
+            "hint": "Please create a new container named nginx-host",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the file exists",
+            "file": "verify3-3.sh",
+            "hint": "Please copy the nginx.txt file to nginx-host container",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step3-solution.md"]
+      },
+      {
+        "title": "Sharing Data Between Containers",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the host directory and nginx-share container exists",
+            "file": "verify4-1.sh",
+            "hint": "Please creat a directory named /tmp/share and create a new container named nginx-share",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the busybox-share container exists",
+            "file": "verify4-2.sh",
+            "hint": "Please create a new container named busybox-share",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if two containers has the same file",
+            "file": "verify4-3.sh",
+            "hint": "Please make the two containers share storage and copy the share.txt file to the nginx-share container",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step4-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

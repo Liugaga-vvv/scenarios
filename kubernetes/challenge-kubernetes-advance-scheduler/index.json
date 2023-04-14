@@ -1,0 +1,200 @@
+{
+  "type": "challenge",
+  "title": "Kubernetes Advance Scheduler",
+  "description": "Introducing the various methods of Kubernetes scheduling",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Node Selector",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the node tag is added.",
+            "file": "verify1-1.sh",
+            "hint": "Please add the tag `zoo=labex-node-selector` to the node.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify1-2.sh",
+            "hint": "Please create a yaml file named my-pod.yaml in the `/home/labelx` directory",
+            "timeout": 10,
+            "showstderr": true
+          },
+          {
+            "name": "Check if the Pod is created in the cluster.",
+            "file": "verify1-3.sh",
+            "hint": "Please create the Pod via the YAML file in step 2.",
+            "timeout": 10,
+            "showstderr": true
+          },
+          {
+            "name": "Check if the Pod is using node selector.",
+            "file": "verify1-4.sh",
+            "hint": "Please use node selector to create Pods.",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "kubernetes/label",
+          "kubernetes/apply",
+          "kubernetes/get",
+          "kubernetes/describe"
+        ],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Node Affinity",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the node tag is added.",
+            "file": "verify2-1.sh",
+            "hint": "Please add the tag `selector=labex-node-affinity` to the node.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify2-2.sh",
+            "hint": "Please create a yaml file named my-affinity-pod.yaml in the `/home/labelx` directory",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Pod is created and running in the cluster.",
+            "file": "verify2-3.sh",
+            "hint": "Please create Pod through YAML file and let it run.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Pod Affinity Or Pod Anti-Affinity",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the Pod is running in the cluster using the requested tag.",
+            "file": "verify3-1.sh",
+            "hint": "Please create a Pod with app=pod-base as the tag.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the affinity Pod is scheduled to a specific node.",
+            "file": "verify3-2.sh",
+            "hint": "Please let pod-affinity dispatch to the node where pod-base is located.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the anti-affinity Pod is in Pending state.",
+            "file": "verify3-3.sh",
+            "hint": "Please create pod-anti-affinity, it will not be dispatched to the node where pod-base is located.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step3-solution.md"]
+      },
+      {
+        "title": "Priority Scheduler",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the priorityclasses created.",
+            "file": "verify4-1.sh",
+            "hint": "Please create two priority categories of high priority and low priority.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Pod was created using a low-priority policy.",
+            "file": "verify4-2.sh",
+            "hint": "Please use the low-priority policy to create Pods.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Pod was created using a high-priority policy.",
+            "file": "verify4-3.sh",
+            "hint": "Please use the high-priority policy to create Pods.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step4-solution.md"]
+      },
+      {
+        "title": "​Resource Scheduler",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check that the low-requests Pod is created and running.",
+            "file": "verify5-1.sh",
+            "hint": "Please create low request Pods as required.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the high-requests Pod is created and pending.",
+            "file": "verify5-2.sh",
+            "hint": "Please create high request Pods as required.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step5-solution.md"]
+      },
+      {
+        "title": "​Taint Scheduler",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Check if NoSchedule taint is added to the minikube node.",
+            "file": "verify6-1.sh",
+            "hint": "Please add a NoSchedule taint to the minikube node.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if a Pod without tolerance taint is in Pending status.",
+            "file": "verify6-2.sh",
+            "hint": "Please create a Pod without tolerance taint",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Pod tolerating the taint is in Running state.",
+            "file": "verify6-3.sh",
+            "hint": "Please create a Pod tolerating the taint.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [],
+        "solutions": ["step6-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

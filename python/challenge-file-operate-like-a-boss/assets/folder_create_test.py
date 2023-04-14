@@ -1,7 +1,7 @@
 import sys
 
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 
 
 import os
@@ -10,7 +10,6 @@ from folder_create import folder_create
 
 
 class TestFolderCreate(unittest.TestCase):
-
     def test_folder_already_exists(self):
         folder_name = "test_folder"
         os.mkdir(folder_name)
@@ -29,5 +28,5 @@ class TestFolderCreate(unittest.TestCase):
         os.rmdir(folder_name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,109 @@
+{
+  "type": "challenge",
+  "title": "Small Online Bookstore",
+  "description": "In this programming challenge, you will write a Python program that uses the `sqlite3` module to interact with a SQLite database.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Add Book",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing the implement of function `add_book`.",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/sqlite3"],
+        "solutions": ["add_book.py"]
+      },
+      {
+        "title": "Update Price",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing the implement of function `update_price`.",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/sqlite3"],
+        "solutions": ["update_price.py"]
+      },
+      {
+        "title": "Record Order",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing the implement of function `record_order`.",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/sqlite3"],
+        "solutions": ["record_order.py"]
+      },
+      {
+        "title": "Get Revenue",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing the implement of function `get_revenue`.",
+            "file": "verify4.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/sqlite3"],
+        "solutions": ["get_revenue.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "add_book.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "update_price.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "record_order.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "get_revenue.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

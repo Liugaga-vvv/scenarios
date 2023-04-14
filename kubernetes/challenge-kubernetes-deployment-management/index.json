@@ -1,0 +1,116 @@
+{
+  "type": "challenge",
+  "title": "Kubernetes Deployment Management",
+  "description": "Managing deployment of containerized applications on a Kubernetes cluster, including creating, scaling, rolling out updates.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Deploy a Multi-Tier Application",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if MySQL is deployed as required.",
+            "file": "verify1-1.sh",
+            "hint": "Please deploy MySQL as required.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the Hello World application is deployed and launched successfully as required.",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the requirements to deploy the Hello World application and launch it successfully.",
+            "timeout": 10,
+            "showstderr": true
+          },
+          {
+            "name": "Check if the application can be accessed properly.",
+            "file": "verify1-3.sh",
+            "hint": "Please check the configuration to make sure the application can be accessed properly.",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/describe"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Update the Application",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check that the hello-world application is updated as required.",
+            "file": "verify2-1.sh",
+            "hint": "Please update the hello-world application as required.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the updated content is correct.",
+            "file": "verify2-2.sh",
+            "hint": "Please check the configuration to ensure that the updates are consistent with the requirements.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/edit"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Roll Back the Update",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check that the rollback matches the requirements.",
+            "file": "verify3-1.sh",
+            "hint": "Please roll back the application as required.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the rollback content access is normal.",
+            "file": "verify3-2.sh",
+            "hint": "Please check the content configuration of the rollback to ensure it meets expectations.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/rollout"],
+        "solutions": ["step3-solution.md"]
+      },
+      {
+        "title": "Scale the Application Deployment",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check that the number of copies of the expansion is correct.",
+            "file": "verify4-1.sh",
+            "hint": "Please extend the application copy as required.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that all applications are launched correctly.",
+            "file": "verify4-2.sh",
+            "hint": "Please make sure all applications are running properly.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/scale"],
+        "solutions": ["step4-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

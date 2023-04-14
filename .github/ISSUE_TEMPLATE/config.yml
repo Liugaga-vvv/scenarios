@@ -1,8 +1,11 @@
 blank_issues_enabled: true
 contact_links:
+  - name: 新建 Issue 前请务必了解
+    url: https://www.labex.wiki/zh/advanced/new-issue
+    about: Please be sure to understand before creating a new issue.
   - name: 新人必读 For Newbie
     url: https://github.com/labex-labs/scenarios/issues/18
     about: Please read this before you ask any questions.
   - name: LabEx Guidelines
-    url: https://labex-docs.vercel.app/
+    url: https://labex.wiki/
     about: You can find the LabEx Guidelines here.

@@ -1,0 +1,89 @@
+{
+  "type": "challenge",
+  "title": "Find File Location",
+  "description": "Find files using four different commands on a Linux system",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Using the find command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the three different search modes of the `find` command are used correctly",
+            "file": "verify1.sh",
+            "hint": "Please complete three different search tasks based on the document information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/find"],
+        "solutions": ["solution-step1.md"]
+      },
+      {
+        "title": "Using the locate command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the two different search modes of the `locate` command are used correctly",
+            "file": "verify2.sh",
+            "hint": "Please complete two different search tasks based on the document information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/locate"],
+        "solutions": ["solution-step2.md"]
+      },
+      {
+        "title": "Using the which command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the three different search modes of the `locate` command are used correctly",
+            "file": "verify3.sh",
+            "hint": "Please complete three different search tasks based on the document information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/which"],
+        "solutions": ["solution-step3.md"]
+      },
+      {
+        "title": "Using the whereis command",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the `whereis` command is used correctly",
+            "file": "verify4.sh",
+            "hint": "Please complete three different search tasks based on the document information",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/whereis"],
+        "solutions": ["solution-step4.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

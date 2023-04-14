@@ -1,2 +1,2 @@
 #!/bin/bash
-ls "/haha.txt" &>/dev/null
+ls "/haha.txt" &> /dev/null

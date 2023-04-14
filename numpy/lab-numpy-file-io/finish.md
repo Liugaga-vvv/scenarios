@@ -1,6 +1,6 @@
 # Summary
 
-Congratulations! You have completed the Numpy File IO Lab.
+Congratulations! You have completed the NumPy File IO Lab.
 
 In this lab, you learned how to:
 

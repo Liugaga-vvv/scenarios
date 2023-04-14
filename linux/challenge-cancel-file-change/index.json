@@ -1,0 +1,60 @@
+{
+    "type": "challenge",
+    "title": "Cancel File Change",
+    "description": "Using several important Git commands for managing changes and the commit history of a Git repository",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Undo The Changes You Made",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if the changes you made are undone",
+                        "file": "verify1.sh",
+                        "hint": "Please undo the changes you made to a file in a Git repository.",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["git/restore"],
+                "solutions": ["step1-solution.md"]
+            },
+            {
+                "title": "Remove A File From The Repository",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Check if the file has been removed",
+                        "file": "verify2.sh",
+                        "hint": "Please remove the file newfile.txt",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["git/rm"],
+                "solutions": ["step2-solution.md"]
+            },
+            {
+                "title": "Undo  And  Reset",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Check if the most recent commit has been undone",
+                        "file": "verify3.sh",
+                        "hint": "Please undo the most recent commit and reset the current branch to the previous commit",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["git/reset", "git/log"],
+                "solutions": ["step3-solution.md"]
+            }
+        ],
+        "intro": {"text": "intro.md", "background": "setup.sh"},
+        "finish": {"text": "finish.md"},
+        "assets": {"host01": [{"file": "", "target": "/tmp"}]}
+    },
+    "backend": {"imageid": "vnc-ubuntu:2204"}
+}

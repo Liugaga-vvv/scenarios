@@ -1,0 +1,132 @@
+{
+  "type": "challenge",
+  "title": "Make Object Like List",
+  "description": "In this challenge, you will create a Python class that behaves like a list, but with some magic methods that will make it even more powerful.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Implementing Basic List Operations",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing init,len,str and contains method",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__init__",
+          "python/__len__",
+          "python/__str__",
+          "python/__contains__",
+          "python/list",
+          "python/len",
+          "python/str"
+        ],
+        "solutions": ["magic_list1.py"]
+      },
+      {
+        "title": "Implementing List Slicing",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing getitem and setitem method",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__getitem__",
+          "python/__setitem__",
+          "python/if_else",
+          "python/list"
+        ],
+        "solutions": ["magic_list2.py"]
+      },
+      {
+        "title": "Implementing List Concatenation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing add and iadd method",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__add__",
+          "python/__iadd__",
+          "python/mixing",
+          "python/math_operator"
+        ],
+        "solutions": ["magic_list3.py"]
+      },
+      {
+        "title": "Implementing List Arithmetic",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing sub and mul method",
+            "file": "verify4.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__sub__",
+          "python/__mul__",
+          "python/list_comprehension",
+          "python/math_operator"
+        ],
+        "solutions": ["magic_list4.py"]
+      },
+      {
+        "title": "Implementing List Sorting",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Testing lt and sort method",
+            "file": "verify5.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/__lt__", "python/sorted", "python/comparison"],
+        "solutions": ["magic_list5.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "magic_list.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

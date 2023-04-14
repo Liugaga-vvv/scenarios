@@ -24,7 +24,8 @@
           "python/len",
           "python/open",
           "python/print"
-        ]
+        ],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "Write Together",
@@ -38,7 +39,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/rw_files", "python/list", "python/python_scripts"]
+        "skills": ["python/rw_files", "python/list", "python/python_scripts"],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Search What I Want",
@@ -52,7 +54,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["python/sys", "python/json", "python/format_specifiers"]
+        "skills": ["python/sys", "python/json", "python/format_specifiers"],
+        "solutions": ["solution-step3.md"]
       }
     ],
     "intro": {

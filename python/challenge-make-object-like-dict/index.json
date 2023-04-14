@@ -1,0 +1,83 @@
+{
+  "type": "challenge",
+  "title": "Make Object Like Dict",
+  "description": "In this programming challenge, you will create a Python class that behaves like a dictionary using magic methods.",
+  "difficulty": "Intermediate",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Functionality",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the DictLikeObject object in the basic_functionality.py file",
+            "file": "verify1.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/dict",
+          "python/__getitem__",
+          "python/__setitem__",
+          "python/__delitem__",
+          "python/__len__"
+        ],
+        "solutions": ["basic_functionality.py"]
+      },
+      {
+        "title": "Advanced Functionality",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the DictLikeObject object in the basic_functionality.py file",
+            "file": "verify2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/dict",
+          "python/__getitem__",
+          "python/__setitem__",
+          "python/__delitem__",
+          "python/__len__",
+          "python/__contains__",
+          "python/__iter__"
+        ],
+        "solutions": ["advanced_functionality.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "basic_functionality.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "advanced_functionality.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

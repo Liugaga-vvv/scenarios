@@ -7,6 +7,7 @@ import unittest
 from typing import List, Tuple
 from find_pair import find_pair
 
+
 class TestFindPair(unittest.TestCase):
     def test_find_pair(self):
         nums = [2, 7, 11, 15]
@@ -25,5 +26,6 @@ class TestFindPair(unittest.TestCase):
         target = 10
         self.assertEqual(find_pair(nums, target), ())
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

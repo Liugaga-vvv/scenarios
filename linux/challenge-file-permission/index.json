@@ -18,7 +18,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["linux/touch", "linux/ls"]
+        "skills": ["linux/touch", "linux/ls"],
+        "solutions": ["solution-step1.md"]
       },
       {
         "title": "Change The File Owner And Group",
@@ -32,7 +33,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["linux/chown"]
+        "skills": ["linux/chown"],
+        "solutions": ["solution-step2.md"]
       },
       {
         "title": "Set The File Permissions",
@@ -46,7 +48,8 @@
             "showstderr": false
           }
         ],
-        "skills": ["linux/chmod"]
+        "skills": ["linux/chmod"],
+        "solutions": ["solution-step3.md"]
       }
     ],
     "intro": {

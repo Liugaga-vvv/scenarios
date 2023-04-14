@@ -1,0 +1,50 @@
+{
+  "type": "challenge",
+  "title": "Check Age Limit",
+  "description": "For this challenge, you will write a function that checks if a person's age is above 18.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Check Age Limit",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/if_else", "python/function_basic"],
+        "solutions": ["check_age_limit.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "age_unittest.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "check_age_limit.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

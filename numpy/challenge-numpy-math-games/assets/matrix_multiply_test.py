@@ -6,6 +6,7 @@ import unittest
 import numpy as np
 from matrix_multiply import matrix_multiply
 
+
 class TestMatrixMultiply(unittest.TestCase):
     def test_matrix_multiply_2d(self):
         a = np.array([[1, 2], [3, 4]])
@@ -21,5 +22,6 @@ class TestMatrixMultiply(unittest.TestCase):
         expected = np.array([17, 39])
         np.testing.assert_array_equal(result, expected)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

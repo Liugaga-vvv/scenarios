@@ -1,0 +1,175 @@
+{
+  "type": "lab",
+  "title": "Typing Module",
+  "description": "Typing Module is a standard library for Python that supports type hints and type annotations.",
+  "difficulty": "Beginner",
+  "time": 40,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Types",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Please open the terminal and Python interpreter",
+            "file": "verify1-1.sh",
+            "hint": "Type python3 in the terminal",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that basic types lab are completed as required.",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/typing", "python/print", "python/return_values"]
+      },
+      {
+        "title": "Containers and Generics",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check that the Containers and Generics experiment is completed as required.",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/typing", "python/print"]
+      },
+      {
+        "title": "User-Defined Types",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the User-Defined Types experiment is completed as required.",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/typing",
+          "python/print",
+          "python/class",
+          "python/math_operator"
+        ]
+      },
+      {
+        "title": "Type Aliases",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if Type Aliases are completed as required experiment.",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/typing", "python/print", "python/list"]
+      },
+      {
+        "title": "Optional and None",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check that the Optional and None experiments are completed as required.",
+            "file": "verify5.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/typing", "python/print", "python/if_else"]
+      },
+      {
+        "title": "Callable",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Check if the Callable experiment is completed as required.",
+            "file": "verify6.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/typing", "python/print"]
+      },
+      {
+        "title": "Typeddict",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Check if the Typeddict experiment is completed as required.",
+            "file": "verify7.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/typing", "python/print", "python/class"]
+      },
+      {
+        "title": "Newtype",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Check if the Newtype experiment is completed as required.",
+            "file": "verify8.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/typing", "python/print"]
+      },
+      {
+        "title": "Static Type Checking",
+        "text": "step9.md",
+        "verify": [
+          {
+            "name": "Check if the mypy package is installed successfully.",
+            "file": "verify9-1.sh",
+            "hint": "Please install the mypy package.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Static Type Checking experiment is completed as required.",
+            "file": "verify9-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/print"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

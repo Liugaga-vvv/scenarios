@@ -1,0 +1,270 @@
+{
+  "type": "challenge",
+  "title": "Python Magic Methods To Operate Numbers",
+  "description": "In this challenge, you will be tasked with creating a custom Python class that utilizes magic methods to perform mathematical operations on instances of the class.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Math Operations",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check that the __add__ function is written correctly",
+            "file": "verify1-0.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __sub__ function is written correctly",
+            "file": "verify1-1.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __mul__ function is written correctly",
+            "file": "verify1-2.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __truediv__ function is written correctly",
+            "file": "verify1-3.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__init__",
+          "python/__add__",
+          "python/__sub__",
+          "python/__mul__",
+          "python/__truediv__",
+          "python/__str__",
+          "python/math_operator"
+        ],
+        "solutions": ["basic_math_operations.py"]
+      },
+      {
+        "title": "Advanced Math Operations",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check that the __pow__ function is written correctly",
+            "file": "verify2-0.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __mod__ function is written correctly",
+            "file": "verify2-1.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __floordiv__ function is written correctly",
+            "file": "verify2-2.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__pow__",
+          "python/__mod__",
+          "python/__floordiv__",
+          "python/str",
+          "python/math_operator"
+        ],
+        "solutions": ["advanced_math_operations.py"]
+      },
+      {
+        "title": "Comparisons",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check that the __eq__ function is written correctly",
+            "file": "verify3-0.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __ne__ function is written correctly",
+            "file": "verify3-1.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __lt__ function is written correctly",
+            "file": "verify3-2.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __le__ function is written correctly",
+            "file": "verify3-3.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __gt__ function is written correctly",
+            "file": "verify3-4.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __ge__ function is written correctly",
+            "file": "verify3-5.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__eq__",
+          "python/__ne__",
+          "python/__lt__",
+          "python/__le__",
+          "python/__gt__",
+          "python/__ge__",
+          "python/boolean",
+          "python/math_operator"
+        ],
+        "solutions": ["comparisons.py"]
+      },
+      {
+        "title": "Unary Operators",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check that the __neg__ function is written correctly",
+            "file": "verify4-0.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __pos__ function is written correctly",
+            "file": "verify4-1.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __abs__ function is written correctly",
+            "file": "verify4-2.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__neg__",
+          "python/__pos__",
+          "python/__abs__",
+          "python/str",
+          "python/math_operator"
+        ],
+        "solutions": ["unary_operators.py"]
+      },
+      {
+        "title": "In-Place Operations",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check that the __iadd__ function is written correctly",
+            "file": "verify5-0.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __isub__ function is written correctly",
+            "file": "verify5-1.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __imul__ function is written correctly",
+            "file": "verify5-2.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check that the __itruediv__ function is written correctly",
+            "file": "verify5-3.sh",
+            "hint": "Please check your code.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__iadd__",
+          "python/__isub__",
+          "python/__imul__",
+          "python/__itruediv__",
+          "python/str",
+          "python/math_operator"
+        ],
+        "solutions": ["in_place_operations.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "backgroud": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test?.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "basic_math_operations.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "advanced_math_operations.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "comparisons.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "unary_operators.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "in_place_operations.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

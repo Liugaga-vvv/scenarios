@@ -1,0 +1,87 @@
+{
+  "type": "challenge",
+  "title": "Delete and Move Files",
+  "description": "In this challenge, you will learn how to delete and move files in Linux systems.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Delete and Move Files",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the file was removed",
+            "file": "verify1.sh",
+            "hint": "Please remove the file using the rm command.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/rm"],
+        "solutions": ["solution-step1.md"]
+      },
+      {
+        "title": "Copy Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the file was copied",
+            "file": "verify2.sh",
+            "hint": "Please copy the file using the cp command.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/cp", "linux/sudo"],
+        "solutions": ["solution-step2.md"]
+      },
+      {
+        "title": "Move Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if change the mod bits",
+            "file": "verify3-1.sh",
+            "hint": "Please change the mod bits of the directory 'challenge3' to 777.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the file was moved",
+            "file": "verify3-2.sh",
+            "hint": "Please move the file using the mv command.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/mv", "linux/sudo", "linux/chmod"],
+        "solutions": ["solution-step3.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "mytextfile.txt",
+          "target": "/home/labex/Desktop/challenge2",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "mytextfile.txt",
+          "target": "/home/labex/Desktop/challenge3",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

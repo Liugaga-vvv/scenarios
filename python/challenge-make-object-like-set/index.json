@@ -1,0 +1,185 @@
+{
+  "type": "challenge",
+  "title": "Make Object Like Set",
+  "description": "In this challenge, you will create a Python class that behaves like a set, but with some magic methods that will make it even more powerful.",
+  "difficulty": "Intermediate",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Implementing init and str",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing __init__ method in the magic_set object.",
+            "file": "verify1-1.sh",
+            "hint": "Failed to initialize magic_set object.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing add method in the magic_set object.",
+            "file": "verify1-2.sh",
+            "hint": "The return value of the add method does not match the expected.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing remove method in the magic_set object.",
+            "file": "verify1-3.sh",
+            "hint": "The return value of the remove method does not match the expected.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing clear method in the magic_set object.",
+            "file": "verify1-4.sh",
+            "hint": "The return value of the clear method does not match the expected.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing __str__ method in the magic_set object.",
+            "file": "verify1-5.sh",
+            "hint": "The return value of the __str__ method does not match the expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/list", "python/__init__", "python/__str__"],
+        "solutions": ["magic_set.py"]
+      },
+      {
+        "title": "Implementing len",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing __len__ method in the magic_set object.",
+            "file": "verify2.sh",
+            "hint": "The return value of the __len__ method does not match the expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/list", "python/__len__"],
+        "solutions": ["magic_set.py"]
+      },
+      {
+        "title": "Implementing contains",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing __contains__ method in the magic_set object.",
+            "file": "verify3.sh",
+            "hint": "Error testing __contains__ method",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/list", "python/__contains__"],
+        "solutions": ["magic_set.py"]
+      },
+      {
+        "title": "Implementing iter and next",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing __iter__ method in the magic_set object.",
+            "file": "verify4-1.sh",
+            "hint": "Error testing __iter__ method",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing __next__ method in the magic_set object.",
+            "file": "verify4-2.sh",
+            "hint": "Error testing __next__ method",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/list", "python/__iter__", "python/next"],
+        "solutions": ["magic_set.py"]
+      },
+      {
+        "title": "Implementing eq and ne",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Testing __eq__ method in the magic_set object.",
+            "file": "verify5-1.sh",
+            "hint": "Error testing __eq__ method",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing __ne__ method in the magic_set object.",
+            "file": "verify5-2.sh",
+            "hint": "Error testing __ne__ method",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/list", "python/__eq__", "python/__ne__"],
+        "solutions": ["magic_set.py"]
+      },
+      {
+        "title": "Implementing and, or, and sub",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Testing __and__ method in the magic_set object.",
+            "file": "verify6-1.sh",
+            "hint": "Error testing __and__ method",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing __or__ method in the magic_set object.",
+            "file": "verify6-2.sh",
+            "hint": "Error testing __or__ method",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Testing __sub__ method in the magic_set object.",
+            "file": "verify6-3.sh",
+            "hint": "Error testing __sub__ method",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/__and__",
+          "python/__or__",
+          "python/__sub__"
+        ],
+        "solutions": ["magic_set.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "magic_set.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -24,7 +24,8 @@
           "python/return_values",
           "python/function_basic",
           "python/function_arguments"
-        ]
+        ],
+        "solutions": ["myiterator.py"]
       },
       {
         "title": "Python Reverse Iterator",
@@ -45,7 +46,8 @@
           "python/function_basic",
           "python/function_arguments",
           "python/len"
-        ]
+        ],
+        "solutions": ["reverseiterator.py"]
       }
     ],
     "intro": {

@@ -1,0 +1,104 @@
+{
+  "type": "challenge",
+  "title": "Area Calculation",
+  "description": "This challenge mainly focuses on practicing classes and inheritance, as well as input and output operations.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Class and method",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the class and methods are created correctly.",
+            "file": "verify1.sh",
+            "hint": "Please create the class and methods correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/raise_errors",
+          "python/instance_objects",
+          "python/print"
+        ],
+        "solutions": ["shape.py"]
+      },
+      {
+        "title": "Subclass and override",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Please use class inheritance to create two subclasses and construct an object for each one.",
+            "file": "verify2.sh",
+            "hint": "Please create the subclasses and their objects correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/inheritance",
+          "python/method_objects",
+          "python/math_operator"
+        ],
+        "solutions": ["subclass.py"]
+      },
+      {
+        "title": "Area Calculation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the calculation of the area can be correctly implemented using input and output.",
+            "file": "verify3.sh",
+            "hint": "Please calculate the area of the corresponding shape correctly based on the input.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/input",
+          "python/int",
+          "python/float",
+          "python/if_else",
+          "python/format_specifiers"
+        ],
+        "solutions": ["area.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "shape.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "subclass.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "area.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

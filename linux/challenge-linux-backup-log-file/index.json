@@ -1,0 +1,109 @@
+{
+  "type": "challenge",
+  "title": "Backup Logs In Linux",
+  "description": "In this challenge we will take you through a log backup of your Linux system.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Preparation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the backup directory exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a directory named `/backup` in the current directory.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the scripts directory exists.",
+            "file": "verify1-2.sh",
+            "hint": "Please create a directory named `/scripts` in the current directory.",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/mkdir"],
+        "solutions": ["solution-step1.md"]
+      },
+      {
+        "title": "Packing System Log",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the zip package exists.",
+            "file": "verify2-1.sh",
+            "hint": "Please pack the log files into the `/backup` directory.",
+            "timeout": 10,
+            "showstderr": true
+          },
+          {
+            "name": "Check if there is still a backup file from 7 days ago.",
+            "file": "verify2-2.sh",
+            "hint": "Please delete files that are 7 days old.",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "linux/ls",
+          "linux/ifconfig",
+          "linux/grep",
+          "linux/date",
+          "linux/tar",
+          "linux/find"
+        ],
+        "solutions": ["solution-step2.md"]
+      },
+      {
+        "title": "Develop Backup Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the backup-linux-log.sh file exists.",
+            "file": "verify3-1.sh",
+            "hint": "Please develop backup scripts.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the script is correct.",
+            "file": "verify3-2.sh",
+            "hint": "Please change the script syntax correctly.",
+            "timeout": 10,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/vim"],
+        "solutions": ["solution-step3.md"]
+      },
+      {
+        "title": "Add Cron Job",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if cronjob is added.",
+            "file": "verify2-1.sh",
+            "hint": "Please add the backup script to the definition task.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/crontab"],
+        "solutions": ["solution-step4.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2004"
+  }
+}

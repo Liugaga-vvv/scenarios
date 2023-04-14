@@ -1,0 +1,109 @@
+{
+  "type": "challenge",
+  "title": "Python Multiprocessing",
+  "description": "In this challenge, you will try Python's multi-processing function and try to use it to run processes in parallel.In this challenge, you will try Python's multiprocessing function and try to use it to run processes in parallel. ",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Square Multiprocessing",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing square_multiprocessing.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/multiprocessing", "python/math_operator"],
+        "solutions": ["square_multiprocessing.py"]
+      },
+      {
+        "title": "Simple Multiprocessing",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing square.py",
+            "file": "verify2.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/multiprocessing", "python/math_operator"],
+        "solutions": ["square.py"]
+      },
+      {
+        "title": "Inter-Process Communication",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing multiprocessing_queue.py",
+            "file": "verify3.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/multiprocessing", "python/function_basic"],
+        "solutions": ["multiprocessing_queue.py"]
+      },
+      {
+        "title": "Asynchronous Tasks with apply_async()",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing slow_square.py",
+            "file": "verify4.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/multiprocessing", "python/function_arguments"],
+        "solutions": ["slow_square.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "square_multiprocessing.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "square.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "multiprocessing_queue.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "slow_square.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

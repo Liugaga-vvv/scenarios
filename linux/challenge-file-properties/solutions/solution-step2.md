@@ -1,0 +1,3 @@
+```bash
+vim ~/main.cpp
+```

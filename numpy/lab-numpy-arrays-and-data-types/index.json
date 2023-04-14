@@ -1,0 +1,112 @@
+{
+  "type": "lab",
+  "title": "NumPy Arrays and Data Types",
+  "description": "In this tutorial, we will be discussing how to create, access, and modify NumPy arrays, as well as exploring the different data types available.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating Arrays",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if open the Python shell.",
+            "file": "verify0.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check np.array()",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check np.zeros()",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check np.ones()",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check np.arange()",
+            "file": "verify1-4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check np.linspace()",
+            "file": "verify1-5.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/array"]
+      },
+      {
+        "title": "Accessing Elements",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check accessing elements.",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/array"]
+      },
+      {
+        "title": "Modifying Elements",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check modifying elements.",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/array"]
+      },
+      {
+        "title": "Data Types",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check the use of data types.",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/dtype"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

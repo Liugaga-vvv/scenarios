@@ -1,0 +1,60 @@
+{
+  "type": "challenge",
+  "title": "Analyzing Disk Usage",
+  "description": "This challenge is designed to help you improve your skills with two important commands: df and du. By completing this challenge, you'll gain a deeper understanding of how these commands work and how they can be used to manage disk space on a Linux system.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "View Disk Usage Statistics for Mounted File-systems",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the disk usage is viewed",
+            "file": "verify1.sh",
+            "hint": "Please view the disk usage statistics for mounted file-systems",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/df"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Analyze Disk Usage for a Specific Directory",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the disk usage for a specific directory is viewed",
+            "file": "verify2.sh",
+            "hint": "Please view the disk usage for a specific directory",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/du"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Find the Largest File and Move it to the Directory",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if the largest file has been moved to the specified location",
+            "file": "verify3.sh",
+            "hint": "Please move the largest file to the specified location",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/du", "linux/head", "linux/mv"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "finish": { "text": "finish.md" },
+    "assets": { "host01": [{ "file": "", "target": "/tmp" }] }
+  },
+  "backend": { "imageid": "vnc-ubuntu:2204" }
+}

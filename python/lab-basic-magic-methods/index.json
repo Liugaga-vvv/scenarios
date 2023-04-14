@@ -1,0 +1,159 @@
+{
+  "type": "lab",
+  "title": "Basic Magic Methods",
+  "description": "Explore Python's magic methods to create customizable classes with tailored behaviors for initialization, representation, comparison, and destruction.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Object Initialization and Representation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if complete the __init_ method",
+            "file": "verify1-1.sh",
+            "hint": "You need to complete the __init__ method.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if complete the __str__ method",
+            "file": "verify1-2.sh",
+            "hint": "You need to complete the __str__ method.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if complete the __repr__ method",
+            "file": "verify1-3.sh",
+            "hint": "You need to complete the __repr__ method.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if complete the example scrpit",
+            "file": "verify1-4.sh",
+            "hint": "You need to complete the example scrpit to continue.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if execute the example scrpit",
+            "file": "verify1-5.sh",
+            "hint": "You need to execute the example scrpit to continue.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/__init__",
+          "python/__str__",
+          "python/__repr__",
+          "python/class",
+          "python/attributes",
+          "python/print",
+          "python/f_string"
+        ]
+      },
+      {
+        "title": "Object Comparison",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if complete the __eq__ and __ne__ methods",
+            "file": "verify2-1.sh",
+            "hint": "You need to complete the __eq__ and __ne__ methods.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if complete all the comparison methods",
+            "file": "verify2-2.sh",
+            "hint": "You need to complete all the comparison methods.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if complete the example scrpit",
+            "file": "verify2-3.sh",
+            "hint": "You need to complete the example scrpit to continue.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if execute the example scrpit",
+            "file": "verify2-4.sh",
+            "hint": "You need to execute the example scrpit to continue.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/__eq__",
+          "python/__ne__",
+          "python/__lt__",
+          "python/__le__",
+          "python/__gt__",
+          "python/__ge__",
+          "python/class",
+          "python/math_operator",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Object Destruction",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if complete the __del__ method",
+            "file": "verify3-1.sh",
+            "hint": "You need to complete the __del__ method.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if complete the example scrpit",
+            "file": "verify3-2.sh",
+            "hint": "You need to complete the example scrpit to continue.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if execute the example scrpit",
+            "file": "verify3-3.sh",
+            "hint": "You need to execute the example scrpit to continue.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/__del__",
+          "python/del",
+          "python/class",
+          "python/print",
+          "python/f_string"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

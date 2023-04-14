@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Count Data Types",
+  "description": "In this challenge, you need to write a Python function that takes a list of data types as input, and returns a dictionary that contains the count of each data type in the list.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Count Data Types",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of the count_data_types function",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/data_types"],
+        "solutions": ["solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "count_data_types_test.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "count_data_types.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

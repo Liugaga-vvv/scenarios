@@ -1,0 +1,116 @@
+{
+  "type": "challenge",
+  "title": "Python Magic Methods To Operate Strings",
+  "description": "Python has several magic methods that can be used to operate on strings. In this challenge, you will implement some of these magic methods to perform various string operations.",
+  "difficulty": "Intermediate",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "String Concatenation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the MyString object in the string_concatenation.py file",
+            "file": "verify1.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/__add__"],
+        "solutions": ["string_concatenation.py"]
+      },
+      {
+        "title": "String Comparison",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the MyString object in the string_comparison.py file",
+            "file": "verify2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/__eq__",
+          "python/__ne__",
+          "python/__lt__",
+          "python/__le__",
+          "python/__gt__",
+          "python/__ge__"
+        ],
+        "solutions": ["string_comparison.py"]
+      },
+      {
+        "title": "String Reversal",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the MyString object in the string_reversal.py file",
+            "file": "verify3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/__reversed__"],
+        "solutions": ["string_reversal.py"]
+      },
+      {
+        "title": "String Representation",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the MyString object in the string_representation.py file",
+            "file": "verify4.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/__repr__"],
+        "solutions": ["string_representation.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "string_comparison.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "string_concatenation.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "string_representation.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "string_reversal.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

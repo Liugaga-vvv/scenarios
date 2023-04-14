@@ -1,6 +1,6 @@
 {
   "type": "lab",
-  "title": "Numpy Advanced Topics",
+  "title": "NumPy Advanced Topics",
   "description": "This lab will cover some of the advanced features of NumPy, including linear algebra, random number generation, and masked arrays.",
   "difficulty": "Beginner",
   "time": 15,

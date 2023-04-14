@@ -1,12 +1,21 @@
 # PR Checklist
 
-Please post the link to the PR-related issue here (请将 PR 相关的 issues 的链接贴于此处):
+- fix #ID
 
-Please make sure you've completed the relevant tasks for this PR from the following list (**请确保完成下方检查项，提交 PR 后才能打勾**):
+请替换上方 `ID` 为本 PR 相关的 Issue ID，如 `fix #18`。Issue ID 可以在 Issue 的 URL 中找到，如 `https://github.com/labex-labs/scenarios/issues/18`，则 ID 为 `18`。
 
-- [ ] The structure of the lab/challenge is correct.(实验/挑战的结构正确)
-- [ ] The format of the lab/challenge is correct.(实验/挑战的格式正确)
-- [ ] The code and verification scripts have been tested in the environment.(代码和验证脚本在环境中测试通过，测试通过后请在 Labels 项添加 Test Complete)
-- [ ] I promise that I have not plagiarised and have not copied the solution from other sources, AIGC is not included.(我保证没有抄袭，也没有从其他来源复制解决方案，AIGC 不包括在内)
+请保留上方链接前的 `fix ` 关键字，确保 issue 可以在 PR 合并后自动关闭。
 
-See the [Contribution Guidelines](https://labex-docs.vercel.app/) for more details.(请参阅 [贡献指南](https://labex-docs.vercel.app/) 了解更多信息。)
+你的内容会被自动同步上线并生成测试课程，完成 [线上测试](https://www.labex.wiki/zh/basic/how-to-test) 后，请评论 "test completed"，以便我们知道你已完成测试。
+
+感谢你提出 PR，为 LabEx 做出贡献！
+
+---
+
+Please replace `ID` with the relevant Issue ID for this PR, such as `fix #18`. The Issue ID can be found in the URL of the Issue, for example, `https://github.com/labex-labs/scenarios/issues/18`, where the ID is `18`.
+
+Please keep the `fix ` keyword before the link to ensure the issue is automatically closed after the PR is merged.
+
+Your content will be automatically synchronized online and a test course will be generated. After completing the [online test](https://www.labex.wiki/en/basic/how-to-test), please comment "test completed" so that we know you have finished the test.
+
+Thank you for submitting a PR and contributing to LabEx!

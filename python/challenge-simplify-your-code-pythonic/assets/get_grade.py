@@ -9,13 +9,13 @@ def get_grade(score: int) -> str:
     str: The grade of the student ('A', 'B', 'C', 'D', or 'E').
     """
     if score >= 90:
-        grade = 'A'
+        grade = "A"
     elif score >= 80:
-        grade = 'B'
+        grade = "B"
     elif score >= 70:
-        grade = 'C'
+        grade = "C"
     elif score >= 60:
-        grade = 'D'
+        grade = "D"
     else:
-        grade = 'E'
+        grade = "E"
     return grade

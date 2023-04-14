@@ -1,0 +1,125 @@
+{
+  "type": "challenge",
+  "title": "Effective Python Environment Management with Conda",
+  "description": "This challenge aims to test the participants' skills in using Conda to manage packages, create and manage environments, and solve complex problems using Conda.",
+  "difficulty": "Beginner",
+  "time": 120,
+  "details": {
+    "steps": [
+      {
+        "title": "Install conda",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if conda is installed",
+            "file": "verify1.sh",
+            "hint": "No conda command detected in /home/labex/miniconda3/bin/ directory",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/wget", "python/conda"],
+        "solutions": ["solution-step1.md"]
+      },
+      {
+        "title": "Package Management",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test for the existence of the cerberus package in package_management environment.",
+            "file": "verify2-1.sh",
+            "hint": "The cerberus package does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test for the existence of the watchdog package in package_management environment.",
+            "file": "verify2-2.sh",
+            "hint": "The watchdog package does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test for the existence of the arrow package in package_management environment.",
+            "file": "verify2-3.sh",
+            "hint": "The arrow package exists.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/conda"],
+        "solutions": ["solution-step2.md"]
+      },
+      {
+        "title": "Environment Management",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the existence of h5py package in environment_management environment.",
+            "file": "verify3-1.sh",
+            "hint": "The h5py package exists in the environment_management environment.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test the existence of scipy package in environment_management environment.",
+            "file": "verify3-2.sh",
+            "hint": "The scipy package exists in the environment_management environment.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test the existence of nose package in environment_management environment.",
+            "file": "verify3-3.sh",
+            "hint": "The nose package exists in the environment_management environment.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test if environment.yml file exists in environment_management environment.",
+            "file": "verify3-4.sh",
+            "hint": "The environment.yml file does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test the existence of h5py package in imported_environment environment.",
+            "file": "verify3-5.sh",
+            "hint": "The h5py package exists in the imported_environment environment.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test the existence of scipy package in imported_environment environment.",
+            "file": "verify3-6.sh",
+            "hint": "The scipy package exists in the imported_environment environment.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test the existence of nose package in imported_environment environment.",
+            "file": "verify3-7.sh",
+            "hint": "The nose package exists in the imported_environment environment.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/conda"],
+        "solutions": ["solution-step3.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

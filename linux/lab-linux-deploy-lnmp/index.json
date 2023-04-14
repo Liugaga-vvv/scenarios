@@ -1,0 +1,127 @@
+{
+  "type": "lab",
+  "title": "Linux Deploy LNMP",
+  "description": "Deploy LNMP on Linux with Nginx, MySQL, and PHP for web server and database.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Nginx",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if Nginx is installed successfully.",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sudo"]
+      },
+      {
+        "title": "Install MySQL",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if MySQL is installed successfully.",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sudo"]
+      },
+      {
+        "title": "Install PHP",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if PHP is installed successfully.",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sudo"]
+      },
+      {
+        "title": "Configure Nginx",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check that the Nginx configuration matches and that Nginx is started properly.",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sudo", "linux/vim"]
+      },
+      {
+        "title": "Configure MySQL",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check that the MySQL root password is set as required.",
+            "file": "verify5.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sudo"]
+      },
+      {
+        "title": "Configure PHP",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Check if the page is added and the PHP service is successfully started.",
+            "file": "verify6.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/vim", "linux/sudo"]
+      },
+      {
+        "title": "Verify",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Check if the PHP page is properly accessed.",
+            "file": "verify7.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/curl"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

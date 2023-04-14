@@ -1,0 +1,134 @@
+{
+  "type": "challenge",
+  "title": "Practice Assignment Expressions",
+  "description": "In this challenge, you will practice using Python assignment expressions, making your code more concise and efficient.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Assignment Expression",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the basic_syntax function in the basic_syntax.py file",
+            "file": "verify1.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/walrus",
+          "python/return_values",
+          "python/function_basic"
+        ],
+        "solutions": ["basic_syntax.py"]
+      },
+      {
+        "title": "Assignment Expression in List Comprehension",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the list_comprehension function in the list_comprehension.py file",
+            "file": "verify2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/walrus",
+          "python/if_else",
+          "python/range",
+          "python/for_loop",
+          "python/list_comprehension",
+          "python/return_values",
+          "python/function_basic"
+        ],
+        "solutions": ["list_comprehension.py"]
+      },
+      {
+        "title": "Assignment Expression in a While Loop",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the while_loop function in the while_loop.py file",
+            "file": "verify3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/walrus",
+          "python/input",
+          "python/for_loop",
+          "python/return_values",
+          "python/function_basic"
+        ],
+        "solutions": ["while_loop.py"]
+      },
+      {
+        "title": "Assignment Expression in a Function",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the count_vowels function in the count_vowels.py file",
+            "file": "verify4.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/sum",
+          "python/walrus",
+          "python/for_loop",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["count_vowels.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "basic_syntax.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "list_comprehension.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "while_loop.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "count_vowels.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

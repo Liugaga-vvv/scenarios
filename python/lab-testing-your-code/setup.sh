@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh&&zsh .setup-python-shell-history.sh
+wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@master/python-shell-history/.setup-python-shell-history.sh && zsh .setup-python-shell-history.sh
 
 # init src files
 touch /home/labex/project/my_code.py

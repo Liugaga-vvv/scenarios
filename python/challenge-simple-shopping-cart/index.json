@@ -1,0 +1,79 @@
+{
+  "type": "challenge",
+  "title": "Simple Shopping Cart",
+  "description": "Learning how to build and use class in Python",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Product Class",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Please practice the class structure",
+            "file": "verify1.sh",
+            "hint": "Please check if the class contains all the components like 'self'",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/data_types"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Create a ShoppingCart Class",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Please practice the class structure and for loop",
+            "file": "verify2.sh",
+            "hint": "Print after each command to see if product is added or deleted properly",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/data_types", "python/for_loop"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Apply Discounts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Please practice the for loop",
+            "file": "verify3.sh",
+            "hint": "Print after each command to see if price is discounted properly",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/data_types", "python/for_loop"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "shopping_cart.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

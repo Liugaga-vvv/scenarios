@@ -1,0 +1,81 @@
+{
+    "type": "challenge",
+    "title": "Mastering Text Manipulation",
+    "description": "Learning how to search for and manipulate text in Linux using three powerful commands: `grep`, `awk`, and `sed`.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Search For Specific Lines Using GREP",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Create a file example.txt.",
+                        "file": "verify1-1.sh",
+                        "hint": "Please touch a file example.txt.",
+                        "timeout": 5,
+                        "showstderr": false
+                    },
+                    {
+                        "name": "Search for specific lines using grep.",
+                        "file": "verify1-2.sh",
+                        "hint": "Search for specific lines using grep.",
+                        "timeout": 5,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["linux/grep", "linux/touch", "linux/redirect"],
+                "solutions": ["solution-step1.md"]
+            },
+            {
+                "title": "Extract Specific Fields Using AWK",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Create a file data.txt.",
+                        "file": "verify2-1.sh",
+                        "hint": "Please touch a file data.txt.",
+                        "timeout": 5,
+                        "showstderr": false
+                    },
+                    {
+                        "name": "Extract name fields Using awk",
+                        "file": "verify2-2.sh",
+                        "hint": "extract name fields Using awk",
+                        "timeout": 5,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["linux/awk", "linux/touch", "linux/redirect"],
+                "solutions": ["solution-step2.md"]
+            },
+            {
+                "title": "Replace Text In A File Using SED",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Create a file example.txt.",
+                        "file": "verify3-1.sh",
+                        "hint": "Please touch a file text.txt.",
+                        "timeout": 5,
+                        "showstderr": false
+                    },
+                    {
+                        "name": "Replace text in a file using sed.",
+                        "file": "verify3-2.sh",
+                        "hint": "Replace line with string using sed",
+                        "timeout": 5,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["linux/sed", "linux/touch", "linux/redirect"],
+                "solutions": ["solution-step3.md"]
+            }
+        ],
+        "intro": {"text": "intro.md", "background": "setup.sh"},
+        "finish": {"text": "finish.md"},
+        "assets": {"host01": [{"file": "", "target": "/tmp"}]}
+    },
+    "backend": {"imageid": "vnc-ubuntu:2204"}
+}

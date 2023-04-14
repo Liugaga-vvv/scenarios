@@ -1,0 +1,50 @@
+{
+  "type": "challenge",
+  "title": "Customized Greetings",
+  "description": "In this programming challenge, you are tasked with writing a Python script that takes in a name and an optional greeting message as command line arguments, and generates a customized greeting message based on the inputs. ",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Customized Greetings",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if your output is correct",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/argparse"],
+        "solutions": ["step1-solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "greet.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

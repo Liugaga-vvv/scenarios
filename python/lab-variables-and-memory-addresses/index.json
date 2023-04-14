@@ -1,0 +1,78 @@
+{
+    "type": "lab",
+    "title": "Variables and Memory Addresses",
+    "description": "In this lab, you will learn about variables and memory addresses in Python. You will learn how to use the Python interpreter to check the memory address of a variable and how to modify a variable's value. You will also learn about the difference between mutable and immutable data types.",
+    "difficulty": "Beginner",
+    "time": 20,
+    "details": {
+        "steps": [
+            {
+                "title": "Variable Assignment and Memory Addresses",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Please open the terminal and Python interpreter",
+                        "file": "verify1-0.sh",
+                        "hint": "You need to open the Python shell to continue.",
+                        "timeout": 0,
+                        "showstderr": false
+                    },
+                    {
+                        "name": "Practice is Operator",
+                        "file": "verify1-1.sh",
+                        "hint": "Please follow the steps to complete the operation.",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["python/python_interpreter", "python/id", "python/is"]
+            },
+            {
+                "title": "Compare Memory Addresses",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Compare Memory Addresses",
+                        "file": "verify2.sh",
+                        "hint": "Please follow the steps to complete the operation.",
+                        "timeout": 5,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["python/list"]
+            },
+            {
+                "title": "Modifying a Mutable Data Type",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Variable Data Types",
+                        "file": "verify3.sh",
+                        "hint": "Please follow the steps to complete the operation.",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["python/list"]
+            },
+            {
+                "title": "Modifying an Immutable Data Type",
+                "text": "step4.md",
+                "verify": [
+                    {
+                        "name": "Immutable Data Types",
+                        "file": "verify4.sh",
+                        "hint": "Please follow the steps to complete the operation.",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["python/id", "python/str"]
+            }
+        ],
+        "intro": {"text": "intro.md", "background": "setup.sh"},
+        "finish": {"text": "finish.md"},
+        "assets": {"host01": [{"file": "", "target": "/tmp"}]}
+    },
+    "backend": {"imageid": "vnc-ubuntu:2204"}
+}

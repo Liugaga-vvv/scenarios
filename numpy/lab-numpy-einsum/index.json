@@ -1,0 +1,105 @@
+{
+  "type": "lab",
+  "title": "NumPy Einsum",
+  "description": "This tutorial will show you how to use einsum effectively in your scientific computing projects.",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Einsum Introduction",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if open the Python shell",
+            "file": "verify0-0.sh",
+            "hint": "You need to open the Python shell to continue.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether einsum is entered.",
+            "file": "verify1-0.sh",
+            "hint": "You need to enter einsum to continue.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/einsum", "numpy/random"]
+      },
+      {
+        "title": "Basic Einsum Examples",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check whether dot product is computed",
+            "file": "verify2-0.sh",
+            "hint": "You need to compute dot product.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether transpose is computed",
+            "file": "verify2-1.sh",
+            "hint": "You need to compute transpose.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether product is computed",
+            "file": "verify2-2.sh",
+            "hint": "You need to compute product.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether broadcasting is computed",
+            "file": "verify2-3.sh",
+            "hint": "You need to compute broadcasting.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "numpy/einsum",
+          "numpy/random",
+          "numpy/dot",
+          "numpy/transpose",
+          "numpy/matmul",
+          "numpy/multiply"
+        ]
+      },
+      {
+        "title": "Batch Matrix Multiplications",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check whether tensor is contracted",
+            "file": "verify3-0.sh",
+            "hint": "You need to contract tensor.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check whether batch matrix multiplication is computed",
+            "file": "verify3-1.sh",
+            "hint": "You need to compute batch matrix multiplication.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["numpy/einsum", "numpy/random", "numpy/sum", "numpy/matmul"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "type": "challenge",
+    "title": "Submit Files",
+    "description": "This challenge will test your knowledge of basic Git commands",
+    "difficulty": "Beginner",
+    "time": 20,
+    "details": {
+        "steps": [
+            {
+                "title": "Adding changes to the staging area",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if the file has been added to the staging area",
+                        "file": "verify1.sh",
+                        "hint": "Please stage these changes",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["git/add"],
+                "solutions": ["step1-solution.md"]
+            },
+            {
+                "title": "Committing changes to the repository",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Check if the changes that you staged have been committed",
+                        "file": "verify2.sh",
+                        "hint": "Please commit the changes that you staged",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["git/commit"],
+                "solutions": ["step2-solution.md"]
+            },
+            {
+                "title": "Checking the status of your repository",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Check if the current status of your repository has been viewed",
+                        "file": "verify3.sh",
+                        "hint": "Please view the status of your repository before and after making changes",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["git/status"],
+                "solutions": ["step3-solution.md"]
+            },
+            {
+                "title": "Viewing differences between two states",
+                "text": "step4.md",
+                "verify": [
+                    {
+                        "name": "Check if the differences between two states have been viewed",
+                        "file": "verify4.sh",
+                        "hint": "Please view the differences between two states",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": ["git/diff"],
+                "solutions": ["step4-solution.md"]
+            }
+        ],
+        "intro": {"text": "intro.md", "background": "setup.sh"},
+        "finish": {"text": "finish.md"},
+        "assets": {"host01": [{"file": "", "target": "/tmp"}]}
+    },
+    "backend": {"imageid": "vnc-ubuntu:2204"}
+}

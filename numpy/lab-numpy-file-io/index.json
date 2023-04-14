@@ -1,6 +1,6 @@
 {
   "type": "lab",
-  "title": "Numpy File IO",
+  "title": "NumPy File IO",
   "description": "In this lab, you will learn how to use NumPy to read and write arrays to files.",
   "difficulty": "Beginner",
   "time": 10,
@@ -18,9 +18,9 @@
             "showstderr": false
           },
           {
-            "name": "Check if import Numpy",
+            "name": "Check if import NumPy",
             "file": "verify1-2.sh",
-            "hint": "You need to import Numpy to continue.",
+            "hint": "You need to import NumPy to continue.",
             "timeout": 0,
             "showstderr": false
           },

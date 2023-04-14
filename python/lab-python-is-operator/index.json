@@ -1,0 +1,82 @@
+{
+  "type": "lab",
+  "title": "Python Is Operator",
+  "description": "In this lab, we will explore how the 'is' operator works and how it can be useful in Python programming.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Usage",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if open the Python Interpreter.",
+            "file": "verify1-0.sh",
+            "hint": "Please open the Python interpreter in the terminal.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the step is completed.",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/variables", "python/python_interpreter", "python/is"]
+      },
+      {
+        "title": "Immutable vs Mutable Objects",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the step is completed.",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/variables", "python/is"]
+      },
+      {
+        "title": "Function Parameters",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the step is completed.",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/is", "python/variables", "python/function_basic"]
+      },
+      {
+        "title": "Advanced Usage",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the step is completed.",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/is",
+          "python/variables",
+          "python/function_basic",
+          "python/class"
+        ]
+      }
+    ],
+    "intro": { "text": "intro.md", "background": "setup.sh" },
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "vnc-ubuntu:2204" }
+}

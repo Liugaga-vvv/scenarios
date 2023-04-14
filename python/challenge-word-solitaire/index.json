@@ -1,0 +1,79 @@
+{
+  "type": "challenge",
+  "title": "Word Solitaire",
+  "description": "This challenge practices Python input, regular expressions, string operations and other related knowledge points through the form of word solitaire game.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Sentence input and split",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check whether the input is correctly split into words and converted to a list.",
+            "file": "verify1.sh",
+            "hint": "Please process the input sentence correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/re",
+          "python/manipulating_strings",
+          "python/input",
+          "python/list",
+          "python/set"
+        ],
+        "solutions": ["split_sentence.py"]
+      },
+      {
+        "title": "Word Solitaire",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if it is possible to complete the word solitaire with a list of words.",
+            "file": "verify2.sh",
+            "hint": "Please implement the word chain correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/manipulating_strings",
+          "python/list_comprehension",
+          "python/iterator"
+        ],
+        "solutions": ["solitaire.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "split_sentence.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "solitaire.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

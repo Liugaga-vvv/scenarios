@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def reshape_array(a: np.ndarray, shape: tuple[int]) -> np.ndarray:
     """
     Reshapes a numpy array to the specified shape and returns the result.

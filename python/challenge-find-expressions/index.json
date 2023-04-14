@@ -1,0 +1,57 @@
+{
+  "type": "challenge",
+  "title": "Find Expressions",
+  "description": "In this challenge, you will implement a function that takes in the list of integers and the target value as parameters, and return a list of all the expressions that can be evaluated to the target value. The expressions can only contain the integers in the list, and the operators +, -, *, /. ",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Find Expressions",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of find_expressions",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/math_operator",
+          "python/for_loop",
+          "python/if_else",
+          "python/dict",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["solution.md", "find_expressions.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "find_expressions.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

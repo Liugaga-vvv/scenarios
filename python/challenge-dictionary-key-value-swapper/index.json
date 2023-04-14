@@ -1,0 +1,50 @@
+{
+  "type": "challenge",
+  "title": "Dictionary Key-Value Swapper",
+  "description": "Write a Python function named `swap_dict_key_value` that takes a dictionary as an argument, and returns a new dictionary where the keys and values are swapped.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Dictionary Key-Value Swapper",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/dict", "python/function_basic", "python/for_loop"],
+        "solutions": ["swap_dict.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_swap_dict.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "swap_dict.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
