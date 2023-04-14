@@ -27,8 +27,8 @@ assignees: "huhuhang"
 
 ## Skills
 
-> Suggested skills to include can be modified as needed. **The main skill points that should be included in this section are bolded**. From [Skills Tree](https://labex-dev.feishu.cn/base/bascnNz4Nqjqgqm1Nm5AYke6xxb?table=tblV5pGIsGZMxmE9&view=vewZpkLWRp).
-> 建议包括的 Skills ID，可以根据需要增删。**本章节应包含的主要技能点已加粗**，技能点来自 [技能树](https://labex-dev.feishu.cn/base/bascnNz4Nqjqgqm1Nm5AYke6xxb?table=tblV5pGIsGZMxmE9&view=vewZpkLWRp)
+> Suggested skills to include can be modified as needed. **The main skill points that should be included in this section are bolded**. From [Skills Tree (Click to apply for permission after logging in)](https://labex-dev.feishu.cn/base/bascnNz4Nqjqgqm1Nm5AYke6xxb?table=tblV5pGIsGZMxmE9&view=vewZpkLWRp).
+> 建议包括的 Skills ID，可以根据需要增删。**本章节应包含的主要技能点已加粗**，技能点来自 [技能树 (登录后点击申请权限)](https://labex-dev.feishu.cn/base/bascnNz4Nqjqgqm1Nm5AYke6xxb?table=tblV5pGIsGZMxmE9&view=vewZpkLWRp)
 
 - **`python/data_types`**
 - `python/for_loop`
