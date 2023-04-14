@@ -1,3 +1,3 @@
 # Count Duplicates
 
-Given a string, write a function that returns the count of characters in the string that appear more than once.
+In this challenge, you need to write a Python function that returns the number of characters in a string that occur more than once.

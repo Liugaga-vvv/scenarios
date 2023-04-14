@@ -11,7 +11,7 @@
                 "text": "step1.md",
                 "verify": [
                     {
-                        "name": "Testing count_duplicates.py",
+                        "name": "Test count_duplicates.py",
                         "file": "verify1.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,

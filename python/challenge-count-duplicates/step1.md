@@ -17,9 +17,9 @@ You are given a string `s` consisting of lowercase letters. Your task is to impl
 
 ## TODO
 
-- Completing `count_duplicates.py`
+- Complete `count_duplicates.py`
 
 ## Requirements
 
-1. The function should take in a single parameter, a string, which consists of lowercase letters only.
-2. The function should return an integer value which represents the count of characters in the string that appear more than once.
+- The function should take in a single parameter, a string, which consists of lowercase letters only.
+- The function should return an integer value which represents the count of characters in the string that appear more than once.
