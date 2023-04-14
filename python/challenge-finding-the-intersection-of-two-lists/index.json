@@ -1,0 +1,49 @@
+{
+    "type": "challenge",
+    "title": "Finding the Intersection of Two Lists",
+    "description": "In this challenge, you will be writing a Python function to find the intersection of two lists.",
+    "difficulty": "Intermediate",
+    "time": 10,
+    "details": {
+        "steps": [
+            {
+                "title": "Finding the Intersection of Two Lists",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Test find_intersection.py",
+                        "file": "verify1.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": ["python/list","python/if_else","python/for_loop","python/function_basic"],
+                "solutions": ["find_intersection.py"]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "find_intersection.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
