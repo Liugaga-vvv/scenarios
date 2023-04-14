@@ -18,7 +18,7 @@
             "showstderr": false
           }
         ],
-        "skills": ["skill/id"],
+        "skills": [],
         "solutions": ["step1-solution.md"]
       },
       {
@@ -33,7 +33,7 @@
             "showstderr": false
           }
         ],
-        "skills": ["skill/id"],
+        "skills": [],
         "solutions": ["step2-solution.md"]
       },
       {
@@ -48,7 +48,7 @@
             "showstderr": false
           }
         ],
-        "skills": ["skill/id"],
+        "skills": [],
         "solutions": ["step3-solution.md"]
       }
     ],

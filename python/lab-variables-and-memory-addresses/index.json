@@ -15,17 +15,17 @@
                         "file": "verify1-0.sh",
                         "hint": "You need to open the Python shell to continue.",
                         "timeout": 0,
-                        "showstderr": false,
+                        "showstderr": false
                     },
                     {
                         "name": "Practice is Operator",
                         "file": "verify1-1.sh",
                         "hint": "Please follow the steps to complete the operation.",
                         "timeout": 0,
-                        "showstderr": false,
-                    },
+                        "showstderr": false
+                    }
                 ],
-                "skills": ["python/python_interpreter", "python/id", "python/is"],
+                "skills": ["python/python_interpreter", "python/id", "python/is"]
             },
             {
                 "title": "Compare Memory Addresses",
@@ -36,10 +36,10 @@
                         "file": "verify2.sh",
                         "hint": "Please follow the steps to complete the operation.",
                         "timeout": 5,
-                        "showstderr": false,
+                        "showstderr": false
                     }
                 ],
-                "skills": ["python/list"],
+                "skills": ["python/list"]
             },
             {
                 "title": "Modifying a Mutable Data Type",
@@ -50,10 +50,10 @@
                         "file": "verify3.sh",
                         "hint": "Please follow the steps to complete the operation.",
                         "timeout": 0,
-                        "showstderr": false,
+                        "showstderr": false
                     }
                 ],
-                "skills": ["python/list"],
+                "skills": ["python/list"]
             },
             {
                 "title": "Modifying an Immutable Data Type",
@@ -64,15 +64,15 @@
                         "file": "verify4.sh",
                         "hint": "Please follow the steps to complete the operation.",
                         "timeout": 0,
-                        "showstderr": false,
+                        "showstderr": false
                     }
                 ],
-                "skills": ["python/id", "python/str"],
-            },
+                "skills": ["python/id", "python/str"]
+            }
         ],
         "intro": {"text": "intro.md", "background": "setup.sh"},
         "finish": {"text": "finish.md"},
-        "assets": {"host01": [{"file": "", "target": "/tmp"}]},
+        "assets": {"host01": [{"file": "", "target": "/tmp"}]}
     },
-    "backend": {"imageid": "vnc-ubuntu:2204"},
+    "backend": {"imageid": "vnc-ubuntu:2204"}
 }

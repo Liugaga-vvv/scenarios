@@ -15,18 +15,18 @@
                         "file": "verify1-1.sh",
                         "hint": "Please touch a file example.txt.",
                         "timeout": 5,
-                        "showstderr": false,
+                        "showstderr": false
                     },
                     {
                         "name": "Search for specific lines using grep.",
                         "file": "verify1-2.sh",
                         "hint": "Search for specific lines using grep.",
                         "timeout": 5,
-                        "showstderr": false,
-                    },
+                        "showstderr": false
+                    }
                 ],
                 "skills": ["linux/grep", "linux/touch", "linux/redirect"],
-                "solutions": ["solution-step1.md"],
+                "solutions": ["solution-step1.md"]
             },
             {
                 "title": "Extract Specific Fields Using AWK",
@@ -37,18 +37,18 @@
                         "file": "verify2-1.sh",
                         "hint": "Please touch a file data.txt.",
                         "timeout": 5,
-                        "showstderr": false,
+                        "showstderr": false
                     },
                     {
                         "name": "Extract name fields Using awk",
                         "file": "verify2-2.sh",
                         "hint": "extract name fields Using awk",
                         "timeout": 5,
-                        "showstderr": false,
-                    },
+                        "showstderr": false
+                    }
                 ],
                 "skills": ["linux/awk", "linux/touch", "linux/redirect"],
-                "solutions": ["solution-step2.md"],
+                "solutions": ["solution-step2.md"]
             },
             {
                 "title": "Replace Text In A File Using SED",
@@ -59,23 +59,23 @@
                         "file": "verify3-1.sh",
                         "hint": "Please touch a file text.txt.",
                         "timeout": 5,
-                        "showstderr": false,
+                        "showstderr": false
                     },
                     {
                         "name": "Replace text in a file using sed.",
                         "file": "verify3-2.sh",
                         "hint": "Replace line with string using sed",
                         "timeout": 5,
-                        "showstderr": false,
-                    },
+                        "showstderr": false
+                    }
                 ],
                 "skills": ["linux/sed", "linux/touch", "linux/redirect"],
-                "solutions": ["solution-step3.md"],
-            },
+                "solutions": ["solution-step3.md"]
+            }
         ],
         "intro": {"text": "intro.md", "background": "setup.sh"},
         "finish": {"text": "finish.md"},
-        "assets": {"host01": [{"file": "", "target": "/tmp"}]},
+        "assets": {"host01": [{"file": "", "target": "/tmp"}]}
     },
-    "backend": {"imageid": "vnc-ubuntu:2204"},
+    "backend": {"imageid": "vnc-ubuntu:2204"}
 }
