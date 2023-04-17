@@ -5,6 +5,7 @@ on:
       - master
 jobs:
   Proofreading:
+    if: github.repository_owner == 'labex-labs'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
