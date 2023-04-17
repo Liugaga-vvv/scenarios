@@ -1,0 +1,184 @@
+{
+  "type": "challenge",
+  "title": "Linear Algebra Solving with NumPy",
+  "description": "In this challenge, you will learn to use the NumPy and Linear Algebra libraries to perform matrix inversion.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Matrix Inversion",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing invert_matrix.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/linalg",
+          "python/raise_errors",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["invert_matrix.py"]
+      },
+      {
+        "title": "Singular Value Decomposition",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing svd_matrix.py",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/linalg",
+          "python/tuple",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["svd_matrix.py"]
+      },
+      {
+        "title": "Determinant Calculation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing determinant_matrix.py",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/linalg",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["determinant_matrix.py"]
+      },
+      {
+        "title": "Linear Equation Solver",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing solve_linear_equation.py",
+            "file": "verify4.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/linalg",
+          "numpy/matmul",
+          "python/raise_errors",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["solve_linear_equation.py"]
+      },
+      {
+        "title": "Eigenvector and Eigenvalue Calculation",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Testing eigenvector_eigenvalue.py",
+            "file": "verify5.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/linalg",
+          "python/tuple",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["eigenvector_eigenvalue.py"]
+      },
+      {
+        "title": "Matrix Rank Calculation",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Testing matrix_rank.py",
+            "file": "verify6.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/linalg",
+          "python/return_values",
+          "python/function_basic",
+          "python/function_arguments"
+        ],
+        "solutions": ["matrix_rank.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "invert_matrix.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "svd_matrix.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "determinant_matrix.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "solve_linear_equation.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "eigenvector_eigenvalue.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "matrix_rank.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
