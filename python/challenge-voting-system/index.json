@@ -1,0 +1,58 @@
+{
+    "type": "challenge",
+    "title": "Voting System",
+    "description": "In this challenge,your task is to write a Python program that will receive votes from users and calculate the winner of the election.",
+    "difficulty": "Beginner",
+    "time": 5,
+    "details": {
+        "steps": [
+            {
+                "title": "Voting System",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Test calculate_winner.py",
+                        "file": "verify1.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+
+                    }
+                ],
+                "skills": [
+                    "python/function_basic",
+                    "python/for_loop",
+                    "python/if_else",
+                    "python/list",
+                    "python/dict"
+                ],
+                "solutions": [
+                    "calculate_winner.py"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "calculate_winner.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
