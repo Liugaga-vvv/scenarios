@@ -1,0 +1,71 @@
+{
+  "type": "lab",
+  "title": "Groups of Linux",
+  "description": "In this lab, you will learn how to create and delete groups, as well as manage group membership using groupadd and groupdel commands.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding Linux Groups",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if the johndoe user is viewed",
+            "file": "verify1.sh",
+            "hint": "Please view the johndoe user using groups command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/groups"]
+      },
+      {
+        "title": "Creating Groups",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects if the user group devs has been created",
+            "file": "verify2.sh",
+            "hint": "Please create the user group devs using groupadd command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/groupadd"]
+      },
+      {
+        "title": "Deleting Groups",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if the user group devs has been deleted",
+            "file": "verify3.sh",
+            "hint": "Please delete the user group devs using groupdel command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/groupdel"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
