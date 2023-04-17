@@ -1,0 +1,89 @@
+{
+  "type": "challenge",
+  "title": "Stream Editor Sed",
+  "description": "This challenge will test your knowledge of the sed command. The challenge will be divided into several steps, each one building on the previous step.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Search and Replace",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the replacement operation is completed",
+            "file": "verify1.sh",
+            "hint": "Please complete all replacement operations using sed command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sed", "linux/ls"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Delete Lines",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the deletion operation is completed",
+            "file": "verify2.sh",
+            "hint": "Please complete all deletion operations using sed command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sed", "linux/ls"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Insert Text",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the insertion operation is completed",
+            "file": "verify3.sh",
+            "hint": "Please complete all insertion operations using sed command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sed", "linux/ls"],
+        "solutions": ["step3-solution.md"]
+      },
+      {
+        "title": "Replace Text in Specific Lines",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the replacement operation is completed",
+            "file": "verify4.sh",
+            "hint": "Please complete all replacement operations using sed command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sed", "linux/ls"],
+        "solutions": ["step4-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
