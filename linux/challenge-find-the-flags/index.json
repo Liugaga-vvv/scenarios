@@ -1,0 +1,89 @@
+{
+  "type": "challenge",
+  "title": "Find the Flags",
+  "description": "This challenge is designed to test your proficiency in using different Linux commands to solve a series of challenges.",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Finding the First Flag",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if a file has been moved to the specified location",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions in the document to complete the operation",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/ls", "linux/cat", "linux/mv"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Finding the Second Flag",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects if a file has been moved to the specified location",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions in the document to complete the operation",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/sudo", "linux/cd", "linux/cat", "linux/mv"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Finding the Third Flag",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if a file has been moved to the specified location",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions in the document to complete the operation",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/unzip", "linux/cat"],
+        "solutions": ["step3-solution.md"]
+      },
+      {
+        "title": "Finding the Fourth Flag",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Detects if a file has been moved to the specified location",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions in the document to complete the operation",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/grep", "linux/cat"],
+        "solutions": ["step4-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

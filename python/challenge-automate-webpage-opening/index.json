@@ -1,0 +1,45 @@
+{
+  "type": "challenge",
+  "title": "Automate Webpage Opening",
+  "description": "In this challenge, you'll write a Python program that opens a web page. The program should have an option to open the page in a new tab or window.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Automate Webpage Opening",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if open a webpage in the browser",
+            "file": "verify1.sh",
+            "hint": "Please make sure the browser is still open.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/webbrowser", "python/argparse"],
+        "solutions": ["step1-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "webbrowser_challenge.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
