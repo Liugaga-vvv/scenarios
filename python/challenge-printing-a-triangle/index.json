@@ -1,0 +1,55 @@
+{
+    "type": "challenge",
+    "title": "Printing a Triangle",
+    "description": "In this challenge, your task is to write a Python function to print a triangle pattern made of asterisks (`*`).",
+    "difficulty": "Beginner",
+    "time": 5,
+    "details": {
+        "steps": [
+            {
+                "title": "Printing a Triangle",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Test print_triangle.py",
+                        "file": "verify1.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/for_loop",
+                    "python/print",
+                    "python/function_basic"
+                ],
+                "solutions": [
+                    "print_triangle.py"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "print_triangle.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
