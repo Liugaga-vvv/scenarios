@@ -1,0 +1,57 @@
+{
+  "type": "challenge",
+  "title": "Jewelry Sales",
+  "description": "You work for a small business that sells handmade jewelry. They have asked you to help them create a program that will track their sales data.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Jewelry Sales",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/data_types",
+          "python/for_loop",
+          "python/tuple",
+          "python/function_basic",
+          "python/round",
+          "python/if_else"
+        ],
+        "solutions": ["jewelry_sales.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "jewelry_sales_unittest.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "jewelry_sales.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
