@@ -1,6 +1,6 @@
 # Leap Year Checker
 
-Write a function called is_leap_year that takes a year (an integer) as an argument and returns True if the year is a leap year, and False otherwise. A leap year is a year that is divisible by 4, except for years that are divisible by 100 but not divisible by 400.
+Write a function called `is_leap_year` that takes a year (an integer) as an argument and returns `True` if the year is a leap year, and `False` otherwise. A leap year is a year that is divisible by 4, except for years that are divisible by 100 but not divisible by 400.
 
 ## Example Usage
 
