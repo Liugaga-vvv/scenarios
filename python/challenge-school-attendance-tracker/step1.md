@@ -2,7 +2,7 @@
 
 Write a Python function `track_attendance` that accepts a dictionary of student names as keys and a list of attendance records as values. Each attendance record is a tuple of two elements: the date (in the format $YYYY-MM-DD$) and the attendance status ($P$ for present, $A$ for absent, or $L$ for late).
 
-The function should return a dictionary containing the attendance percentage for each student for the given month. The percentage should be rounded to two decimal places.
+The function should return a dictionary containing the attendance percentage for each student for the given month.
 
 ## Example Usage
 
@@ -30,8 +30,6 @@ Output:
 
 ## Requirements
 
-- The function should be named `track_attendance`.
 - The function should accept a dictionary as its only argument.
 - The dictionary should have student names as keys and a list of attendance records as values.
-- Each attendance record should be a tuple of two elements: the date (in the format $YYYY-MM-DD$) and the attendance status ($P$ for present, $A$ for absent, or $L$ for late).
-- The function should return a dictionary containing the attendance percentage for each student for the given month. The percentage should be rounded to two decimal places.
+- The percentage should be rounded to two decimal places.
