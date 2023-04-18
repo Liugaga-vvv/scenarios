@@ -1,0 +1,54 @@
+{
+  "type": "challenge",
+  "title": "Long Word Counter",
+  "description": "In this challenge, you will implement a function that counts the number of words in a given string that are longer than a specific length. You will write this function using basic Python syntax and string manipulation techniques.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Long Word Counter",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of count_long_words.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/str",
+          "python/for_loop",
+          "python/function_basic",
+          "python/if_else"
+        ],
+        "solutions": ["count_long_words.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "count_long_words.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
