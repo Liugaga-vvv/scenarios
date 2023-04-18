@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Count Duplicates",
+  "description": "In this challenge, your task is to implement a Python function `count_duplicates(s: str) -> int` that returns the count of characters in the string that appear more than once.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Count Duplicates",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test count_duplicates.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/function_basic", "python/for_loop", "python/dict"],
+        "solutions": ["count_duplicates.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "count_duplicates.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
