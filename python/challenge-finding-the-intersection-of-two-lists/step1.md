@@ -20,5 +20,5 @@ Given two lists of integers, list1 and list2, write a Python function `find_inte
 
 - The input lists may contain duplicates, but the output list should not.
 - The order of the output list does not matter.
-- If there are no common elements, return an empty `list []`.
+- If there are no common elements, return an empty list [].
 - Your implementation should have a time complexity of $O(n)$, where $n$ is the length of the longer input list.
