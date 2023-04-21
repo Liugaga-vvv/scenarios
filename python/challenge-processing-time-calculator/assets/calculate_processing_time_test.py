@@ -25,5 +25,5 @@ class TestCalculateProcessingTime(unittest.TestCase):
         self.assertEqual(calculate_processing_time(num_pages), expected_output)
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
     
