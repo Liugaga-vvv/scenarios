@@ -24,5 +24,5 @@ class TestUpdateInventory(unittest.TestCase):
         self.assertEqual(update_inventory(inventory, orders), expected_output)
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
     
