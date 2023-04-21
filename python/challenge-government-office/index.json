@@ -21,7 +21,7 @@
                 "skills": [
                     "python/dict",
                     "python/if_else",
-                    "function_basic"
+                    "python/function_basic"
                 ],
                 "solutions": [
                     "search_document.py"
