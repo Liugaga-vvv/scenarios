@@ -22,7 +22,7 @@
                     "python/__del__",
                     "python/class",
                     "python/function_basic",
-                    "python/sort"
+                    "python/sorted"
                 ],
                 "solutions": [
                     "fire_emergencies.py"
