@@ -1,0 +1,69 @@
+{
+  "type": "challenge",
+  "title": "Local and Global Scope",
+  "description": "You are tasked with creating a Python program that demonstrates the difference between local and global variables.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding Local and Global Scope",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/local_and_global", "python/function_basic"],
+        "solutions": ["step1.py", "step1-solution.md"]
+      },
+      {
+        "title": "Modifying Enclosing Scope Variables with Non-Local",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step2.py",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/local_and_global", "python/function_basic"],
+        "solutions": ["step2.py", "step2-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "step1.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "step2.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

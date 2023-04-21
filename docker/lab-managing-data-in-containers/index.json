@@ -1,0 +1,99 @@
+{
+  "type": "lab",
+  "title": "Managing Data In Containers",
+  "description": "In this lab, you will learn how to manage data in containers.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Create A Docker Volume",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if myvolume exists",
+            "file": "verify1.sh",
+            "hint": "Please create a volume called myvolume",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/volume"]
+      },
+      {
+        "title": "Mount A Docker Volume In A Container",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if myvolume mount",
+            "file": "verify2.sh",
+            "hint": "Please mount the myvolume volume at this path /app/data.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run", "docker/inspect"]
+      },
+      {
+        "title": "Write Data To A Docker Volume",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if /app/data/hello.txt exists",
+            "file": "verify3.sh",
+            "hint": "Please exec container and create a file hello.txt at /app/data",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/exec"]
+      },
+      {
+        "title": "Read Data From A Docker Volume",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if /app/data/hello.txt reads",
+            "file": "verify4.sh",
+            "hint": "Please exec container and read the file /app/data/hello.txt",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/exec"]
+      },
+      {
+        "title": "Backup And Restore A Docker Volume",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if myvolume.tar.gz and myvolume.tar.gz exists",
+            "file": "verify5.sh",
+            "hint": "Please backup and restore a Docker volume",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run", "docker/volume"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}
