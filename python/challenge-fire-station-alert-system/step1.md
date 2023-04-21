@@ -16,6 +16,10 @@ fs.add_emergency(emergency1)
 fs.add_emergency(emergency2)
 fs.add_emergency(emergency3)
 
+# Prioritize the emergencies and remove the highest priority one
+fire_station.prioritize_emergencies()
+highest_priority = fire_station.emergencies.pop(0)
+
 # Remove another emergency
 fire_station.remove_emergency(emergency3)
 ```
