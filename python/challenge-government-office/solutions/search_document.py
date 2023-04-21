@@ -6,4 +6,4 @@ def search_document(inventory, document_name):
         return inventory[document_name]
     # else, return a string value "document not found."
     else:
-        return "document not found."
+        return "Document not found."
