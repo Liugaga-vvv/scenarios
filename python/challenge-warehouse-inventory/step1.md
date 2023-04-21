@@ -2,7 +2,7 @@
 
 Your task is to write a Python function called `update_inventory` that takes in two parameters:
 
-- `inventory` (a dictionary): represents the current inventory of the warehouse where the keys are the item names and the values are the quantities in stock
+- `inventory` (a dictionary): represents the current inventory of the warehouse where the keys are the item names and the values are the quantities in stock.
 - `orders` (a list of tuples): represents the new orders that need to be fulfilled where each tuple contains the following information:
   - the item name
   - the quantity ordered
