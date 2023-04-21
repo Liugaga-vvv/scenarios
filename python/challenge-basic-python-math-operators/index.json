@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "Basic Python Math Operators",
+  "description": "In this challenge, you will write a program that uses basic math operators in Python to perform various mathematical operations.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Python Math Operators",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of math_operations.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/math_operator", "python/function_basic"],
+        "solutions": ["math_operations.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "math_operations.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
