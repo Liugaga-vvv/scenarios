@@ -2,8 +2,8 @@
 
 Your task is to write a Python function called `search_document` that takes in two parameters:
 
-- `inventory` (a dictionary): represents the current inventory of the office where the keys are the document names and the values are the locations where the documents are stored
-- `document_name` (a string): represents the name of the document that needs to be searched
+- `inventory` (a dictionary): represents the current inventory of the office where the keys are the document names and the values are the locations where the documents are stored.
+- `document_name` (a string): represents the name of the document that needs to be searched.
 
 ## Example Usage
 
