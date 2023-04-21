@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Proxy Command",
+  "description": "Learn how to use Kubernetes proxy api to access and operate Kubernetes resources.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Set Up a Basic Proxy",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the kubectl proxy command is executed.",
+            "file": "verify1.sh",
+            "hint": "Please execute the kubectl proxy command.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/proxy"]
+      },
+      {
+        "title": "Access the Kubernetes Api with Curl",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if curl is used to access the API server.",
+            "file": "verify2.sh",
+            "hint": "Please use curl to access the API server.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

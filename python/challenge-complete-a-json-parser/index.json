@@ -1,0 +1,107 @@
+{
+  "type": "challenge",
+  "title": "Complete a JSON Parser",
+  "description": "In this challenge, you will learn how to create a JSON parser and serializer that converts JSON strings to Python objects and vice versa, without applying the json library.",
+  "difficulty": "Intermediate",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Parse JSON",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check to make sure the json library is not being used.",
+            "file": "verify3.sh",
+            "hint": "Please do not use the json library.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the implementation of parse_json function",
+            "file": "verify1.sh",
+            "hint": "Please create a function that correctly converts a JSON string into a Python Object.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/json",
+          "python/manipulating_strings",
+          "python/data_types"
+        ],
+        "solutions": ["parse_json.py"]
+      },
+      {
+        "title": "Serialize to JSON",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check to make sure the json library is not being used.",
+            "file": "verify4.sh",
+            "hint": "Please do not use the json library.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Test the implementation of serialize_json function",
+            "file": "verify2.sh",
+            "hint": "Please create a function that correctly converts a Python Object to a JSON string.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/json",
+          "python/manipulating_strings",
+          "python/data_types"
+        ],
+        "solutions": ["serialize_json.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "parse_json.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "serialize_json.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "parse_json_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "json_lib_test1.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "json_lib_test2.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "serialize_json_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
