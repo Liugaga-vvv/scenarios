@@ -5,13 +5,19 @@ The fire station is responsible for attending emergencies in a city. Emergencies
 ## Example Usage
 
 ```python
+# Create some Emergency instances
+emergency1 = Emergency(3, '123 Main St')
+emergency2 = Emergency(1, '456 Oak Ave')
+emergency3 = Emergency(2, '789 Pine Rd')
+
+# Create a FireStation instance and add the emergencies
 fs = FireStation()
-e1 = Emergency(2, "Main St")
-e2 = Emergency(1, "Market St")
-fs.add_emergency(e1)
-fs.add_emergency(e2)
-fs.prioritize_emergencies()
-fs.remove_emergency(e1)
+fs.add_emergency(emergency1)
+fs.add_emergency(emergency2)
+fs.add_emergency(emergency3)
+
+# Remove another emergency
+fire_station.remove_emergency(emergency3)
 ```
 
 ## TODO
