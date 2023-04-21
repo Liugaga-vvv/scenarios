@@ -19,5 +19,5 @@ class TestSearchDocument(unittest.TestCase):
         self.assertEqual(search_document(inventory, document_name), expected_output)
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
     
