@@ -24,3 +24,7 @@ jobs:
           pip install requests
           wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@latest/actions/sync-pr-to-feishu.py
           python sync-pr-to-feishu.py --appid "$APP_ID" --appsecret "$APP_SECRET" --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY
+          pip install jsonschema
+          wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@latest/schema.json
+          wget https://cdn.jsdelivr.net/gh/labex-labs/common-scripts@latest/actions/sync-labs-to-feishu.py
+          python sync-labs-to-feishu.py --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --schema schema.json

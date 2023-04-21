@@ -1,0 +1,74 @@
+{
+  "type": "challenge",
+  "title": "Group of Linux",
+  "description": "In this challenge, you will be using the usermod, groupadd, and groupdel commands to manage user groups in a Linux environment.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating a New User Group",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Detects if a user has created a user group",
+            "file": "verify1.sh",
+            "hint": "Please created a user group",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/groupadd"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Adding Users to a Group",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Detects if a user has added users to a user group",
+            "file": "verify2.sh",
+            "hint": "Please add users to a user group",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/usermod"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Deleting a User Group",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Detects if a user has deleted a user group",
+            "file": "verify3.sh",
+            "hint": "Please delete a user group",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/groupdel", "linux/userdel"],
+        "solutions": ["step3-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
