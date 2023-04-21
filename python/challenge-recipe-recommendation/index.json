@@ -1,0 +1,53 @@
+{
+  "type": "challenge",
+  "title": "Recipe Recommendation",
+  "description": "You are helping a friend who loves to cook and experiment with different recipes. They have asked you to create a program that will recommend recipes based on the ingredients they have on hand. Your task is to create a program that will take in a list of ingredients and return a list of recommended recipes.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Recipe Recommendation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of recipe_recommendation.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/data_types",
+          "python/for_loop",
+          "python/function_basic"
+        ],
+        "solutions": ["recipe_recommendation.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "recipe_recommendation.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
