@@ -1,8 +1,6 @@
 # Immigration Office Processing Time Calculator
 
-Your task is to write a Python function called `calculate_processing_time` that takes in one parameter:
-
-The function should calculate the processing time for the application based on the following formula:
+Your task is to write a Python function called `calculate_processing_time` that takes in one parameter.The function should calculate the processing time for the application based on the following formula:
 
 - If the number of pages is less than or equal to 10, the processing time is 1 day.
 - If the number of pages is greater than 10 and less than or equal to 50, the processing time is 3 days.
