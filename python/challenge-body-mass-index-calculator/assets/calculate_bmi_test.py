@@ -24,5 +24,5 @@ class TestCalculateBMI(unittest.TestCase):
         self.assertAlmostEqual(calculate_bmi(weight, height), expected_output, delta=0.01)
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
     
