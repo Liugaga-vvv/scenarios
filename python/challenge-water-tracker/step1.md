@@ -45,7 +45,7 @@ Output:
 
 ## TODO
 
-- Complete the `water_tracker.py`.
+- Complete `water_tracker.py`
 
 ## Requirements
 
