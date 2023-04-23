@@ -1,0 +1,134 @@
+{
+  "type": "lab",
+  "title": "Custom Docker Images",
+  "description": "In this lab, you learned how to create custom Docker images.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Create A Simple Docker Image",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check that the Dockerfile is correct",
+            "file": "verify1-1.sh",
+            "hint": "Please check that the Dockerfile is correct at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the index.html is correct",
+            "file": "verify1-2.sh",
+            "hint": "Please check that the index.html is correct at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if my-nginx image exists",
+            "file": "verify1-3.sh",
+            "hint": "Please build my-nginx image at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if running the container with my-nginx image",
+            "file": "verify1-4.sh",
+            "hint": "Please run a container with my-nginx image",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/build", "docker/images", "docker/run"]
+      },
+      {
+        "title": "Add Custom Software To The Image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check that the Dockerfile is correct",
+            "file": "verify2-1.sh",
+            "hint": "Please check that the Dockerfile is correct at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the index.html is correct",
+            "file": "verify2-2.sh",
+            "hint": "Please check that the index.html is correct at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if my-nginx-curl image exists",
+            "file": "verify2-3.sh",
+            "hint": "Please build my-nginx-curl image at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if running the container with my-nginx-curl image",
+            "file": "verify2-4.sh",
+            "hint": "Please run a container with my-nginx-curl",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/build", "docker/images", "docker/run"]
+      },
+      {
+        "title": "Use Environment Variables In The Image",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check that the Dockerfile is correct",
+            "file": "verify3-1.sh",
+            "hint": "Please check that the Dockerfile is correct at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that the index.html is correct",
+            "file": "verify3-2.sh",
+            "hint": "Please check that the index.html is correct at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if my-nginx-env image exists",
+            "file": "verify3-3.sh",
+            "hint": "Please build my-nginx-env image at /home/labex/docker path",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if running the container with my-nginx-env image",
+            "file": "verify3-4.sh",
+            "hint": "Please run a container with my-nginx-env",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/build", "docker/images", "docker/run"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}
