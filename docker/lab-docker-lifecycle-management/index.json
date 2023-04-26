@@ -1,0 +1,113 @@
+{
+  "type": "lab",
+  "title": "Docker Lifecycle Management",
+  "description": "In this lab，we will go through the basics of Docker lifecycle management.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Docker Image",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the Dockerfile file exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a file named `Dockerfile` in /home/labex/docker-lab",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the index.html file exists.",
+            "file": "verify1-2.sh",
+            "hint": "Please create a file named `index.html` in /home/labex/docker-lab",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the my-web-server image exists.",
+            "file": "verify1-3.sh",
+            "hint": "Please build the Docker image named my-web-server",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/build"]
+      },
+      {
+        "title": "Run a Docker Container",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the my-web-server container start.",
+            "file": "verify2.sh",
+            "hint": "Please start a new container based on the `my-web-server` image",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run"]
+      },
+      {
+        "title": "Manage Docker Containers",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed.",
+            "file": "verify3-1.sh",
+            "hint": "Please executed command 'docker stop' ",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed.",
+            "file": "verify3-2.sh",
+            "hint": "Please executed command 'docker rm'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/ps", "docker/stop", "docker/rm"]
+      },
+      {
+        "title": "Clean up the resources",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check for running containers.",
+            "file": "verify4-1.sh",
+            "hint": "Please stop and remove all running containers",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the my-web-server image exists.",
+            "file": "verify4-2.sh",
+            "hint": "Please removes the Docker image with the tag `my-web-server`",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/rmi"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

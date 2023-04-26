@@ -19,10 +19,7 @@
           }
         ],
         "skills": [
-          "python/__init__",
-          "python/__len__",
-          "python/__str__",
-          "python/__contains__",
+          "python/magic_method",
           "python/list",
           "python/len",
           "python/str"
@@ -41,12 +38,7 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/__getitem__",
-          "python/__setitem__",
-          "python/if_else",
-          "python/list"
-        ],
+        "skills": ["python/magic_method", "python/if_else", "python/list"],
         "solutions": ["magic_list2.py"]
       },
       {
@@ -62,8 +54,7 @@
           }
         ],
         "skills": [
-          "python/__add__",
-          "python/__iadd__",
+          "python/magic_method",
           "python/mixing",
           "python/math_operator"
         ],
@@ -82,8 +73,7 @@
           }
         ],
         "skills": [
-          "python/__sub__",
-          "python/__mul__",
+          "python/magic_method",
           "python/list_comprehension",
           "python/math_operator"
         ],
@@ -101,7 +91,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/__lt__", "python/sorted", "python/comparison"],
+        "skills": ["python/magic_method", "python/sorted", "python/comparison"],
         "solutions": ["magic_list5.py"]
       }
     ],

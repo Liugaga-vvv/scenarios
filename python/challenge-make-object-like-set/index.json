@@ -46,7 +46,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__init__", "python/__str__"],
+        "skills": ["python/list", "python/magic_method"],
         "solutions": ["magic_set.py"]
       },
       {
@@ -61,7 +61,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__len__"],
+        "skills": ["python/list", "python/magic_method"],
         "solutions": ["magic_set.py"]
       },
       {
@@ -76,7 +76,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__contains__"],
+        "skills": ["python/list", "python/magic_method"],
         "solutions": ["magic_set.py"]
       },
       {
@@ -98,7 +98,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__iter__", "python/next"],
+        "skills": ["python/list", "python/magic_method", "python/next"],
         "solutions": ["magic_set.py"]
       },
       {
@@ -120,7 +120,7 @@
             "showstderr": true
           }
         ],
-        "skills": ["python/list", "python/__eq__", "python/__ne__"],
+        "skills": ["python/list", "python/magic_method"],
         "solutions": ["magic_set.py"]
       },
       {
@@ -149,12 +149,7 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/list",
-          "python/__and__",
-          "python/__or__",
-          "python/__sub__"
-        ],
+        "skills": ["python/list", "python/magic_method"],
         "solutions": ["magic_set.py"]
       }
     ],

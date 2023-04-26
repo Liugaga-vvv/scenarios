@@ -18,13 +18,7 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/list",
-          "python/__len__",
-          "python/__contains__",
-          "python/__init__",
-          "python/class"
-        ]
+        "skills": ["python/list", "python/magic_method", "python/class"]
       },
       {
         "title": "Item Access",
@@ -38,12 +32,7 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/list",
-          "python/__getitem__",
-          "python/__setitem__",
-          "python/__delitem__"
-        ]
+        "skills": ["python/list", "python/magic_method"]
       },
       {
         "title": "Iteration",
@@ -59,8 +48,7 @@
         ],
         "skills": [
           "python/list",
-          "python/__iter__",
-          "python/__reversed__",
+          "python/magic_method",
           "python/for_loop",
           "python/yield_values"
         ]

@@ -18,13 +18,7 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/dict",
-          "python/__getitem__",
-          "python/__setitem__",
-          "python/__delitem__",
-          "python/__len__"
-        ],
+        "skills": ["python/dict", "python/magic_method"],
         "solutions": ["basic_functionality.py"]
       },
       {
@@ -39,15 +33,7 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "python/dict",
-          "python/__getitem__",
-          "python/__setitem__",
-          "python/__delitem__",
-          "python/__len__",
-          "python/__contains__",
-          "python/__iter__"
-        ],
+        "skills": ["python/dict", "python/magic_method"],
         "solutions": ["advanced_functionality.py"]
       }
     ],

@@ -1,0 +1,54 @@
+{
+  "type": "challenge",
+  "title": "Water Tracker",
+  "description": "In this challenge, you will write a Python function that can track the amount of water a person drinks throughout the day.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Water Tracker",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test water_tracker.py",
+            "file": "verify1.sh",
+            "hint": "There are errors, please check.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/tuple",
+          "python/sum",
+          "python/dict",
+          "python/function_basic"
+        ],
+        "solutions": ["water_tracker.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "water_tracker.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
