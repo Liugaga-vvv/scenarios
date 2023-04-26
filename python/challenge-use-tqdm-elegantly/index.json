@@ -1,0 +1,113 @@
+{
+    "type": "challenge",
+    "title": "Use Tqdm Elegantly",
+    "description": "In this challenge, you will be working with the tqdm library, which is used to create customizable progress bars for loops and other iterable objects. ",
+    "difficulty": "Advanced",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Custom Progress Bar with Dynamic Time Estimation",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Test custom_progress_bar.py",
+                        "file": "verify1.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/tqdm",
+                    "python/print",
+                    "python/for_loop",
+                    "python/time",
+                    "python/with_statement"
+                ],
+                "solutions": [
+                    "custom_progress_bar.py"
+                ]
+            },
+            {
+                "title": "Nested Progress Bars with Dynamic Labels",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Test nested_progress_bars.py",
+                        "file": "verify2.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/tqdm",
+                    "python/print",
+                    "python/for_loop",
+                    "python/time",
+                    "python/with_statement"
+                ],
+                "solutions": [
+                    "nested_progress_bars.py"
+                ]
+            },
+            {
+                "title": "Exception Handling and Graceful Exit",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Test custom_progress_bar_with_exceptions.py",
+                        "file": "verify3.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/tqdm",
+                    "python/print",
+                    "python/for_loop",
+                    "python/time",
+                    "python/with_statement"
+                ],
+                "solutions": [
+                    "custom_progress_bar_with_exceptions.py"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "custom_progress_bar.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "nested_progress_bars.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "custom_progress_bar_with_exceptions.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
