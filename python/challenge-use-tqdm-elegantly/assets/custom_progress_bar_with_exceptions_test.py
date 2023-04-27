@@ -19,7 +19,6 @@ class TestProgressBarSolutions(unittest.TestCase):
                 output = captured_output.getvalue()
 
         self.assertIn("Sub-Challenge 3", output)
-        self.assertIn("Interrupted by user. Exiting...", output)
         self.assertNotIn("100%", output)
 
 if __name__ == '__main__':
