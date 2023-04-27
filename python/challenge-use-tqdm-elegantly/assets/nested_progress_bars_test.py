@@ -13,7 +13,7 @@ class TestProgressBarSolutions(unittest.TestCase):
     def test_nested_progress_bars(self):
         tasks = [[0.1, 0.2], [0.2, 0.1, 0.3], [0.1, 0.1]]
 
-        with patch('sys.stdout', new=StringIO()) as captured_output:
+        with patch('sys.stderr', new=StringIO()) as captured_output:
             nested_progress_bars(tasks)
             output = captured_output.getvalue()
 

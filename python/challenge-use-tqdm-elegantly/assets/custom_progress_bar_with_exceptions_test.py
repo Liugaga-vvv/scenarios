@@ -12,7 +12,7 @@ class TestProgressBarSolutions(unittest.TestCase):
     def test_custom_progress_bar_with_exceptions(self):
         tasks = [0.1, 0.2, 0.3, 0.2, 0.1]
 
-        with patch('sys.stdout', new=StringIO()) as captured_output:
+        with patch('sys.stderr', new=StringIO()) as captured_output:
             with patch('custom_progress_bar_with_exceptions.sleep', side_effect=[None, None, KeyboardInterrupt, None, None]):
                 custom_progress_bar_with_exceptions(
                     tasks, desc="Sub-Challenge 3")

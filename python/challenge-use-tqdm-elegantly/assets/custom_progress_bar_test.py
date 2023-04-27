@@ -13,7 +13,7 @@ class TestProgressBarSolutions(unittest.TestCase):
     def test_custom_progress_bar(self):
         tasks = [0.1, 0.2, 0.3, 0.2, 0.1]
 
-        with patch('sys.stdout', new=StringIO()) as captured_output:
+        with patch('sys.stderr', new=StringIO()) as captured_output:
             custom_progress_bar(tasks, desc="Sub-Challenge 1")
             output = captured_output.getvalue()
 
