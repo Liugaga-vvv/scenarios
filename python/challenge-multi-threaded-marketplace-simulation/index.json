@@ -1,0 +1,105 @@
+{
+    "type": "challenge",
+    "title": "Multi-Threaded Marketplace Simulation",
+    "description": "In this challenge, your task is to create a multi-threaded application that simulates the behaviour of an online marketplace. ",
+    "difficulty": "Intermediate",
+    "time": 20,
+    "details": {
+        "steps": [
+            {
+                "title": "Implementing the Catalog",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Test Catalog.py",
+                        "file": "verify1.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/threading",
+                    "python/class"
+                ],
+                "solutions": [
+                    "Catalog.py"
+                ]
+            },
+            {
+                "title": "Implementing the Buyer",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Test Buyer.py",
+                        "file": "verify2.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/threading",
+                    "python/class"
+                ],
+                "solutions": [
+                    "Buyer.py"
+                ]
+            },
+            {
+                "title": "Implementing the Seller",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Test Seller.py",
+                        "file": "verify3.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/threading",
+                    "python/class"
+                ],
+                "solutions": [
+                    "Seller.py"
+                ]
+            }
+            
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "Seller.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "Buyer.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "Catalog.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
