@@ -4,13 +4,6 @@ from typing import Any, List
 
 
 def custom_progress_bar_with_exceptions(iterable: List[Any], desc: str = "Processing") -> None:
-    """
-    A custom progress bar with exception handling and graceful exit capabilities.
-
-    Args:
-        iterable: A list of elements that the progress bar should iterate through.
-        desc: A description to display in the progress bar. Default is "Processing".
-    """
     total_iterations = len(iterable)
     avg_time_per_iteration = 0
 
@@ -37,3 +30,7 @@ def custom_progress_bar_with_exceptions(iterable: List[Any], desc: str = "Proces
                 (avg_time_per_iteration * i) + elapsed_time) / (i + 1)
             pbar.set_postfix_str(
                 f"ETA: {avg_time_per_iteration * (total_iterations - (i + 1)):.2f}s", refresh=True)
+
+
+tasks = [1, 2, 3, 2, 1]
+custom_progress_bar_with_exceptions(tasks, desc="Sub-Challenge 3")

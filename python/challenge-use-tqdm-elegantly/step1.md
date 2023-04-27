@@ -2,12 +2,9 @@
 
 In this sub-challenge, you will create a custom progress bar that shows the estimated time remaining for the completion of a task, based on the average time taken by previous iterations. The progress bar should update dynamically, recalculating the estimated time remaining after each iteration.
 
-## Example usage
+## Remind
 
-```python
-tasks = [1, 2, 3, 2, 1]
-custom_progress_bar(tasks, desc="Sub-Challenge 1")
-```
+- Before starting this challenge, please import the `tqdm` library and type $pip install tqdm$ statement at the command line. After successful import, $Successfully installed tqdm-4.65.0$ will be displayed. Now you can start the challenge.
 
 ## TODO
 
