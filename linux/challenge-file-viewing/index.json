@@ -1,0 +1,104 @@
+{
+  "type": "challenge",
+  "title": "File Viewing",
+  "description": "In this challenge, you will learn how to use the cat, head, and tail commands in Linux.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Using Cat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the output is stored in the specified location",
+            "file": "verify1.sh",
+            "hint": "Please save the output to the specified location",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/cat"],
+        "solutions": ["step1-solution.md"]
+      },
+      {
+        "title": "Using Head Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the output is stored in the specified location",
+            "file": "verify2.sh",
+            "hint": "Please save the output to the specified location",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/head"],
+        "solutions": ["step2-solution.md"]
+      },
+      {
+        "title": "Using Tail Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the output is stored in the specified location",
+            "file": "verify3.sh",
+            "hint": "Please save the output to the specified location",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/tail"],
+        "solutions": ["step3-solution.md"]
+      },
+      {
+        "title": "Using Cat and Head Commands",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the output is stored in the specified location",
+            "file": "verify4.sh",
+            "hint": "Please save the output to the specified location",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/cat", "linux/head"],
+        "solutions": ["step4-solution.md"]
+      },
+      {
+        "title": "Using Cat and Tail Commands",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if the output is stored in the specified location",
+            "file": "verify5.sh",
+            "hint": "Please save the output to the specified location",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/cat", "linux/tail"],
+        "solutions": ["step5-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

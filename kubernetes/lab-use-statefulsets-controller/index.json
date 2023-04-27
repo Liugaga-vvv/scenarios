@@ -1,0 +1,134 @@
+{
+  "type": "lab",
+  "title": "Use Statefulsets Controller",
+  "description": "In this lab, we learn how to model stability with StatefulSets in Kubernetes.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Create PV and PVC",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if pv my-pv exist",
+            "file": "verify1-1.sh",
+            "hint": "Please verify pv.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if pvc my-pvc exist",
+            "file": "verify1-2.sh",
+            "hint": "Please verify pvc.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Create a StatefulSet",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if statefulset web exist",
+            "file": "verify2-1.sh",
+            "hint": "Please verify statefulset.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if 'get' is used",
+            "file": "verify2-2.sh",
+            "hint": "Please input 'kubectl get statefulsets'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if 'exec' is used",
+            "file": "verify2-3.sh",
+            "hint": "Please input 'kubectl exec -it web-0 -- /bin/bash'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/exec"]
+      },
+      {
+        "title": "Update a StatefulSet",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the statefulset.yaml has changed",
+            "file": "verify3-1.sh",
+            "hint": "Please modify the statefulset.yaml file to use NGINX version 1.20.0",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Waiting for the configuration to take effect",
+            "file": "verify3-2.sh",
+            "hint": "Please wait about two minutes",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Scale a StatefulSet",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the statefulset.yaml has changed",
+            "file": "verify4-1.sh",
+            "hint": "Please modify the statefulset.yaml file to scale five replicas",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of the StatefulSet",
+            "file": "verify4-2.sh",
+            "hint": "Please input 'kubectl get statefulsets'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Delete a StatefulSet",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if statefulset web is deleted",
+            "file": "verify5.sh",
+            "hint": "Please input 'kubectl delete statefulset web'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/delete"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

@@ -19,12 +19,7 @@
           }
         ],
         "skills": [
-          "python/__init__",
-          "python/__neg__",
-          "python/__abs__",
-          "python/__round__",
-          "python/__floor__",
-          "python/__ceil__",
+          "python/magic_method",
           "python/math_operator",
           "python/math",
           "python/f_string",
@@ -46,13 +41,7 @@
           }
         ],
         "skills": [
-          "python/__add__",
-          "python/__sub__",
-          "python/__mul__",
-          "python/__truediv__",
-          "python/__floordiv__",
-          "python/__mod__",
-          "python/__pow__",
+          "python/magic_method",
           "python/math_operator",
           "python/f_string",
           "python/class",
@@ -73,13 +62,7 @@
           }
         ],
         "skills": [
-          "python/__iadd__",
-          "python/__isub__",
-          "python/__imul__",
-          "python/__itruediv__",
-          "python/__ifloordiv__",
-          "python/__imod__",
-          "python/__ipow__",
+          "python/magic_method",
           "python/math_operator",
           "python/f_string",
           "python/class",

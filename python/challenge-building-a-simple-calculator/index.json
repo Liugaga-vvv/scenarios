@@ -1,0 +1,110 @@
+{
+  "type": "challenge",
+  "title": "Building a Simple Calculator",
+  "description": "In this challenge, you will build a simple calculator that can perform basic arithmetic operations.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Get user input",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing get_user_input() function",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/input", "python/function_basic"],
+        "solutions": ["get_user_input.py"]
+      },
+      {
+        "title": "Validate user input",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Testing validate_user_input() function",
+            "file": "verify2.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/if_else", "python/print", "python/function_basic"],
+        "solutions": ["validate_user_input.py"]
+      },
+      {
+        "title": "Perform the calculation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Testing perform_calculation() function",
+            "file": "verify3.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/data_types",
+          "python/math_operator",
+          "python/if_else",
+          "python/float",
+          "python/function_basic"
+        ],
+        "solutions": ["perform_calculation.py"]
+      },
+      {
+        "title": "Display the result",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Testing display_result() function",
+            "file": "verify4.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/data_types",
+          "python/print",
+          "python/str",
+          "python/function_basic"
+        ],
+        "solutions": ["display_result.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "simple_calculator.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "implement_calculator.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

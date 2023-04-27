@@ -1,0 +1,99 @@
+{
+  "type": "challenge",
+  "title": "Log Parsing",
+  "description": "This challenge practices knowledge points such as opening and reading files, string manipulation, common data structures, and built-in methods by reading log files and parsing them.",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Reading Log File",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the log file is read correctly",
+            "file": "verify1.sh",
+            "hint": "Please read the log file correctly and print it line by line",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/rw_files", "python/open", "python/for_loop"],
+        "solutions": ["read_log.py"]
+      },
+      {
+        "title": "Analysis Each Row",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Whether to parse each line correctly",
+            "file": "verify2.sh",
+            "hint": "Please correctly parse each line of log file and count the number",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/dict", "python/manipulating_strings"],
+        "solutions": ["uri_count.py"]
+      },
+      {
+        "title": "Time-Consuming Statistics",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Statistics requested uri and return required value",
+            "file": "verify3.sh",
+            "hint": "Please correctly count the average value of the request and find out the maximum and minimum values",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sum", "python/len"],
+        "solutions": ["time_statistics.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "read_log.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "uri_count.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "time_statistics.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "access.log",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "access.log",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

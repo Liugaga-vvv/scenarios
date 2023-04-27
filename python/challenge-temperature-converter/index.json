@@ -1,0 +1,54 @@
+{
+  "type": "challenge",
+  "title": "Temperature Converter",
+  "description": "You have been tasked with creating a Python program that converts temperatures between Fahrenheit and Celsius.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Please replace this text with the title of the step",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of temperature_converter.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/data_types",
+          "python/for_loop",
+          "python/function_basic",
+          "python/round"
+        ],
+        "solutions": ["temperature_converter.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "temperature_converter.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

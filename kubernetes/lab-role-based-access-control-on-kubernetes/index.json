@@ -1,0 +1,141 @@
+{
+  "type": "lab",
+  "title": "Role-Based Access Control on Kubernetes",
+  "description": "In a Kubernetes cluster, Role-Based Access Control (RBAC) is used to control access to resources and operations within the cluster.",
+  "difficulty": "Intermediate",
+  "time": 35,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Namespace",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if Namespace myapp exists",
+            "file": "verify1.sh",
+            "hint": "Please create a new Namespace called 'myapp'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/create"]
+      },
+      {
+        "title": "Create a Role",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if role myapp-reader exists",
+            "file": "verify2.sh",
+            "hint": "Please create a new Role called myapp-reader in the myapp Namespace",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Create a Role Binding",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if Role Binding myapp-reader-binding exists",
+            "file": "verify3.sh",
+            "hint": "Please create the Role Binding called myapp-reader-binding",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "kubernetes/apply",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test access to the myapp namespace",
+            "file": "verify4-1.sh",
+            "hint": "Please input 'kubectl get pods -n myapp --as developer'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test access to the default namespace",
+            "file": "verify4-2.sh",
+            "hint": "Please input 'kubectl get pods --as developer'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get"]
+      },
+      {
+        "title": "Create a ClusterRole",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if ClusterRole myapp-admin exists",
+            "file": "verify5.sh",
+            "hint": "Please create a new ClusterRole called myapp-admin",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Create a ClusterRole Binding",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Check if ClusterRole Binding 'myapp-admin-binding' exists",
+            "file": "verify6.sh",
+            "hint": "Please create a ClusterRole Binding called myapp-admin-binding",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Test Access",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Check if pod myapp-pod exists",
+            "file": "verify7-1.sh",
+            "hint": "Please create a pod in the myapp namespace",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Test access to create a deployment in the myapp namespace",
+            "file": "verify7-2.sh",
+            "hint": "Please input 'kubectl apply -f myapp-deployment.yaml --as cluster-admin'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}
