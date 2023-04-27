@@ -1,0 +1,85 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Taint Command",
+  "description": "In this lab, you will learn how to use the kubectl taint command in Kubernetes.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Add a Taint to a Node",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Add a taint to a node",
+            "file": "verify1-1.sh",
+            "hint": "Please add taint for minikube node",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "View the taints on minikube node",
+            "file": "verify1-2.sh",
+            "hint": "Please input 'kubectl describe node minikube'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/taint", "kubernetes/describe"]
+      },
+      {
+        "title": "Remove a Taint From a Node",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Remove a taint from minikube node",
+            "file": "verify2.sh",
+            "hint": "Please input 'kubectl taint nodes minikube app-'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/taint"]
+      },
+      {
+        "title": "Modify a Taint on a Node",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if new taint exists",
+            "file": "verify3-1.sh",
+            "hint": "Please add the a new taint",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Force updates taint",
+            "file": "verify3-2.sh",
+            "hint": "Please use 'overwrite' to force updates",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/taint"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "type": "lab",
+  "title": "Isolating Workloads With Namespaces",
+  "description": "In this lab, you learn how to use namespaces to isolate workloads and resources in a Kubernetes cluster.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Namespace",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if namespace webapp exists",
+            "file": "verify1-1.sh",
+            "hint": "Please check namespace.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Verify that the namespace was created",
+            "file": "verify1-2.sh",
+            "hint": "Please input 'kubectl get namespaces'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Deploy a Web Application",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if deployment web-app exists",
+            "file": "verify2-1.sh",
+            "hint": "Please check web-app.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Verify that the web application is running in the 'webapp' namespace",
+            "file": "verify2-2.sh",
+            "hint": "Please input 'kubectl get pods -n webapp'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Expose the Web Application",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if service web-app exists",
+            "file": "verify3-1.sh",
+            "hint": "Please check web-app-service.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Verify that the Service is running in the webapp namespace",
+            "file": "verify3-2.sh",
+            "hint": "Please input 'kubectl get services -n webapp'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Expose the Web Application",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if deployment other exists",
+            "file": "verify4-1.sh",
+            "hint": "Please check other-app.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Verify that the Deployment is running in the default namespace",
+            "file": "verify4-2.sh",
+            "hint": "Please input 'kubectl get pods | grep other'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Verifying Cross-Namaspace Access",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Find the name of the pod running",
+            "file": "verify5-1.sh",
+            "hint": "Please input 'kubectl get pods -l app=other'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Open a shell session in the container running",
+            "file": "verify5-2.sh",
+            "hint": "Please input 'kubectl exec -it <pod-name> -- sh'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get", "kubernetes/exec"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

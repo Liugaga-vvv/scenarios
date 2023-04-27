@@ -1,0 +1,127 @@
+{
+  "type": "lab",
+  "title": "Configuring Apps with Configmaps",
+  "description": "Kubernetes ConfigMaps simplify configuration management by separating configuration data from the application and can be used as environment variables or mounted volumes in the container.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Configmap",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a yaml file named my-config.yaml in the `/home/labex/project` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Configmap is created in the cluster.",
+            "file": "verify1-2.sh",
+            "hint": "Please create the Configmap via the YAML file in step 1.",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Use the Configmap in Your Application",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify2-1.sh",
+            "hint": "Please create a yaml file named deployment.yaml in the `/home/labex/project` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Deployment is created in the cluster.",
+            "file": "verify2-2.sh",
+            "hint": "Please create the Deployment via the YAML file in step 1.",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Verify the Configuration",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify3-1.sh",
+            "hint": "Please execute `kubectl get pods -l app=my-app` command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify3-2.sh",
+            "hint": "Please execute `kubectl exec -it <pod-name> -- sh` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/exec", "kubernetes/get"]
+      },
+      {
+        "title": "Update the Configmap",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file is updated",
+            "file": "verify4-1.sh",
+            "hint": "Please update this yaml file named my-config.yaml",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if configmap is updated",
+            "file": "verify4-2.sh",
+            "hint": "Please update the Configmap via the YAML file in step 1.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Verify the Update",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify5-1.sh",
+            "hint": "Please execute `kubectl rollout restart deployment my-app` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/rollout"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

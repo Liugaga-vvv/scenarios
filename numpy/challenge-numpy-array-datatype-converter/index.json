@@ -1,0 +1,49 @@
+{
+  "type": "challenge",
+  "title": "NumPy Array Datatype Converter",
+  "description": "In this challenge, you will be required to write a Python function that converts a list of integers into a numpy array with a specified datatype. This will test your understanding of numpy and data types in Python.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "NumPy Array Datatype Conversion",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of convert_to_dtype_test.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["numpy/dtype", "python/function_basic"],
+        "solutions": ["convert_to_dtype.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "convert_to_dtype.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

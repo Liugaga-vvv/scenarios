@@ -1,0 +1,55 @@
+{
+  "type": "challenge",
+  "title": "Grocery List Generator",
+  "description": "You are helping a friend who is starting a new healthy eating plan. They have asked you to create a Python program that will generate a grocery list based on their meal plan for the week. Your task is to create a program that will take in their meal plan and generate a grocery list of all the ingredients needed for the week.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Grocery List Generator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of grocery_list_generator.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/data_types",
+          "python/for_loop",
+          "python/set",
+          "python/list",
+          "python/function_basic"
+        ],
+        "solutions": ["grocery_list_generator.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "grocery_list_generator.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

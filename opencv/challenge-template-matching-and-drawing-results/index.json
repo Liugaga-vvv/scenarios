@@ -1,0 +1,135 @@
+{
+  "type": "challenge",
+  "title": "Template Matching and Drawing Results",
+  "description": "In this challenge, you will be able to implement template matching using OpenCv-Python.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Load Images and Convert to Grayscale",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of load_and_convert_images function",
+            "file": "verify1.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["opencv/cvt_color", "opencv/imread", "opencv/imwrite"],
+        "solutions": ["load_and_convert_images.py"]
+      },
+      {
+        "title": "Implement Multiple Template Matching Methods",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implement of perform_template_matching function",
+            "file": "verify2.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "opencv/match_template",
+          "opencv/min_max_loc",
+          "opencv/imread",
+          "opencv/imwrite"
+        ],
+        "solutions": ["perform_template_matching.py"]
+      },
+      {
+        "title": "Draw Rectangles Around Matches",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implement of draw_rectangles_around_matches function",
+            "file": "verify3.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["opencv/rectangle", "opencv/imread", "opencv/imwrite"],
+        "solutions": ["draw_rectangles_around_matches.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "load_and_convert_images.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "perform_template_matching.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "draw_rectangles_around_matches.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "test_source.jpg",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "test_template.jpg",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        },
+        {
+          "file": "test_load_and_convert_images.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "test_perform_template_matching.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "test_draw_rectangles_around_matches.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "test_source2.jpg",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "test_template2.jpg",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "gray_test_source2.jpg",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "gray_test_template2.jpg",
+          "target": "/tmp",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

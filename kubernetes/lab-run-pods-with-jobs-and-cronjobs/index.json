@@ -1,0 +1,127 @@
+{
+  "type": "lab",
+  "title": "Run Pods with Jobs and Cronjobs",
+  "description": "Use Kubernetes Jobs/CronJobs to schedule and manage Pods for tasks like backups or maintenance. Set Pod parameters and monitor status/logs.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Run a Pod with a Job",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a yaml file named myapp-daemonset.yaml in the `/home/labelx/project` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Job is created in the cluster.",
+            "file": "verify1-2.sh",
+            "hint": "Please create the Job via the YAML file in step 1.",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get job` command is executed",
+            "file": "verify1-3.sh",
+            "hint": "Please execute `kubectl get job` command",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl logs <POD_NAME>` command is executed",
+            "file": "verify1-4.sh",
+            "hint": "Please execute `kubectl logs <POD_NAME>` command",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/logs"]
+      },
+      {
+        "title": "Run a Job with Multiple Pods",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify2-1.sh",
+            "hint": "Please create a yaml file named multi-pod-job.yaml in the `/home/labelx/project` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Job is created in the cluster.",
+            "file": "verify2-2.sh",
+            "hint": "Please create the Job via the YAML file in step 1.",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl logs <POD_NAME>` command is executed",
+            "file": "verify2-4.sh",
+            "hint": "Please execute `kubectl logs <POD_NAME>` command",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/logs"]
+      },
+      {
+        "title": "Run a Cronjob",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify3-1.sh",
+            "hint": "Please create a yaml file named cronjob.yaml in the `/home/labelx/project` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Cronjob is created in the cluster.",
+            "file": "verify3-2.sh",
+            "hint": "Please create the Cronjob via the YAML file in step 1.",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl get cronjobs` command is executed",
+            "file": "verify3-3.sh",
+            "hint": "Please execute `kubectl get cronjobs` command",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the `kubectl logs <POD_NAME>`command is executed",
+            "file": "verify3-4.sh",
+            "hint": "Please execute `kubectl logs <POD_NAME>` command",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/logs"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}
