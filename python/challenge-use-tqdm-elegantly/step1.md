@@ -4,7 +4,7 @@ In this sub-challenge, you will create a custom progress bar that shows the esti
 
 ## Remind
 
-- Before starting this challenge, please import the `tqdm` library and type $pip install tqdm$ statement at the command line. After successful import, $Successfully installed tqdm-4.65.0$ will be displayed. Now you can start the challenge.
+- Before starting this challenge, please import the `tqdm` library and type `pip install tqdm` statement at the command line. After successful import, `Successfully installed tqdm-4.65.0` will be displayed. Now you can start the challenge.
 
 ## TODO
 
