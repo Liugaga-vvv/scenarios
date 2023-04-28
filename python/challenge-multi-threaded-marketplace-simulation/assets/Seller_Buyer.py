@@ -1,7 +1,10 @@
+# Importing necessary modules including threading,time and required type hints
 import threading
 import time
 from typing import List
+# Importing Catalog class from a module called Catalog
 from Catalog import Catalog
+# Importing Product class from a module called Product
 from Product import Product
 
 class Seller(threading.Thread):

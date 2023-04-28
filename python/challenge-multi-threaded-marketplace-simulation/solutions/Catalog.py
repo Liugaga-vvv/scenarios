@@ -1,18 +1,10 @@
+# Importing necessary modules including threading and required type hints
 import threading
 from typing import Dict, List, Optional
-
-# defines a product class with id, name and price attributes
-
-
-class Product:
-    def __init__(self, id: int, name: str, price: float):
-        self.id = id
-        self.name = name
-        self.price = price
+# Importing Product class from a module called Product
+from Product import Product
 
 # defines a catalog class that stores products in a dictionary called `products` and provides methods to manipulate it
-
-
 class Catalog:
     def __init__(self):
         # initialize an empty dictionary 'products' to store product objects keyed by their ids.

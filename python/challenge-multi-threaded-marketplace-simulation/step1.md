@@ -1,7 +1,6 @@
 # Implementing the Product
 
-In this sub-challenge, you will implement the `Product` class.
-The purpose of this class is to represent a product and access its different attributes through its instances. We can add, delete, or update product instances in a product list through this class.
+In this sub-challenge, you will implement the `Product` class.The purpose of this class is to represent a product and access its different attributes through its instances. We can add, delete, or update product instances in a product list through this class.
 
 ## Example
 

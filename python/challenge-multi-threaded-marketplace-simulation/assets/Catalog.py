@@ -1,6 +1,9 @@
+# Importing necessary modules including threading and required type hints
 import threading
 from typing import Dict, List, Optional
+# Importing Product class from a module called Product
 from Product import Product
+
 
 class Catalog:
     def __init__(self):
