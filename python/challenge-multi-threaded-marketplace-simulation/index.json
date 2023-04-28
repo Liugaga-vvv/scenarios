@@ -20,7 +20,13 @@
                 ],
                 "skills": [
                     "python/threading",
-                    "python/class"
+                    "python/class",
+                    "python/typing",
+                    "python/deal",
+                    "python/with_statement",
+                    "python/return_values",
+                    "python/for_loop",
+                    "python/print"
                 ],
                 "solutions": [
                     "Catalog.py"
@@ -40,7 +46,11 @@
                 ],
                 "skills": [
                     "python/threading",
-                    "python/class"
+                    "python/class",
+                    "python/typing",
+                    "python/return_values",
+                    "python/for_loop",
+                    "python/print"
                 ],
                 "solutions": [
                     "Seller_Buyer.py"
