@@ -9,9 +9,9 @@ In this sub-challenge, you will implement the `Product` class.The purpose of thi
 product = Product(1, "iphone", 999.99)
 
 #Accessing the properties of a product
-Print (product. id) # Output: 1
-Print (product. name) # Output: "iPhone"
-Print (product. price) # Output: 999.99
+print (product. id) # Output: 1
+print (product. name) # Output: "iPhone"
+print (product. price) # Output: 999.99
 ```
 
 ## TODO
