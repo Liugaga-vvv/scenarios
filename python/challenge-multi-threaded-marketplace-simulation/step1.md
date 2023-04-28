@@ -21,4 +21,4 @@ Print (product. price) # Output: 999.99
 ## Requirements
 
 - The `Product` class should contains three attributes: id, name, and price.
-- This class has a constructor`__ init__` ,It takes three parameters: id, name, and price to initialize the properties of this instance.
+- This class has a constructor`__ init__`,It takes three parameters: id, name, and price to initialize the properties of this instance.
