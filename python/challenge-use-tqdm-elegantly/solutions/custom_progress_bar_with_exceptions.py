@@ -2,6 +2,7 @@ from time import sleep
 from tqdm import tqdm
 from typing import Any, List
 
+
 def custom_progress_bar_with_exceptions(iterable: List[Any], desc: str = "Processing") -> None:
     total_iterations = len(iterable)
     avg_time_per_iteration = 0
@@ -19,20 +20,20 @@ def custom_progress_bar_with_exceptions(iterable: List[Any], desc: str = "Proces
                 print("\nInterrupted by user. Exiting...")
                 pbar.close()
                 break
-            
+
             # catches other exceptions
             except Exception as e:
                 print(f"\nAn error occurred: {e}. Skipping this iteration.")
-                
-                # Writes an additional message to the progress bar. 
+
+                # Writes an additional message to the progress bar.
                 pbar.write("Skipping the current iteration.")
-                
+
                 pbar.update(1)
                 continue
 
             # Completes each iteration, updating the progress bar along each loop.
             pbar.update(1)
-            
+
             elapsed_time = pbar.format_dict["elapsed"] - start_time
 
             avg_time_per_iteration = (
@@ -40,7 +41,3 @@ def custom_progress_bar_with_exceptions(iterable: List[Any], desc: str = "Proces
             # Adjusts the final output of progress by adding an ETA.
             pbar.set_postfix_str(
                 f"ETA: {avg_time_per_iteration * (total_iterations - (i + 1)):.2f}s", refresh=True)
-
-# Example usage
-tasks = [1, 2, 3, 2, 1]
-custom_progress_bar_with_exceptions(tasks, desc="Sub-Challenge 3")

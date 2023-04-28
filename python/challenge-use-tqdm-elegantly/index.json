@@ -1,9 +1,9 @@
 {
     "type": "challenge",
-    "title": "Use Tqdm Elegantly",
-    "description": "In this challenge, you will be working with the tqdm library, which is used to create customizable progress bars for loops and other iterable objects. ",
+    "title": "Use tqdm Elegantly",
+    "description": "In this challenge, your task is to use the tqdm library to create customizable progress bar for loops and other iterable objects.",
     "difficulty": "Advanced",
-    "time": 15,
+    "time": 30,
     "details": {
         "steps": [
             {

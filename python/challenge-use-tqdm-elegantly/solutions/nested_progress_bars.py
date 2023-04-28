@@ -27,7 +27,3 @@ def nested_progress_bars(iterable: List[List[Any]]) -> None:
 
             # update the progress bar for the main tasks to reflect that one additional main task has been completed.
             main_pbar.update(1)
-
-# define a nested list of tasks, where each "main" task is represented by a list containing multiple "sub-tasks," and call the nested_progress_bars function with this input.
-tasks = [[1, 2], [2, 1, 3], [1, 1]]
-nested_progress_bars(tasks)

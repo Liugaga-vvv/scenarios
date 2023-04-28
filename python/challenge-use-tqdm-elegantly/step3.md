@@ -2,6 +2,13 @@
 
 In this sub-challenge, you will add exception handling and graceful exit capabilities to your custom tqdm progress bar. This will allow the progress bar to handle errors and interruptions without causing the entire program to crash.
 
+## Example
+
+```python
+tasks = [1, 2, 3, 2, 1]
+custom_progress_bar_with_exceptions(tasks, desc="process 3")
+```
+
 ## TODO
 
 - Complete `custom_progress_bar_with_exceptions.py`

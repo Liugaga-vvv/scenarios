@@ -15,10 +15,10 @@ class TestProgressBarSolutions(unittest.TestCase):
         with patch('sys.stderr', new=StringIO()) as captured_output:
             with patch('custom_progress_bar_with_exceptions.sleep', side_effect=[None, None, KeyboardInterrupt, None, None]):
                 custom_progress_bar_with_exceptions(
-                    tasks, desc="Sub-Challenge 3")
+                    tasks, desc="process 3")
                 output = captured_output.getvalue()
 
-        self.assertIn("Sub-Challenge 3", output)
+        self.assertIn("process 3", output)
         self.assertNotIn("100%", output)
 
 if __name__ == '__main__':

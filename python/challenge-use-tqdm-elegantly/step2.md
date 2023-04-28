@@ -2,6 +2,14 @@
 
 In this sub-challenge, you will create nested progress bars to track the progress of a task with multiple sub-tasks. The progress bars should display dynamic labels, indicating the current sub-task being executed.
 
+## Example
+
+```python
+# define a nested list of tasks, where each "main" task is represented by a list containing multiple "sub-tasks," and call the nested_progress_bars function with this input.
+tasks = [[1, 2], [2, 1, 3], [1, 1]]
+nested_progress_bars(tasks)
+```
+
 ## TODO
 
 - Complete `nested_progress_bars.py`

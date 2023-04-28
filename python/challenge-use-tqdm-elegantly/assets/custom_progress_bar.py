@@ -3,7 +3,7 @@ from tqdm import tqdm
 from typing import Any, List
 
 
-def custom_progress_bar_with_exceptions(iterable: List[Any], desc: str = "Processing") -> None:
+def custom_progress_bar(iterable: List[any], desc: str = "processing") -> None:
     """
     A custom progress bar that calculates the average time per iteration and estimates the remaining time for completion.
 

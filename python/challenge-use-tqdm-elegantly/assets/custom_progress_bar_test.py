@@ -14,10 +14,10 @@ class TestProgressBarSolutions(unittest.TestCase):
         tasks = [0.1, 0.2, 0.3, 0.2, 0.1]
 
         with patch('sys.stderr', new=StringIO()) as captured_output:
-            custom_progress_bar(tasks, desc="Sub-Challenge 1")
+            custom_progress_bar(tasks, desc="process 1")
             output = captured_output.getvalue()
 
-        self.assertIn("Sub-Challenge 1", output)
+        self.assertIn("process 1", output)
         self.assertIn("100%", output)
         
 if __name__ == '__main__':
