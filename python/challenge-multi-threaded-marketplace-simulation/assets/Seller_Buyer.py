@@ -48,18 +48,20 @@ class Buyer(threading.Thread):
         pass 
 
 if __name__ == "__main__":
-
-    sellers = [Seller(i, Catalog) for i in range(1, 4)]
-    buyers = [Buyer(i, Catalog) for i in range(1, 4)]
+    catalog = Catalog()
+    sellers = [Seller(i, catalog) for i in range(1, 4)]
+    buyers = [Buyer(i, catalog) for i in range(1, 4)]
 
     for seller in sellers:
         seller.start()
-        
+
     for buyer in buyers:
         buyer.start()
 
     for seller in sellers:
-        seller.join() 
-        
+        seller.join()
+
     for buyer in buyers:
         buyer.join()
+
+    catalog.display_catalog()
