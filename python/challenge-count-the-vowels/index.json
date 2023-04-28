@@ -1,0 +1,54 @@
+{
+  "type": "challenge",
+  "title": "Count the Vowels",
+  "description": "In this challenge, you will be required to count the number of vowels in a given string using a Python function.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a function",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check that the function is written correctly",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/if_else",
+          "python/for_loop",
+          "python/str"
+        ],
+        "solutions": ["step1-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "count_vowels.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

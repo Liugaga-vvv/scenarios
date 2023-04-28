@@ -1,0 +1,85 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Client and Server Version",
+  "description": "In this lab, you will learn how to print the client and server version information on Kubernetes.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Print the Server Version Information",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if 'kubectl version' is used ",
+            "file": "verify1.sh",
+            "hint": "Please input 'kubectl version'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/version"]
+      },
+      {
+        "title": "Print the Client Version Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if --client is used",
+            "file": "verify2.sh",
+            "hint": "Please input --client",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/version"]
+      },
+      {
+        "title": "Print the Server Version Information With JSON Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if '--output=json' is used",
+            "file": "verify3.sh",
+            "hint": "Please input '--output=json'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/version"]
+      },
+      {
+        "title": "Print the Server Version Information in YAML Format",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if '--output=yaml' is used",
+            "file": "verify4.sh",
+            "hint": "Please input '--output=yaml'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/version"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

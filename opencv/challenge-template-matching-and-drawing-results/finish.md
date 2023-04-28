@@ -1,0 +1,3 @@
+# Summary
+
+Congratulations on completing the three challenge projects! You have successfully improved your skills in template matching and visualization techniques using OpenCV. In the challengess, you were required to load and preprocess the images before implementing various template matching methods to locate the template within the source image. The results were compared, and the best match locations were visualized by drawing rectangles around them. Overall, you have demonstrated proficiency in these fundamental computer vision tasks, which will serve as a solid foundation for future projects. Well done!

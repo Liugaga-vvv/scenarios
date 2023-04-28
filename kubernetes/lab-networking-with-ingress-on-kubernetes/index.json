@@ -1,0 +1,127 @@
+{
+  "type": "lab",
+  "title": "Networking With Ingress on Kubernetes",
+  "description": "In this lab, you will learn how to use Ingress to route external traffic to services running in a Kubernetes cluster.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Install the Nginx Ingress Controller",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if ingress-nginx namespace exists",
+            "file": "verify1-1.sh",
+            "hint": "Please create a namespace called ingress-nginx for the Ingress controller",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Install the nginx-ingress chart using kubectl",
+            "file": "verify1-2.sh",
+            "hint": "Please input 'kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.7.0/deploy/static/provider/cloud/deploy.yaml'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Verify that the nginx-ingress controller pods are running",
+            "file": "verify1-3.sh",
+            "hint": "Please input 'kubectl get pods -n ingress-nginx'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/create", "kubernetes/get"]
+      },
+      {
+        "title": "Create a Sample Application",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if deployment sample-app exists",
+            "file": "verify2-1.sh",
+            "hint": "Please create a deployment called sample-app",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if service sample-app exists",
+            "file": "verify2-2.sh",
+            "hint": "Please create a service called sample-app",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Create an Ingress Resource",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if ingress test-ingress exists",
+            "file": "verify3.sh",
+            "hint": "Please create a ingress called test-ingress",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Test the Ingress Resource",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Determine the IP address of the node",
+            "file": "verify4-1.sh",
+            "hint": "Please input 'kubectl get node -o wide'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Map the example.com domain to the IP address of the node",
+            "file": "verify4-2.sh",
+            "hint": "Please input the second operation",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Get service nodeport for ingress-nginx",
+            "file": "verify4-3.sh",
+            "hint": "Please input 'kubectl get services -n ingress-nginx'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Use curl to make an HTTP request to the Ingress endpoint",
+            "file": "verify4-4.sh",
+            "hint": "Please input 'curl http://example.com:<NodePort>/'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

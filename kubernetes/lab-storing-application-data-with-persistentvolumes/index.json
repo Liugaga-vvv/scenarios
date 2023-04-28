@@ -1,0 +1,134 @@
+{
+  "type": "lab",
+  "title": "Storing Application Data with Persistentvolumes",
+  "description": "In this lab, you will learn how to store application data with PersistentVolumes in Kubernetes.",
+  "difficulty": "Intermediate",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a PersistentVolume",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if pv my-pv exist",
+            "file": "verify1.sh",
+            "hint": "Please verify pv.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Deploy a Simple Web Application",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if deployment web-app exist",
+            "file": "verify2.sh",
+            "hint": "Please verify web-app.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Create a PersistentVolumeClaim",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if pvc my-pvc exist",
+            "file": "verify3.sh",
+            "hint": "Please verify pvc.yaml is correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      },
+      {
+        "title": "Verify Data Persistence",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Note the name of the web-app pod",
+            "file": "verify4-1.sh",
+            "hint": "Please input 'kubectl get pods -l app=web-app'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if 'exec' command is used",
+            "file": "verify4-2.sh",
+            "hint": "Please input 'kubectl exec -it <pod-name> -- sh'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the web-app is deleted",
+            "file": "verify4-3.sh",
+            "hint": "Please input 'kubectl delete deployment web-app'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the web-app exist",
+            "file": "verify4-4.sh",
+            "hint": "Please input 'kubectl apply -f web-app.yaml'",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if 'exec' command is used",
+            "file": "verify4-5.sh",
+            "hint": "Please input 'kubectl exec <pod-name> -- cat /usr/share/nginx/html/data/test.txt'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get", "kubernetes/exec"]
+      },
+      {
+        "title": "Modify the PVC Storage Resources",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if the pvc.yaml has changed",
+            "file": "verify5-1.sh",
+            "hint": "Please modify the pvc.yaml file to request 1Gi of storage instead of 500Mi",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if my-pvc is 1Gi storage",
+            "file": "verify5-2.sh",
+            "hint": "Please input the last step",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

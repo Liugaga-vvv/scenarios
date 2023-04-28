@@ -47,9 +47,7 @@
           }
         ],
         "skills": [
-          "python/__init__",
-          "python/__str__",
-          "python/__repr__",
+          "python/magic_method",
           "python/class",
           "python/attributes",
           "python/print",
@@ -90,12 +88,7 @@
           }
         ],
         "skills": [
-          "python/__eq__",
-          "python/__ne__",
-          "python/__lt__",
-          "python/__le__",
-          "python/__gt__",
-          "python/__ge__",
+          "python/magic_method",
           "python/class",
           "python/math_operator",
           "python/print"
@@ -128,7 +121,7 @@
           }
         ],
         "skills": [
-          "python/__del__",
+          "python/magic_method",
           "python/del",
           "python/class",
           "python/print",

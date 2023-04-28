@@ -1,0 +1,120 @@
+{
+  "type": "lab",
+  "title": "Scaling and Managing Pods with Deployments",
+  "description": "Kubernetes Deployments simplify Pod scaling and updating by managing ReplicaSet objects, with features for flexible application management.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Deployment",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please create a yaml file named my-deployment.yaml in the `/home/labex/project` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify1-2.sh",
+            "hint": "Please execute `kubectl apply -f /home/labex/project/my-deployment.yaml` command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify1-3.sh",
+            "hint": "Please execute `kubectl get deployments command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/apply", "kubernetes/get"]
+      },
+      {
+        "title": "Scale the Deployment",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify2-1.sh",
+            "hint": "Please execute `kubectl scale deployment my-deployment --replicas=5` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/scale"]
+      },
+      {
+        "title": "Update the Deployment",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify3-1.sh",
+            "hint": "Please execute `kubectl edit deployment my-deployment` command",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify3-2.sh",
+            "hint": "Please execute `kubectl rollout status deployment/my-deployment` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/edit", "kubernetes/rollout"]
+      },
+      {
+        "title": "Roll Back the Deployment",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify4-1.sh",
+            "hint": "Please execute `kubectl rollout undo deployment/my-deployment` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/rollout"]
+      },
+      {
+        "title": "Clean Up",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify5.sh",
+            "hint": "Please execute `kubectl delete deployment my-deployment` command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/delete"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Describe Command",
+  "description": "The describe command provides detailed resource information for troubleshooting Kubernetes via the command line interface.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Describe a Pod",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if Pod named myapp-pod has been created in the cluster",
+            "file": "verify1-1.sh",
+            "hint": "Please create a Pod using a YAML file named myapp-pod.yaml.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Pod named myapp-pod is passed through the command 'describe'.",
+            "file": "verify1-2.sh",
+            "hint": "Please use the command 'describe' to query the pod of myapp-pod.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/describe", "kubernetes/apply"]
+      },
+      {
+        "title": "Describe a Deployment",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if Deployment named myapp-deployment has been created in the cluster",
+            "file": "verify2-1.sh",
+            "hint": "lease create a Deployment using a YAML file named myapp-deployment.yaml.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Deployment named myapp-deploymentis passed through the command 'describe'.",
+            "file": "verify2-2.sh",
+            "hint": "Please use the command 'describe' to query the Deployment of myapp-deployment.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Describe a Service",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if Service named myapp-service has been created in the cluster",
+            "file": "verify3-1.sh",
+            "hint": "Please create a Service using a YAML file named myapp-service.yaml.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the Service named myapp-service is passed through the command 'describe'.",
+            "file": "verify3-2.sh",
+            "hint": "Please use the command 'describe' to query the Service of myapp-service.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

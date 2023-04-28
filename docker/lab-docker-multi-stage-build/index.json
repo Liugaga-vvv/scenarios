@@ -1,0 +1,78 @@
+{
+  "type": "lab",
+  "title": "Docker Multi Stage Build",
+  "description": "In this lab, you learned how to use Docker Multi-stage Build to create a smaller and more efficient Docker image.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Create A Dockerfile With Multi-stage Build",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if nodejs-example exists",
+            "file": "verify1-1.sh",
+            "hint": "Please clone NodeJS source code",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check that Dockerfile is correct",
+            "file": "verify1-2.sh",
+            "hint": "Please check that the Dockerfile is correct at /home/labex/myapp/ path",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/build", "docker/images", "docker/run"]
+      },
+      {
+        "title": "Build A Docker Image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if myapp image exists",
+            "file": "verify2.sh",
+            "hint": "Please build the myapp image and check the Dockerfile",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/build", "docker/images", "docker/run"]
+      },
+      {
+        "title": "Run A Docker Container",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if running the container with myapp image",
+            "file": "verify3.sh",
+            "hint": "Please run a container with myapp image",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/build", "docker/images", "docker/run"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-instance-ubuntu:2204"
+  }
+}

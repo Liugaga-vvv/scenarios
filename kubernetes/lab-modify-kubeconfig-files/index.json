@@ -1,0 +1,99 @@
+{
+  "type": "lab",
+  "title": "Modify Kubeconfig Files",
+  "description": "In this lab, you learned how to modify kubeconfig files using the kubectl command-line tool.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "View the Kubeconfig File",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if view is used",
+            "file": "verify1.sh",
+            "hint": "Please input 'kubectl config view'",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/config"]
+      },
+      {
+        "title": "Add a Cluster to the Kubeconfig File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the command 'set-cluster' is correct",
+            "file": "verify2.sh",
+            "hint": "Please input correct 'set-cluster' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/config"]
+      },
+      {
+        "title": "Add a User to the Kubeconfig File",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the command 'set-credentials' is correct",
+            "file": "verify3.sh",
+            "hint": "Please input correct 'set-credentials' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/config"]
+      },
+      {
+        "title": "Create a Context in the Kubeconfig File",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the command 'set-context' is correct",
+            "file": "verify4.sh",
+            "hint": "Please input correct 'set-context' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/config"]
+      },
+      {
+        "title": "Use a Context in the Kubeconfig File",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if the command 'use-context' is correct",
+            "file": "verify5.sh",
+            "hint": "Please input correct 'use-context' command",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/config"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

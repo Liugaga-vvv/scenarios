@@ -1,0 +1,141 @@
+{
+  "type": "lab",
+  "title": "Kubernetes Cordon and Uncordon Command",
+  "description": "kubectl cordon marks a node as unschedulable, while kubectl uncordon makes it schedulable again.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Cordoning a Node",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify1-1.sh",
+            "hint": "Please execute `kubectl get nodes` command",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify1-2.sh",
+            "hint": "Please execute `kubectl cordon minikube` command",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify1-3.sh",
+            "hint": "Please execute `kubectl get node | grep SchedulingDisabled` command",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/cordon", "kubernetes/get"]
+      },
+      {
+        "title": "Uncordoning a Node",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify2.sh",
+            "hint": "Please execute `kubectl uncordon minikube` command",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/uncordon"]
+      },
+      {
+        "title": "Cordoning and Uncordoning Nodes with Pods",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the yaml file exists.",
+            "file": "verify3-1.sh",
+            "hint": "Please create a yaml file named `deploy.yaml` in the `/home/labex/project/` directory",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify3-2.sh",
+            "hint": "Please execute `kubectl cordon minikube` command",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify3-3.sh",
+            "hint": "Please execute the commands in step 2 and step 3 again",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify3-4.sh",
+            "hint": "Please execute `kubectl uncordon minikube` command",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/cordon"]
+      },
+      {
+        "title": "Using Labels to Cordon and Uncordon Nodes",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if the command is executed",
+            "file": "verify4-1.sh",
+            "hint": "Please execute `kubectl label nodes minikube org=labex` command",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify4-2.sh",
+            "hint": "Please execute `kubectl cordon -l org=labex` command",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify4-3.sh",
+            "hint": "Please execute `kubectl get node -l org=labex | grep SchedulingDisabled` command",
+            "timeout": 10,
+            "showstderr": false
+          },
+          {
+            "name": "Check if the command is executed",
+            "file": "verify4-4.sh",
+            "hint": "Please execute `kubectl uncordon -l org=labex` command",
+            "timeout": 10,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/cordon"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}

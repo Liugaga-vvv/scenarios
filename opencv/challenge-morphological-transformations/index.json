@@ -1,0 +1,149 @@
+{
+  "type": "challenge",
+  "title": "Morphological Transformations",
+  "description": "In this challenge, you will master the skills of morphological transformation using OpenCV-Python.",
+  "difficulty": "Intermediate",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Implement a Binary Image Generator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of generate_binary_image function",
+            "file": "verify1.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "numpy/random",
+          "opencv/circle",
+          "opencv/rectangle",
+          "opencv/line"
+        ],
+        "solutions": ["generate_binary_image.py"]
+      },
+      {
+        "title": "Perform Dilation and Erosion Operations",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implement of apply_dilation_and_erosion function",
+            "file": "verify2.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "opencv/dilate",
+          "opencv/erode",
+          "opencv/get_structuring_element"
+        ],
+        "solutions": ["apply_dilation_and_erosion.py"]
+      },
+      {
+        "title": "Implement Opening and Closing Operations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implement of apply_opening_and_closing",
+            "file": "verify3.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "opencv/morphology_ex",
+          "opencv/get_structuring_element"
+        ],
+        "solutions": ["apply_opening_and_closing.py"]
+      },
+      {
+        "title": "Implement a Morphological Gradient",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implement of apply_morphological_gradient",
+            "file": "verify4.sh",
+            "hint": "Please create a function that correctly implements the requirements.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "opencv/morphology_ex",
+          "opencv/get_structuring_element"
+        ],
+        "solutions": ["apply_morphological_gradient.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "generate_binary_image.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "apply_dilation_and_erosion.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "apply_opening_and_closing.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "apply_morphological_gradient.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "generate_binary_image_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "apply_dilation_and_erosion_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "apply_opening_and_closing_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "apply_morphological_gradient_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "img_test.jpg",
+          "target": "/tmp",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

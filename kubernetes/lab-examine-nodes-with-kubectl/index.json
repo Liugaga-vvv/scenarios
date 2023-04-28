@@ -1,0 +1,152 @@
+{
+  "type": "lab",
+  "title": "Examine Nodes with Kubectl",
+  "description": "In this lab，you will learn how to use `kubectl` to examine the nodes in your Kubernetes cluster.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Node Information",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "View a list of nodes in your cluster",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Get more detailed information about a specific node.",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get", "kubernetes/describe"]
+      },
+      {
+        "title": "Labels and Annotations",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "View the labels and annotations for a specific node.",
+            "file": "verify2-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "To add a label to a node.",
+            "file": "verify2-2.sh",
+            "hint": "Please add a labelx called `org=labex` to the node.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "To add an annotation to a node.",
+            "file": "verify2-3.sh",
+            "hint": "Please add an annotation called `environment=production` to the node.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get", "kubernetes/label", "kubernetes/annotate"]
+      },
+      {
+        "title": "Taints and Tolerations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "To add a taint to a node.",
+            "file": "verify3-1.sh",
+            "hint": "Please add an annotation called `app=backend:NoSchedule` to the node.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Create a toleration to a pod.",
+            "file": "verify3-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "kubernetes/describe",
+          "kubernetes/taint",
+          "kubernetes/apply"
+        ]
+      },
+      {
+        "title": "View Node Capacity and Resource Usage",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "To view the available resources on a node.",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/describe"]
+      },
+      {
+        "title": "View Node Events",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "To view all events related to a specific node.",
+            "file": "verify5.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/get"]
+      },
+      {
+        "title": "Cordon and Uncordon a Node",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "To cordon a node.",
+            "file": "verify6-1.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "To uncordon a node and allow new pods to be scheduled on it",
+            "file": "verify6-2.sh",
+            "hint": "Please follow the steps to complete the operation.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["kubernetes/cordon", "kubernetes/uncordon"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  }
+}
