@@ -27,11 +27,11 @@
                 ]
             },
             {
-                "title": "Implementing the Buyer",
+                "title": "Implementing the Seller and Buyer",
                 "text": "step2.md",
                 "verify": [
                     {
-                        "name": "Test Buyer.py",
+                        "name": "Test Seller_Buyer.py",
                         "file": "verify2.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
@@ -43,30 +43,9 @@
                     "python/class"
                 ],
                 "solutions": [
-                    "Buyer.py"
+                    "Seller_Buyer.py"
                 ]
-            },
-            {
-                "title": "Implementing the Seller",
-                "text": "step3.md",
-                "verify": [
-                    {
-                        "name": "Test Seller.py",
-                        "file": "verify3.sh",
-                        "hint": "There are errors, please check.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "python/threading",
-                    "python/class"
-                ],
-                "solutions": [
-                    "Seller.py"
-                ]
-            }
-            
+            }   
         ],
         "intro": {
             "text": "intro.md",
@@ -78,12 +57,7 @@
         "assets": {
             "host01": [
                 {
-                    "file": "Seller.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "Buyer.py",
+                    "file": "Seller_Buyer.py",
                     "target": "/home/labex/project",
                     "chmod": "ugo+rwx"
                 },

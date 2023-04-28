@@ -9,6 +9,22 @@ class Product:
         self.name = name
         self.price = price
 
+class Seller(threading.Thread):
+    def __init__(self, id: int, catalog: Catalog):
+        super().__init__()
+        self.id = id
+        self.catalog = catalog
+
+    def add_product(self, product: Product) -> None:
+        self.catalog.add_product(product)
+
+    def run(self) -> None:
+        for i in range(1, 4):
+            product = Product(i, f"Product {i}", i * 10.0)
+            self.add_product(product)
+            print(f"Seller {self.id} added {product.name}")
+            time.sleep(1)
+            
 class Buyer(threading.Thread):
     def __init__(self, id: int, catalog: Catalog):
         super().__init__()
@@ -31,11 +47,20 @@ class Buyer(threading.Thread):
             self.buy_product(product.id)
             time.sleep(1)
 
+
 if __name__ == "__main__":
+
+    sellers = [Seller(i, Catalog) for i in range(1, 4)]
     buyers = [Buyer(i, Catalog) for i in range(1, 4)]
+
+    for seller in sellers:
+        seller.start()
 
     for buyer in buyers:
         buyer.start()
+
+    for seller in sellers:
+        seller.join()
+        
     for buyer in buyers:
         buyer.join()
-

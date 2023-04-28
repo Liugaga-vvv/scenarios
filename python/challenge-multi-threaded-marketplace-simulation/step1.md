@@ -8,6 +8,6 @@ In this sub-challenge, you will implement the `Catalog` class. The `Catalog` cla
 
 ## Requirements
 
-1. Create a `Catalog` class with methods to add, remove, update, and browse products.
-2. Implement proper synchronization mechanisms to ensure thread-safe access to the shared product listings.
-3. Implement a method to display the current state of the catalog.
+- Create a `Catalog` class with methods to add, remove, update, and browse products.
+- Implement proper synchronization mechanisms to ensure thread-safe access to the shared product listings.
+- Implement a method to display the current state of the catalog.

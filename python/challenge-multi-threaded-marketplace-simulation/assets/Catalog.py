@@ -39,5 +39,6 @@ class Catalog:
         pass 
 
 if __name__ == "__main__":
-    catalog = Catalog()
-    catalog.display_catalog()
+        
+    # TODO: Write your code here
+        pass 
