@@ -1,7 +1,9 @@
 import threading
 from typing import Dict, List, Optional
 
-# defines a product class with id, name and price attributes 
+# defines a product class with id, name and price attributes
+
+
 class Product:
     def __init__(self, id: int, name: str, price: float):
         self.id = id
@@ -9,6 +11,8 @@ class Product:
         self.price = price
 
 # defines a catalog class that stores products in a dictionary called `products` and provides methods to manipulate it
+
+
 class Catalog:
     def __init__(self):
         # initialize an empty dictionary 'products' to store product objects keyed by their ids.
@@ -25,7 +29,7 @@ class Catalog:
     # method to remove a specific product from the catalog by its id value
     def remove_product(self, product_id: int) -> None:
         # use a lock to ensure this block of code is executed as one atomic operation to avoid race conditions.
-         with self.lock:
+        with self.lock:
             del self.products[product_id]
 
     # method to retrieve a product object stored in the catalog given a specific product id
@@ -41,14 +45,16 @@ class Catalog:
         with self.lock:
             return list(self.products.values())
 
-    # method to display all products stored in the catalog formatted for human-readable output. 
+    # method to display all products stored in the catalog formatted for human-readable output.
     def display_catalog(self) -> None:
         # use a lock to ensure this block of code is executed as one atomic operation to avoid race conditions.
         with self.lock:
             print("Catalog:")
             # iterate over all product objects stored in the catalog and print their id, name
             for product in self.products.values():
-                print(f"ID: {product.id}, Name: {product.name}, Price: ${product.price}")
+                print(
+                    f"ID: {product.id}, Name: {product.name}, Price: ${product.price}")
+
 
 if __name__ == "__main__":
     catalog = Catalog()

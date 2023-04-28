@@ -7,12 +7,31 @@
     "details": {
         "steps": [
             {
-                "title": "Implementing the Catalog",
+                "title": "Implementing the Product",
                 "text": "step1.md",
                 "verify": [
                     {
-                        "name": "Test Catalog.py",
+                        "name": "Test Product.py",
                         "file": "verify1.sh",
+                        "hint": "There are errors, please check.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/class"
+                ],
+                "solutions": [
+                    "Product.py"
+                ]
+            },
+            {
+                "title": "Implementing the Catalog",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Test Catalog.py",
+                        "file": "verify2.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
@@ -34,11 +53,11 @@
             },
             {
                 "title": "Implementing the Seller and Buyer",
-                "text": "step2.md",
+                "text": "step3.md",
                 "verify": [
                     {
                         "name": "Test Seller_Buyer.py",
-                        "file": "verify2.sh",
+                        "file": "verify3.sh",
                         "hint": "There are errors, please check.",
                         "timeout": 0,
                         "showstderr": true
@@ -66,6 +85,11 @@
         },
         "assets": {
             "host01": [
+                {
+                    "file": "Product.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
                 {
                     "file": "Seller_Buyer.py",
                     "target": "/home/labex/project",

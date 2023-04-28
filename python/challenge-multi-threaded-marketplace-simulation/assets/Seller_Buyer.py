@@ -2,50 +2,46 @@ import threading
 import time
 from typing import List
 from Catalog import Catalog
-
-class Product:
-    def __init__(self, id: int, name: str, price: float):
-        self.id = id
-        self.name = name
-        self.price = price
+from Product import Product
 
 class Seller(threading.Thread):
     def __init__(self, id: int, catalog: Catalog):
-         
+
         # TODO: Write your code here
-        pass 
+        pass
 
     def add_product(self, product: Product) -> None:
-          
+
         # TODO: Write your code here
-        pass 
+        pass
 
     def run(self) -> None:
-         
+
         # TODO: Write your code here
-        pass 
+        pass
 
 
 class Buyer(threading.Thread):
     def __init__(self, id: int, catalog: Catalog):
-         
+
         # TODO: Write your code here
-        pass 
+        pass
 
     def browse_catalog(self) -> List[Product]:
-          
+
         # TODO: Write your code here
-        pass 
+        pass
 
     def buy_product(self, product_id: int) -> None:
-        
+
         # TODO: Write your code here
-        pass 
+        pass
 
     def run(self) -> None:
-        
+
         # TODO: Write your code here
-        pass 
+        pass
+
 
 if __name__ == "__main__":
     catalog = Catalog()

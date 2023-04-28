@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /tmp && python3 Catalog_test.py
+cd /tmp && python3 Product_test.py
